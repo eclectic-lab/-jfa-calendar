@@ -1,0 +1,225 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//JFA National Team Calendar Bot//JA//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:サッカー日本代表 試合日程
+X-WR-CALDESC:JFA公式サイトより自動取得したサッカー日本代表（SAMURAI BLUE）の最新試合日程
+X-WR-TIMEZONE:Asia/Tokyo
+REFRESH-INTERVAL;VALUE=DURATION:P1D
+X-PUBLISHED-TTL:P1D
+BEGIN:VTIMEZONE
+TZID:Asia/Tokyo
+X-LIC-LOCATION:Asia/Tokyo
+BEGIN:STANDARD
+TZOFFSETFROM:+0900
+TZOFFSETTO:+0900
+TZNAME:JST
+DTSTART:19700101T000000
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:jfa-match-20260329-kirin-scotland@jfa.jp
+DTSTAMP:20261026T014838Z
+DTSTART;VALUE=DATE:20260329
+DTEND;VALUE=DATE:20260330
+SUMMARY:【日本代表】vs スコットランド（KIRIN WORLD CHALLENGE 2026）
+DESCRIPTION:大会名: KIRIN WORLD CHALLENGE 2026\n対戦カード: 日本代表 vs スコットランド\nキックオフ: 時間未定（または公式発表待ち）\n会場: グラスゴー(スコットランド)／ハムデン・パーク\n試合結果: ○1-0\n詳細ページ: https://www.jfa.jp/samuraiblue/20260328/\n\n※JFA公式サイトより自動取得した日程情報です。
+LOCATION:グラスゴー(スコットランド)／ハムデン・パーク
+URL:https://www.jfa.jp/samuraiblue/20260328/
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+UID:jfa-match-20260401-kirin-england@jfa.jp
+DTSTAMP:20261026T014838Z
+DTSTART;VALUE=DATE:20260401
+DTEND;VALUE=DATE:20260402
+SUMMARY:【日本代表】vs イングランド（KIRIN WORLD CHALLENGE 2026）
+DESCRIPTION:大会名: KIRIN WORLD CHALLENGE 2026\n対戦カード: 日本代表 vs イングランド\nキックオフ: 時間未定（または公式発表待ち）\n会場: ロンドン(イングランド)／ウェンブリー・スタジアム\n試合結果: ○1-0\n詳細ページ: https://www.jfa.jp/samuraiblue/20260331/\n\n※JFA公式サイトより自動取得した日程情報です。
+LOCATION:ロンドン(イングランド)／ウェンブリー・スタジアム
+URL:https://www.jfa.jp/samuraiblue/20260331/
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+UID:jfa-match-20260531-kirincup-iceland@jfa.jp
+DTSTAMP:20261026T014838Z
+DTSTART;VALUE=DATE:20260531
+DTEND;VALUE=DATE:20260601
+SUMMARY:【日本代表】vs アイスランド（キリンチャレンジカップ2026 ひとつになるから強くなる。）
+DESCRIPTION:大会名: キリンチャレンジカップ2026 ひとつになるから強くなる。\n対戦カード: 日本代表 vs アイスランド\nキックオフ: 時間未定（または公式発表待ち）\n会場: 東京／国立競技場\n試合結果: 〇1-0\n詳細ページ: https://www.jfa.jp/samuraiblue/20260531/\n\n※JFA公式サイトより自動取得した日程情報です。
+LOCATION:東京／国立競技場
+URL:https://www.jfa.jp/samuraiblue/20260531/
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+UID:jfa-match-20260615-wc-netherlands@jfa.jp
+DTSTAMP:20261026T014838Z
+DTSTART;VALUE=DATE:20260615
+DTEND;VALUE=DATE:20260616
+SUMMARY:【日本代表】vs オランダ（FIFAワールドカップ2026）
+DESCRIPTION:大会名: FIFAワールドカップ2026\n対戦カード: 日本代表 vs オランダ\nキックオフ: 時間未定（または公式発表待ち）\n会場: ダラス(アメリカ)／Dallas Stadium\n試合結果: △2-2\n詳細ページ: https://www.jfa.jp/samuraiblue/worldcup_2026/\n\n※JFA公式サイトより自動取得した日程情報です。
+LOCATION:ダラス(アメリカ)／Dallas Stadium
+URL:https://www.jfa.jp/samuraiblue/worldcup_2026/
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+UID:jfa-match-20260621-wc-tunisia@jfa.jp
+DTSTAMP:20261026T014838Z
+DTSTART;VALUE=DATE:20260621
+DTEND;VALUE=DATE:20260622
+SUMMARY:【日本代表】vs チュニジア（FIFAワールドカップ2026）
+DESCRIPTION:大会名: FIFAワールドカップ2026\n対戦カード: 日本代表 vs チュニジア\nキックオフ: 時間未定（または公式発表待ち）\n会場: モンテレイ(メキシコ)／Estadio Monterrey\n試合結果: 〇4-0\n詳細ページ: https://www.jfa.jp/samuraiblue/worldcup_2026/\n\n※JFA公式サイトより自動取得した日程情報です。
+LOCATION:モンテレイ(メキシコ)／Estadio Monterrey
+URL:https://www.jfa.jp/samuraiblue/worldcup_2026/
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+UID:jfa-match-20260626-wc-sweden@jfa.jp
+DTSTAMP:20261026T014838Z
+DTSTART;VALUE=DATE:20260626
+DTEND;VALUE=DATE:20260627
+SUMMARY:【日本代表】vs スウェーデン（FIFAワールドカップ2026）
+DESCRIPTION:大会名: FIFAワールドカップ2026\n対戦カード: 日本代表 vs スウェーデン\nキックオフ: 時間未定（または公式発表待ち）\n会場: ダラス(アメリカ)／Dallas Stadium\n試合結果: △1-1\n詳細ページ: https://www.jfa.jp/samuraiblue/worldcup_2026/\n\n※JFA公式サイトより自動取得した日程情報です。
+LOCATION:ダラス(アメリカ)／Dallas Stadium
+URL:https://www.jfa.jp/samuraiblue/worldcup_2026/
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+UID:jfa-match-20260630-wc-brazil@jfa.jp
+DTSTAMP:20261026T014838Z
+DTSTART;VALUE=DATE:20260630
+DTEND;VALUE=DATE:20260701
+SUMMARY:【日本代表】vs ブラジル（FIFAワールドカップ2026）
+DESCRIPTION:大会名: FIFAワールドカップ2026\n対戦カード: 日本代表 vs ブラジル\nキックオフ: 時間未定（または公式発表待ち）\n会場: ヒューストン(アメリカ)／ヒューストンスタジアム\n試合結果: ●1-2\n詳細ページ: https://www.jfa.jp/samuraiblue/worldcup_2026/\n\n※JFA公式サイトより自動取得した日程情報です。
+LOCATION:ヒューストン(アメリカ)／ヒューストンスタジアム
+URL:https://www.jfa.jp/samuraiblue/worldcup_2026/
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+UID:jfa-match-20260924-kirin-uruguay@jfa.jp
+DTSTAMP:20261026T014838Z
+DTSTART;VALUE=DATE:20260924
+DTEND;VALUE=DATE:20260925
+SUMMARY:【日本代表】vs ウルグアイ（キリンチャレンジカップ2026）
+DESCRIPTION:大会名: キリンチャレンジカップ2026\n対戦カード: 日本代表 vs ウルグアイ\nキックオフ: 時間未定（または公式発表待ち）\n会場: 宮城／キューアンドエースタジアムみやぎ\n試合結果: 〇3-1\n詳細ページ: https://www.jfa.jp/samuraiblue/20260924/\n\n※JFA公式サイトより自動取得した日程情報です。
+LOCATION:宮城／キューアンドエースタジアムみやぎ
+URL:https://www.jfa.jp/samuraiblue/20260924/
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+UID:jfa-match-20260928-kirin-venezuela@jfa.jp
+DTSTAMP:20261026T014838Z
+DTSTART;VALUE=DATE:20260928
+DTEND;VALUE=DATE:20260929
+SUMMARY:【日本代表】vs ベネズエラ（キリンチャレンジカップ2026）
+DESCRIPTION:大会名: キリンチャレンジカップ2026\n対戦カード: 日本代表 vs ベネズエラ\nキックオフ: 時間未定（または公式発表待ち）\n会場: 広島／エディオンピースウイング広島\n試合結果: 〇2-1\n詳細ページ: https://www.jfa.jp/samuraiblue/20260928/\n\n※JFA公式サイトより自動取得した日程情報です。
+LOCATION:広島／エディオンピースウイング広島
+URL:https://www.jfa.jp/samuraiblue/20260928/
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+UID:jfa-match-20261001-kirin-ecuador@jfa.jp
+DTSTAMP:20261026T014838Z
+DTSTART;VALUE=DATE:20261001
+DTEND;VALUE=DATE:20261002
+SUMMARY:【日本代表】vs エクアドル（キリンカップサッカー2026）
+DESCRIPTION:大会名: キリンカップサッカー2026\n対戦カード: 日本代表 vs エクアドル\nキックオフ: 時間未定（または公式発表待ち）\n会場: 神奈川／横浜国際総合競技場\n試合結果: 〇0-0\n詳細ページ: https://www.jfa.jp/samuraiblue/kirincupsoccer_2026/\n\n※JFA公式サイトより自動取得した日程情報です。
+LOCATION:神奈川／横浜国際総合競技場
+URL:https://www.jfa.jp/samuraiblue/kirincupsoccer_2026/
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+UID:jfa-match-20261005-kirin-nz@jfa.jp
+DTSTAMP:20261026T014838Z
+DTSTART;VALUE=DATE:20261005
+DTEND;VALUE=DATE:20261006
+SUMMARY:【日本代表】vs ニュージーランド（キリンカップサッカー2026）
+DESCRIPTION:大会名: キリンカップサッカー2026\n対戦カード: 日本代表 vs ニュージーランド\nキックオフ: 時間未定（または公式発表待ち）\n会場: 東京／国立競技場\n試合結果: 〇2-1\n詳細ページ: https://www.jfa.jp/samuraiblue/kirincupsoccer_2026/\n\n※JFA公式サイトより自動取得した日程情報です。
+LOCATION:東京／国立競技場
+URL:https://www.jfa.jp/samuraiblue/kirincupsoccer_2026/
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+UID:jfa-match-20261114-bluechallenge-brazil@jfa.jp
+DTSTAMP:20261026T014838Z
+DTSTART;VALUE=DATE:20261114
+DTEND;VALUE=DATE:20261115
+SUMMARY:【日本代表】vs ブラジル（MIZUHO BLUE CHALLENGE THE KALLANG FOOTBALL SERIES SINGAPORE）
+DESCRIPTION:大会名: MIZUHO BLUE CHALLENGE THE KALLANG FOOTBALL SERIES SINGAPORE\n対戦カード: 日本代表 vs ブラジル\nキックオフ: 時間未定（または公式発表待ち）\n会場: カラン(シンガポール)／シンガポールナショナルスタジアム\n詳細ページ: https://www.jfa.jp/samuraiblue/20261117/\n\n※JFA公式サイトより自動取得した日程情報です。
+LOCATION:カラン(シンガポール)／シンガポールナショナルスタジアム
+URL:https://www.jfa.jp/samuraiblue/20261117/
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+UID:jfa-match-20261117-bluechallenge-paraguay@jfa.jp
+DTSTAMP:20261026T014838Z
+DTSTART;VALUE=DATE:20261117
+DTEND;VALUE=DATE:20261118
+SUMMARY:【日本代表】vs パラグアイ（MIZUHO BLUE CHALLENGE THE KALLANG FOOTBALL SERIES SINGAPORE）
+DESCRIPTION:大会名: MIZUHO BLUE CHALLENGE THE KALLANG FOOTBALL SERIES SINGAPORE\n対戦カード: 日本代表 vs パラグアイ\nキックオフ: 時間未定（または公式発表待ち）\n会場: カラン(シンガポール)／シンガポールナショナルスタジアム\n詳細ページ: https://www.jfa.jp/samuraiblue/20261117/\n\n※JFA公式サイトより自動取得した日程情報です。
+LOCATION:カラン(シンガポール)／シンガポールナショナルスタジアム
+URL:https://www.jfa.jp/samuraiblue/20261117/
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+UID:jfa-match-20261230-kirin-tbd@jfa.jp
+DTSTAMP:20261026T014838Z
+DTSTART;VALUE=DATE:20261230
+DTEND;VALUE=DATE:20261231
+SUMMARY:【日本代表】vs 未定（キリンチャレンジカップ2026）
+DESCRIPTION:大会名: キリンチャレンジカップ2026\n対戦カード: 日本代表 vs 未定\nキックオフ: 時間未定（または公式発表待ち）\n会場: 大阪／パナソニック スタジアム 吹田\n詳細ページ: https://www.jfa.jp/samuraiblue/20261230/\n\n※JFA公式サイトより自動取得した日程情報です。
+LOCATION:大阪／パナソニック スタジアム 吹田
+URL:https://www.jfa.jp/samuraiblue/20261230/
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+UID:jfa-match-20270111-asiancup-indonesia@jfa.jp
+DTSTAMP:20261026T014838Z
+DTSTART;VALUE=DATE:20270111
+DTEND;VALUE=DATE:20270112
+SUMMARY:【日本代表】vs インドネシア（AFC アジアカップ サウジアラビア 2027）
+DESCRIPTION:大会名: AFC アジアカップ サウジアラビア 2027\n対戦カード: 日本代表 vs インドネシア\nキックオフ: 時間未定（または公式発表待ち）\n会場: ジェッダ(サウジアラビア)／Prince Abdullah Al Faisal Sports City Stadium\n詳細ページ: https://www.jfa.jp/samuraiblue/asiancup2027/\n\n※JFA公式サイトより自動取得した日程情報です。
+LOCATION:ジェッダ(サウジアラビア)／Prince Abdullah Al Faisal Sports City Stadium
+URL:https://www.jfa.jp/samuraiblue/asiancup2027/
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+UID:jfa-match-20270116-asiancup-thailand@jfa.jp
+DTSTAMP:20261026T014838Z
+DTSTART;VALUE=DATE:20270116
+DTEND;VALUE=DATE:20270117
+SUMMARY:【日本代表】vs タイ（AFC アジアカップ サウジアラビア 2027）
+DESCRIPTION:大会名: AFC アジアカップ サウジアラビア 2027\n対戦カード: 日本代表 vs タイ\nキックオフ: 時間未定（または公式発表待ち）\n会場: リヤド(サウジアラビア)／Al Shabab Stadium\n詳細ページ: https://www.jfa.jp/samuraiblue/asiancup2027/\n\n※JFA公式サイトより自動取得した日程情報です。
+LOCATION:リヤド(サウジアラビア)／Al Shabab Stadium
+URL:https://www.jfa.jp/samuraiblue/asiancup2027/
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+UID:jfa-match-20270120-asiancup-qatar@jfa.jp
+DTSTAMP:20261026T014838Z
+DTSTART;VALUE=DATE:20270120
+DTEND;VALUE=DATE:20270121
+SUMMARY:【日本代表】vs カタール（AFC アジアカップ サウジアラビア 2027）
+DESCRIPTION:大会名: AFC アジアカップ サウジアラビア 2027\n対戦カード: 日本代表 vs カタール\nキックオフ: 時間未定（または公式発表待ち）\n会場: リヤド(サウジアラビア)／Imam Mohammed Bin Saud University Stadium\n詳細ページ: https://www.jfa.jp/samuraiblue/asiancup2027/\n\n※JFA公式サイトより自動取得した日程情報です。
+LOCATION:リヤド(サウジアラビア)／Imam Mohammed Bin Saud University Stadium
+URL:https://www.jfa.jp/samuraiblue/asiancup2027/
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+END:VEVENT
+END:VCALENDAR
