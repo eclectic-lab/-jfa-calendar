@@ -1,0 +1,1354 @@
+﻿BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//J1 Kashima Antlers Calendar Bot//JA//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:鹿島アントラーズ 試合日程
+X-WR-CALDESC:Jリーグ公式データサイトより自動取得した鹿
+ 島アントラーズの最新試合日程
+X-WR-TIMEZONE:Asia/Tokyo
+REFRESH-INTERVAL;VALUE=DURATION:P1D
+X-PUBLISHED-TTL:P1D
+BEGIN:VTIMEZONE
+TZID:Asia/Tokyo
+X-LIC-LOCATION:Asia/Tokyo
+BEGIN:STANDARD
+TZOFFSETFROM:+0900
+TZOFFSETTO:+0900
+TZNAME:JST
+DTSTART:19700101T000000
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:jleague-antlers-20250215-1bfe15726d8719d0@jleague.jp
+DTSTAMP:20261026T105822Z
+DTSTART;TZID=Asia/Tokyo:20250215T150300
+DTEND;TZID=Asia/Tokyo:20250215T170300
+SUMMARY:【鹿島】@ 貉伜漉（・ｪ・・ 隨ｬ・醍ｯ隨ｬ・�
+ ��律）
+DESCRIPTION:大会名: ・ｪ・・\n節 / ラウンド: 隨ｬ・醍ｯ
+ 隨ｬ・呈律\n対戦カード: 貉伜漉 vs 鮖ｿ蟲ｶ\nキックオ�
+ ��: 15:03 (JST)\n会場: 繝ｬ繝｢繝ｳ・ｳ\n試合結果: 1-0\nTV�
+ �継・配信: ・､・｡・ｺ・ｮ\n公式詳細ページ: https://da
+ ta.j-league.or.jp/SFMS02/?match_card_id=31368\n\n※Jリーグ公式デー
+ タサイトより自動取得した日程情報です。
+LOCATION:繝ｬ繝｢繝ｳ・ｳ
+URL:https://data.j-league.or.jp/SFMS02/?match_card_id=31368
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+UID:jleague-antlers-20250222-1c90d323c7d7af8a@jleague.jp
+DTSTAMP:20261026T105822Z
+DTSTART;TZID=Asia/Tokyo:20250222T150300
+DTEND;TZID=Asia/Tokyo:20250222T170300
+SUMMARY:【鹿島】@ 鮖ｿ蟲ｶ（・ｪ・・ 隨ｬ・堤ｯ隨ｬ�
+ ��第律）
+DESCRIPTION:大会名: ・ｪ・・\n節 / ラウンド: 隨ｬ・堤ｯ
+ 隨ｬ・第律\n対戦カード: 鮖ｿ蟲ｶ vs 譚ｱ莠ｬ・ｶ\nキ�
+ ��クオフ: 15:03 (JST)\n会場: 繧ｫ繧ｷ繝・/td>\n													\n	
+ 													26\,021\n試合結果: 4-0\n公式詳細ページ: https://da
+ ta.j-league.or.jp/SFMS02/?match_card_id=31376\n\n※Jリーグ公式デー
+ タサイトより自動取得した日程情報です。
+LOCATION:繧ｫ繧ｷ繝・/td>\n													\n														26\,021
+URL:https://data.j-league.or.jp/SFMS02/?match_card_id=31376
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+UID:jleague-antlers-20250226-4ad2b8fff4276403@jleague.jp
+DTSTAMP:20261026T105822Z
+DTSTART;TZID=Asia/Tokyo:20250226T190300
+DTEND;TZID=Asia/Tokyo:20250226T210300
+SUMMARY:【鹿島】@ 鮖ｿ蟲ｶ（・ｪ・・ 隨ｬ・鍋ｯ隨ｬ�
+ ��第律）
+DESCRIPTION:大会名: ・ｪ・・\n節 / ラウンド: 隨ｬ・鍋ｯ
+ 隨ｬ・第律\n対戦カード: 鮖ｿ蟲ｶ vs 譁ｰ貎・/a>\nキッ�
+ ��オフ: 19:03 (JST)\n会場: 繧ｫ繧ｷ繝・/td>\n													\n				
+ 										12\,106\n試合結果: 2-1\n公式詳細ページ: https://data.
+ j-league.or.jp/SFMS02/?match_card_id=31381\n\n※Jリーグ公式データ
+ サイトより自動取得した日程情報です。
+LOCATION:繧ｫ繧ｷ繝・/td>\n													\n														12\,106
+URL:https://data.j-league.or.jp/SFMS02/?match_card_id=31381
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+UID:jleague-antlers-20250301-548c61636c29bdc0@jleague.jp
+DTSTAMP:20261026T105822Z
+DTSTART;TZID=Asia/Tokyo:20250301T140300
+DTEND;TZID=Asia/Tokyo:20250301T160300
+SUMMARY:【鹿島】@ 鮖ｿ蟲ｶ（・ｪ・・ 隨ｬ・皮ｯ隨ｬ�
+ ��第律）
+DESCRIPTION:大会名: ・ｪ・・\n節 / ラウンド: 隨ｬ・皮ｯ
+ 隨ｬ・第律\n対戦カード: 鮖ｿ蟲ｶ vs FC譚ｱ莠ｬ\nキッ�
+ �オフ: 14:03 (JST)\n会場: 繧ｫ繧ｷ繝・/td>\n													\n					
+ 									21\,421\n試合結果: 2-0\n公式詳細ページ: https://data.j
+ -league.or.jp/SFMS02/?match_card_id=31392\n\n※Jリーグ公式データ�
+ ��イトより自動取得した日程情報です。
+LOCATION:繧ｫ繧ｷ繝・/td>\n													\n														21\,421
+URL:https://data.j-league.or.jp/SFMS02/?match_card_id=31392
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+UID:jleague-antlers-20250308-14e21ecd49a3a9e9@jleague.jp
+DTSTAMP:20261026T105822Z
+DTSTART;TZID=Asia/Tokyo:20250308T160300
+DTEND;TZID=Asia/Tokyo:20250308T180300
+SUMMARY:【鹿島】@ 譟・/a>（・ｪ・・ 隨ｬ・慕ｯ隨ｬ・�
+ ��律）
+DESCRIPTION:大会名: ・ｪ・・\n節 / ラウンド: 隨ｬ・慕ｯ
+ 隨ｬ・第律\n対戦カード: 譟・/a> vs 鮖ｿ蟲ｶ\nキックオ�
+ ��: 16:03 (JST)\n会場: 荳牙鵠・ｦ譟・/td>\n													\n							
+ 							13\,309\n試合結果: 1-3\n公式詳細ページ: https://data.j-l
+ eague.or.jp/SFMS02/?match_card_id=31402\n\n※Jリーグ公式データサ
+ イトより自動取得した日程情報です。
+LOCATION:荳牙鵠・ｦ譟・/td>\n													\n														13\,309
+URL:https://data.j-league.or.jp/SFMS02/?match_card_id=31402
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+UID:jleague-antlers-20250316-d2826967ba278f41@jleague.jp
+DTSTAMP:20261026T105822Z
+DTSTART;TZID=Asia/Tokyo:20250316T140300
+DTEND;TZID=Asia/Tokyo:20250316T160300
+SUMMARY:【鹿島】@ 鮖ｿ蟲ｶ（・ｪ・・ 隨ｬ・也ｯ隨ｬ�
+ ��呈律）
+DESCRIPTION:大会名: ・ｪ・・\n節 / ラウンド: 隨ｬ・也ｯ
+ 隨ｬ・呈律\n対戦カード: 鮖ｿ蟲ｶ vs 豬ｦ蜥・/a>\nキッ�
+ ��オフ: 14:03 (JST)\n会場: 繧ｫ繧ｷ繝・/td>\n													\n				
+ 										31\,574\n試合結果: 1-1\n公式詳細ページ: https://data.
+ j-league.or.jp/SFMS02/?match_card_id=31416\n\n※Jリーグ公式データ
+ サイトより自動取得した日程情報です。
+LOCATION:繧ｫ繧ｷ繝・/td>\n													\n														31\,574
+URL:https://data.j-league.or.jp/SFMS02/?match_card_id=31416
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+UID:jleague-antlers-20250329-af336a168a790055@jleague.jp
+DTSTAMP:20261026T105822Z
+DTSTART;TZID=Asia/Tokyo:20250329T150300
+DTEND;TZID=Asia/Tokyo:20250329T170300
+SUMMARY:【鹿島】@ 鮖ｿ蟲ｶ（・ｪ・・ 隨ｬ・礼ｯ隨ｬ�
+ ��呈律）
+DESCRIPTION:大会名: ・ｪ・・\n節 / ラウンド: 隨ｬ・礼ｯ
+ 隨ｬ・呈律\n対戦カード: 鮖ｿ蟲ｶ vs 逾樊虻\nキックオ�
+ ��: 15:03 (JST)\n会場: 繧ｫ繧ｷ繝・/td>\n													\n										
+ 				22\,601\n試合結果: 1-0\n公式詳細ページ: https://data.j-leag
+ ue.or.jp/SFMS02/?match_card_id=31428\n\n※Jリーグ公式データサイ
+ トより自動取得した日程情報です。
+LOCATION:繧ｫ繧ｷ繝・/td>\n													\n														22\,601
+URL:https://data.j-league.or.jp/SFMS02/?match_card_id=31428
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+UID:jleague-antlers-20250402-2223b657d559e343@jleague.jp
+DTSTAMP:20261026T105822Z
+DTSTART;TZID=Asia/Tokyo:20250402T190300
+DTEND;TZID=Asia/Tokyo:20250402T210300
+SUMMARY:【鹿島】@ 蠎・ｳｶ（・ｪ・・ 隨ｬ・倡ｯ隨ｬ�
+ ��第律）
+DESCRIPTION:大会名: ・ｪ・・\n節 / ラウンド: 隨ｬ・倡ｯ
+ 隨ｬ・第律\n対戦カード: 蠎・ｳｶ vs 鮖ｿ蟲ｶ\nキック�
+ ��フ: 19:03 (JST)\n会場: ・･繝斐・繧ｹ\n試合結果: 1-0\nTV�
+ �継・配信: ・､・｡・ｺ・ｮ\n公式詳細ページ: https://da
+ ta.j-league.or.jp/SFMS02/?match_card_id=32229\n\n※Jリーグ公式デー
+ タサイトより自動取得した日程情報です。
+LOCATION:・･繝斐・繧ｹ
+URL:https://data.j-league.or.jp/SFMS02/?match_card_id=32229
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+UID:jleague-antlers-20250406-1f30ad4f8a35b20b@jleague.jp
+DTSTAMP:20261026T105822Z
+DTSTART;TZID=Asia/Tokyo:20250406T150300
+DTEND;TZID=Asia/Tokyo:20250406T170300
+SUMMARY:【鹿島】@ 鮖ｿ蟲ｶ（・ｪ・・ 隨ｬ・咏ｯ隨ｬ�
+ ��呈律）
+DESCRIPTION:大会名: ・ｪ・・\n節 / ラウンド: 隨ｬ・咏ｯ
+ 隨ｬ・呈律\n対戦カード: 鮖ｿ蟲ｶ vs 莠ｬ驛ｽ\nキック�
+ ��フ: 15:03 (JST)\n会場: 繧ｫ繧ｷ繝・/td>\n													\n							
+ 							16\,859\n試合結果: 3-4\n公式詳細ページ: https://data.j-l
+ eague.or.jp/SFMS02/?match_card_id=32237\n\n※Jリーグ公式データサ
+ イトより自動取得した日程情報です。
+LOCATION:繧ｫ繧ｷ繝・/td>\n													\n														16\,859
+URL:https://data.j-league.or.jp/SFMS02/?match_card_id=32237
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+UID:jleague-antlers-20250412-2ee62153eea59c14@jleague.jp
+DTSTAMP:20261026T105822Z
+DTSTART;TZID=Asia/Tokyo:20250412T150500
+DTEND;TZID=Asia/Tokyo:20250412T170500
+SUMMARY:【鹿島】@ ・｣螟ｧ髦ｪ（・ｪ・・ 隨ｬ・托ｼ千
+ ｯ隨ｬ・呈律）
+DESCRIPTION:大会名: ・ｪ・・\n節 / ラウンド: 隨ｬ・托ｼ�
+ �ｯ隨ｬ・呈律\n対戦カード: ・｣螟ｧ髦ｪ vs 鮖ｿ蟲ｶ
+ \nキックオフ: 15:05 (JST)\n会場: 繝ｨ繝峨さ繧ｦ\n試合結�
+ �: 1-0\nTV中継・配信: ・､・｡・ｺ・ｮ\n公式詳細ページ
+ : https://data.j-league.or.jp/SFMS02/?match_card_id=32247\n\n※Jリーグ
+ 公式データサイトより自動取得した日程情報です。
+LOCATION:繝ｨ繝峨さ繧ｦ
+URL:https://data.j-league.or.jp/SFMS02/?match_card_id=32247
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+UID:jleague-antlers-20250420-0d390b8aecc7aa30@jleague.jp
+DTSTAMP:20261026T105822Z
+DTSTART;TZID=Asia/Tokyo:20250420T140300
+DTEND;TZID=Asia/Tokyo:20250420T160300
+SUMMARY:【鹿島】@ 蟯｡螻ｱ（・ｪ・・ 隨ｬ・托ｼ醍ｯ�
+ ��ｬ・呈律）
+DESCRIPTION:大会名: ・ｪ・・\n節 / ラウンド: 隨ｬ・托ｼ�
+ �ｯ隨ｬ・呈律\n対戦カード: 蟯｡螻ｱ vs 鮖ｿ蟲ｶ\nキ�
+ ��クオフ: 14:03 (JST)\n会場: ・ｪ・ｦ・･繧ｹ\n試合結果: 
+ 1-2\n公式詳細ページ: https://data.j-league.or.jp/SFMS02/?match_card
+ _id=32256\n\n※Jリーグ公式データサイトより自動取得した
+ 日程情報です。
+LOCATION:・ｪ・ｦ・･繧ｹ
+URL:https://data.j-league.or.jp/SFMS02/?match_card_id=32256
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+UID:jleague-antlers-20250425-f1adffb877457b91@jleague.jp
+DTSTAMP:20261026T105822Z
+DTSTART;TZID=Asia/Tokyo:20250425T190300
+DTEND;TZID=Asia/Tokyo:20250425T210300
+SUMMARY:【鹿島】@ 鮖ｿ蟲ｶ（・ｪ・・ 隨ｬ・托ｼ堤ｯ�
+ ��ｬ・呈律）
+DESCRIPTION:大会名: ・ｪ・・\n節 / ラウンド: 隨ｬ・托ｼ�
+ �ｯ隨ｬ・呈律\n対戦カード: 鮖ｿ蟲ｶ vs 蜷榊商螻・/a>
+ \nキックオフ: 19:03 (JST)\n会場: 繧ｫ繧ｷ繝・/td>\n										
+ 			\n														13\,550\n試合結果: 1-0\n公式詳細ページ: http
+ s://data.j-league.or.jp/SFMS02/?match_card_id=32261\n\n※Jリーグ公式
+ データサイトより自動取得した日程情報です。
+LOCATION:繧ｫ繧ｷ繝・/td>\n													\n														13\,550
+URL:https://data.j-league.or.jp/SFMS02/?match_card_id=32261
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+UID:jleague-antlers-20250429-24b994db35fa4c39@jleague.jp
+DTSTAMP:20261026T105822Z
+DTSTART;TZID=Asia/Tokyo:20250429T140300
+DTEND;TZID=Asia/Tokyo:20250429T160300
+SUMMARY:【鹿島】@ 讓ｪ豬廡C（・ｪ・・ 隨ｬ・托ｼ鍋ｯ
+ 隨ｬ・第律）
+DESCRIPTION:大会名: ・ｪ・・\n節 / ラウンド: 隨ｬ・托ｼ�
+ �ｯ隨ｬ・第律\n対戦カード: 讓ｪ豬廡C vs 鮖ｿ蟲ｶ\nキ
+ ックオフ: 14:03 (JST)\n会場: 繝九ャ繝代ヤ\n試合結果: 0-3\n
+ TV中継・配信: ・､・｡・ｺ・ｮ\n公式詳細ページ: https:
+ //data.j-league.or.jp/SFMS02/?match_card_id=32272\n\n※Jリーグ公式�
+ �ータサイトより自動取得した日程情報です。
+LOCATION:繝九ャ繝代ヤ
+URL:https://data.j-league.or.jp/SFMS02/?match_card_id=32272
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+UID:jleague-antlers-20250503-4f6fdef6c35ac3fe@jleague.jp
+DTSTAMP:20261026T105822Z
+DTSTART;TZID=Asia/Tokyo:20250503T150300
+DTEND;TZID=Asia/Tokyo:20250503T170300
+SUMMARY:【鹿島】@ 鮖ｿ蟲ｶ（・ｪ・・ 隨ｬ・托ｼ皮ｯ�
+ ��ｬ・第律）
+DESCRIPTION:大会名: ・ｪ・・\n節 / ラウンド: 隨ｬ・托ｼ�
+ �ｯ隨ｬ・第律\n対戦カード: 鮖ｿ蟲ｶ vs 逕ｺ逕ｰ\nキ�
+ ��クオフ: 15:03 (JST)\n会場: 繧ｫ繧ｷ繝・/td>\n													\n	
+ 													33\,762\n試合結果: 1-0\n公式詳細ページ: https://da
+ ta.j-league.or.jp/SFMS02/?match_card_id=32284\n\n※Jリーグ公式デー
+ タサイトより自動取得した日程情報です。
+LOCATION:繧ｫ繧ｷ繝・/td>\n													\n														33\,762
+URL:https://data.j-league.or.jp/SFMS02/?match_card_id=32284
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+UID:jleague-antlers-20250506-45e28b083979bc0e@jleague.jp
+DTSTAMP:20261026T105822Z
+DTSTART;TZID=Asia/Tokyo:20250506T140300
+DTEND;TZID=Asia/Tokyo:20250506T160300
+SUMMARY:【鹿島】@ 遖丞ｲ｡（・ｪ・・ 隨ｬ・托ｼ慕ｯ�
+ ��ｬ・第律）
+DESCRIPTION:大会名: ・ｪ・・\n節 / ラウンド: 隨ｬ・托ｼ�
+ �ｯ隨ｬ・第律\n対戦カード: 遖丞ｲ｡ vs 鮖ｿ蟲ｶ\nキ�
+ ��クオフ: 14:03 (JST)\n会場: 繝吶せ繧ｹ繧ｿ\n試合結果: 0-1
+ \nTV中継・配信: ・､・｡・ｺ・ｮ\n公式詳細ページ: http
+ s://data.j-league.or.jp/SFMS02/?match_card_id=32293\n\n※Jリーグ公式
+ データサイトより自動取得した日程情報です。
+LOCATION:繝吶せ繧ｹ繧ｿ
+URL:https://data.j-league.or.jp/SFMS02/?match_card_id=32293
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+UID:jleague-antlers-20250511-a6e5d59faa44e26a@jleague.jp
+DTSTAMP:20261026T105822Z
+DTSTART;TZID=Asia/Tokyo:20250511T131000
+DTEND;TZID=Asia/Tokyo:20250511T151000
+SUMMARY:【鹿島】@ 鮖ｿ蟲ｶ（・ｪ・・ 隨ｬ・托ｼ也ｯ�
+ ��ｬ・呈律）
+DESCRIPTION:大会名: ・ｪ・・\n節 / ラウンド: 隨ｬ・托ｼ�
+ �ｯ隨ｬ・呈律\n対戦カード: 鮖ｿ蟲ｶ vs 蟾晏ｴ趣ｼｦ
+ \nキックオフ: 13:10 (JST)\n会場: 蝗ｽ遶・/td>\n													\n	
+ 													59\,574\n試合結果: 2-1\n公式詳細ページ: https://da
+ ta.j-league.or.jp/SFMS02/?match_card_id=32304\n\n※Jリーグ公式デー
+ タサイトより自動取得した日程情報です。
+LOCATION:蝗ｽ遶・/td>\n													\n														59\,574
+URL:https://data.j-league.or.jp/SFMS02/?match_card_id=32304
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+UID:jleague-antlers-20250517-616e029ddd526e73@jleague.jp
+DTSTAMP:20261026T105822Z
+DTSTART;TZID=Asia/Tokyo:20250517T150400
+DTEND;TZID=Asia/Tokyo:20250517T170400
+SUMMARY:【鹿島】@ 鮖ｿ蟲ｶ（・ｪ・・ 隨ｬ・托ｼ礼ｯ�
+ ��ｬ・第律）
+DESCRIPTION:大会名: ・ｪ・・\n節 / ラウンド: 隨ｬ・托ｼ�
+ �ｯ隨ｬ・第律\n対戦カード: 鮖ｿ蟲ｶ vs 貂・ｰｴ\nキ�
+ ��クオフ: 15:04 (JST)\n会場: 繧ｫ繧ｷ繝・/td>\n													\n	
+ 													20\,864\n試合結果: 1-0\n公式詳細ページ: https://da
+ ta.j-league.or.jp/SFMS02/?match_card_id=32316\n\n※Jリーグ公式デー
+ タサイトより自動取得した日程情報です。
+LOCATION:繧ｫ繧ｷ繝・/td>\n													\n														20\,864
+URL:https://data.j-league.or.jp/SFMS02/?match_card_id=32316
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+UID:jleague-antlers-20250525-7c0bd93dd448916c@jleague.jp
+DTSTAMP:20261026T105822Z
+DTSTART;TZID=Asia/Tokyo:20250525T140300
+DTEND;TZID=Asia/Tokyo:20250525T160300
+SUMMARY:【鹿島】@ 讓ｪ豬廡M（・ｪ・・ 隨ｬ・托ｼ倡ｯ
+ 隨ｬ・呈律）
+DESCRIPTION:大会名: ・ｪ・・\n節 / ラウンド: 隨ｬ・托ｼ�
+ �ｯ隨ｬ・呈律\n対戦カード: 讓ｪ豬廡M vs 鮖ｿ蟲ｶ\nキ
+ ックオフ: 14:03 (JST)\n会場: 譌･逕｣繧ｹ\n試合結果: 3-1\n
+ TV中継・配信: ・､・｡・ｺ・ｮ\n公式詳細ページ: https:
+ //data.j-league.or.jp/SFMS02/?match_card_id=32324\n\n※Jリーグ公式�
+ �ータサイトより自動取得した日程情報です。
+LOCATION:譌･逕｣繧ｹ
+URL:https://data.j-league.or.jp/SFMS02/?match_card_id=32324
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+UID:jleague-antlers-20250531-a23bd0711117f20c@jleague.jp
+DTSTAMP:20261026T105822Z
+DTSTART;TZID=Asia/Tokyo:20250531T180300
+DTEND;TZID=Asia/Tokyo:20250531T200300
+SUMMARY:【鹿島】@ ・ｧ螟ｧ髦ｪ（・ｪ・・ 隨ｬ・托ｼ咏
+ ｯ隨ｬ・第律）
+DESCRIPTION:大会名: ・ｪ・・\n節 / ラウンド: 隨ｬ・托ｼ�
+ �ｯ隨ｬ・第律\n対戦カード: ・ｧ螟ｧ髦ｪ vs 鮖ｿ蟲ｶ
+ \nキックオフ: 18:03 (JST)\n会場: 繝代リ繧ｹ繧ｿ\n試合結�
+ �: 0-1\nTV中継・配信: ・､・｡・ｺ・ｮ\n公式詳細ページ
+ : https://data.j-league.or.jp/SFMS02/?match_card_id=32336\n\n※Jリーグ
+ 公式データサイトより自動取得した日程情報です。
+LOCATION:繝代リ繧ｹ繧ｿ
+URL:https://data.j-league.or.jp/SFMS02/?match_card_id=32336
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+UID:jleague-antlers-20250614-2ba40ef94b303eb4@jleague.jp
+DTSTAMP:20261026T105822Z
+DTSTART;TZID=Asia/Tokyo:20250614T180300
+DTEND;TZID=Asia/Tokyo:20250614T200300
+SUMMARY:【鹿島】@ 鮖ｿ蟲ｶ（・ｪ・・ 隨ｬ・抵ｼ千ｯ�
+ ��ｬ・呈律）
+DESCRIPTION:大会名: ・ｪ・・\n節 / ラウンド: 隨ｬ・抵ｼ�
+ �ｯ隨ｬ・呈律\n対戦カード: 鮖ｿ蟲ｶ vs 蠎・ｳｶ\nキ�
+ ��クオフ: 18:03 (JST)\n会場: 繧ｫ繧ｷ繝・/td>\n													\n	
+ 													22\,725\n試合結果: 1-1\n公式詳細ページ: https://da
+ ta.j-league.or.jp/SFMS02/?match_card_id=32343\n\n※Jリーグ公式デー
+ タサイトより自動取得した日程情報です。
+LOCATION:繧ｫ繧ｷ繝・/td>\n													\n														22\,725
+URL:https://data.j-league.or.jp/SFMS02/?match_card_id=32343
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+UID:jleague-antlers-20250621-ce2866e37f50e58e@jleague.jp
+DTSTAMP:20261026T105822Z
+DTSTART;TZID=Asia/Tokyo:20250621T160300
+DTEND;TZID=Asia/Tokyo:20250621T180300
+SUMMARY:【鹿島】@ 逕ｺ逕ｰ（・ｪ・・ 隨ｬ・抵ｼ醍ｯ�
+ ��ｬ・第律）
+DESCRIPTION:大会名: ・ｪ・・\n節 / ラウンド: 隨ｬ・抵ｼ�
+ �ｯ隨ｬ・第律\n対戦カード: 逕ｺ逕ｰ vs 鮖ｿ蟲ｶ\nキ�
+ ��クオフ: 16:03 (JST)\n会場: ・ｧ繧ｹ繧ｿ\n試合結果: 2-1\nT
+ V中継・配信: ・､・｡・ｺ・ｮ\n公式詳細ページ: https:/
+ /data.j-league.or.jp/SFMS02/?match_card_id=32351\n\n※Jリーグ公式デ
+ ータサイトより自動取得した日程情報です。
+LOCATION:・ｧ繧ｹ繧ｿ
+URL:https://data.j-league.or.jp/SFMS02/?match_card_id=32351
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+UID:jleague-antlers-20250628-440527e8cc996632@jleague.jp
+DTSTAMP:20261026T105822Z
+DTSTART;TZID=Asia/Tokyo:20250628T180300
+DTEND;TZID=Asia/Tokyo:20250628T200300
+SUMMARY:【鹿島】@ 鮖ｿ蟲ｶ（・ｪ・・ 隨ｬ・抵ｼ堤ｯ�
+ ��ｬ・呈律）
+DESCRIPTION:大会名: ・ｪ・・\n節 / ラウンド: 隨ｬ・抵ｼ�
+ �ｯ隨ｬ・呈律\n対戦カード: 鮖ｿ蟲ｶ vs 蟯｡螻ｱ\nキ�
+ ��クオフ: 18:03 (JST)\n会場: 繧ｫ繧ｷ繝・/td>\n													\n	
+ 													22\,254\n試合結果: 1-2\n公式詳細ページ: https://da
+ ta.j-league.or.jp/SFMS02/?match_card_id=32362\n\n※Jリーグ公式デー
+ タサイトより自動取得した日程情報です。
+LOCATION:繧ｫ繧ｷ繝・/td>\n													\n														22\,254
+URL:https://data.j-league.or.jp/SFMS02/?match_card_id=32362
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+UID:jleague-antlers-20250705-4a4c75497188921d@jleague.jp
+DTSTAMP:20261026T105822Z
+DTSTART;TZID=Asia/Tokyo:20250705T190300
+DTEND;TZID=Asia/Tokyo:20250705T210300
+SUMMARY:【鹿島】@ 蟾晏ｴ趣ｼｦ（・ｪ・・ 隨ｬ・抵ｼ鍋
+ ｯ隨ｬ・第律）
+DESCRIPTION:大会名: ・ｪ・・\n節 / ラウンド: 隨ｬ・抵ｼ�
+ �ｯ隨ｬ・第律\n対戦カード: 蟾晏ｴ趣ｼｦ vs 鮖ｿ蟲ｶ
+ \nキックオフ: 19:03 (JST)\n会場: ・ｵ遲峨・鴨\n試合結果
+ : 2-1\nTV中継・配信: ・､・｡・ｺ・ｮ\n公式詳細ページ:
+  https://data.j-league.or.jp/SFMS02/?match_card_id=32374\n\n※Jリーグ�
+ ��式データサイトより自動取得した日程情報です。
+LOCATION:・ｵ遲峨・鴨
+URL:https://data.j-league.or.jp/SFMS02/?match_card_id=32374
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+UID:jleague-antlers-20250720-4c27d5f866c13aea@jleague.jp
+DTSTAMP:20261026T105822Z
+DTSTART;TZID=Asia/Tokyo:20250720T180300
+DTEND;TZID=Asia/Tokyo:20250720T200300
+SUMMARY:【鹿島】@ 鮖ｿ蟲ｶ（・ｪ・・ 隨ｬ・抵ｼ皮ｯ�
+ ��ｬ・呈律）
+DESCRIPTION:大会名: ・ｪ・・\n節 / ラウンド: 隨ｬ・抵ｼ�
+ �ｯ隨ｬ・呈律\n対戦カード: 鮖ｿ蟲ｶ vs 譟・/a>\nキッ�
+ ��オフ: 18:03 (JST)\n会場: 繝｡繝ｫ繧ｹ繧ｿ\n試合結果: 3-2
+ \nTV中継・配信: ・､・｡・ｺ・ｮ\n公式詳細ページ: http
+ s://data.j-league.or.jp/SFMS02/?match_card_id=32383\n\n※Jリーグ公式
+ データサイトより自動取得した日程情報です。
+LOCATION:繝｡繝ｫ繧ｹ繧ｿ
+URL:https://data.j-league.or.jp/SFMS02/?match_card_id=32383
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+UID:jleague-antlers-20250810-7857abbf3469a8e2@jleague.jp
+DTSTAMP:20261026T105822Z
+DTSTART;TZID=Asia/Tokyo:20250810T190300
+DTEND;TZID=Asia/Tokyo:20250810T210300
+SUMMARY:【鹿島】@ FC譚ｱ莠ｬ（・ｪ・・ 隨ｬ・抵ｼ慕ｯ�
+ �隨ｬ・呈律）
+DESCRIPTION:大会名: ・ｪ・・\n節 / ラウンド: 隨ｬ・抵ｼ�
+ �ｯ隨ｬ・呈律\n対戦カード: FC譚ｱ莠ｬ vs 鮖ｿ蟲ｶ\n�
+ �ックオフ: 19:03 (JST)\n会場: 蜻ｳ繧ｹ繧ｿ\n試合結果: 0-1\
+ nTV中継・配信: ・､・｡・ｺ・ｮ・擾ｼｴ・ｯ・ｫ・ｹ
+ ・ｯ縲・ｭ・ｸ\n公式詳細ページ: https://data.j-league.or.j
+ p/SFMS02/?match_card_id=32396\n\n※Jリーグ公式データサイトよ�
+ ��自動取得した日程情報です。
+LOCATION:蜻ｳ繧ｹ繧ｿ
+URL:https://data.j-league.or.jp/SFMS02/?match_card_id=32396
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+UID:jleague-antlers-20250816-ba28bdfa34028d20@jleague.jp
+DTSTAMP:20261026T105822Z
+DTSTART;TZID=Asia/Tokyo:20250816T180300
+DTEND;TZID=Asia/Tokyo:20250816T200300
+SUMMARY:【鹿島】@ 鮖ｿ蟲ｶ（・ｪ・・ 隨ｬ・抵ｼ也ｯ�
+ ��ｬ・第律）
+DESCRIPTION:大会名: ・ｪ・・\n節 / ラウンド: 隨ｬ・抵ｼ�
+ �ｯ隨ｬ・第律\n対戦カード: 鮖ｿ蟲ｶ vs 遖丞ｲ｡\nキ�
+ ��クオフ: 18:03 (JST)\n会場: 繝｡繝ｫ繧ｹ繧ｿ\n試合結果: 
+ 1-1\nTV中継・配信: ・､・｡・ｺ・ｮ\n公式詳細ページ: h
+ ttps://data.j-league.or.jp/SFMS02/?match_card_id=32401\n\n※Jリーグ公
+ 式データサイトより自動取得した日程情報です。
+LOCATION:繝｡繝ｫ繧ｹ繧ｿ
+URL:https://data.j-league.or.jp/SFMS02/?match_card_id=32401
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+UID:jleague-antlers-20250823-e21205a87abb1682@jleague.jp
+DTSTAMP:20261026T105822Z
+DTSTART;TZID=Asia/Tokyo:20250823T190300
+DTEND;TZID=Asia/Tokyo:20250823T210300
+SUMMARY:【鹿島】@ 譁ｰ貎・/a>（・ｪ・・ 隨ｬ・抵ｼ礼ｯ
+ 隨ｬ・呈律）
+DESCRIPTION:大会名: ・ｪ・・\n節 / ラウンド: 隨ｬ・抵ｼ�
+ �ｯ隨ｬ・呈律\n対戦カード: 譁ｰ貎・/a> vs 鮖ｿ蟲ｶ\n�
+ ��ックオフ: 19:03 (JST)\n会場: 繝・Φ繧ｫ・ｳ\n試合結果: 1
+ -2\nTV中継・配信: ・､・｡・ｺ・ｮ\n公式詳細ページ: ht
+ tps://data.j-league.or.jp/SFMS02/?match_card_id=32414\n\n※Jリーグ公�
+ ��データサイトより自動取得した日程情報です。
+LOCATION:繝・Φ繧ｫ・ｳ
+URL:https://data.j-league.or.jp/SFMS02/?match_card_id=32414
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+UID:jleague-antlers-20250831-bfc7edbab20817fe@jleague.jp
+DTSTAMP:20261026T105822Z
+DTSTART;TZID=Asia/Tokyo:20250831T183300
+DTEND;TZID=Asia/Tokyo:20250831T203300
+SUMMARY:【鹿島】@ 貂・ｰｴ（・ｪ・・ 隨ｬ・抵ｼ倡ｯ�
+ ��ｬ・呈律）
+DESCRIPTION:大会名: ・ｪ・・\n節 / ラウンド: 隨ｬ・抵ｼ�
+ �ｯ隨ｬ・呈律\n対戦カード: 貂・ｰｴ vs 鮖ｿ蟲ｶ\nキ�
+ ��クオフ: 18:33 (JST)\n会場: 繧｢繧､繧ｹ繧ｿ\n試合結果: 
+ 1-1\nTV中継・配信: ・､・｡・ｺ・ｮ\n公式詳細ページ: h
+ ttps://data.j-league.or.jp/SFMS02/?match_card_id=32424\n\n※Jリーグ公
+ 式データサイトより自動取得した日程情報です。
+LOCATION:繧｢繧､繧ｹ繧ｿ
+URL:https://data.j-league.or.jp/SFMS02/?match_card_id=32424
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+UID:jleague-antlers-20250913-950034bdba7557fc@jleague.jp
+DTSTAMP:20261026T105822Z
+DTSTART;TZID=Asia/Tokyo:20250913T190300
+DTEND;TZID=Asia/Tokyo:20250913T210300
+SUMMARY:【鹿島】@ 鮖ｿ蟲ｶ（・ｪ・・ 隨ｬ・抵ｼ咏ｯ�
+ ��ｬ・呈律）
+DESCRIPTION:大会名: ・ｪ・・\n節 / ラウンド: 隨ｬ・抵ｼ�
+ �ｯ隨ｬ・呈律\n対戦カード: 鮖ｿ蟲ｶ vs 貉伜漉\nキッ�
+ ��オフ: 19:03 (JST)\n会場: 繝｡繝ｫ繧ｹ繧ｿ\n試合結果: 3-0
+ \nTV中継・配信: ・､・｡・ｺ・ｮ・擾ｼｮ・ｨ・ｫ縲
+ ・｢・ｳ\n公式詳細ページ: https://data.j-league.or.jp/SFMS02/?m
+ atch_card_id=32431\n\n※Jリーグ公式データサイトより自動取
+ 得した日程情報です。
+LOCATION:繝｡繝ｫ繧ｹ繧ｿ
+URL:https://data.j-league.or.jp/SFMS02/?match_card_id=32431
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+UID:jleague-antlers-20250920-19ac3402907be9fb@jleague.jp
+DTSTAMP:20261026T105822Z
+DTSTART;TZID=Asia/Tokyo:20250920T190400
+DTEND;TZID=Asia/Tokyo:20250920T210400
+SUMMARY:【鹿島】@ 豬ｦ蜥・/a>（・ｪ・・ 隨ｬ・難ｼ千ｯ
+ 隨ｬ・呈律）
+DESCRIPTION:大会名: ・ｪ・・\n節 / ラウンド: 隨ｬ・難ｼ�
+ �ｯ隨ｬ・呈律\n対戦カード: 豬ｦ蜥・/a> vs 鮖ｿ蟲ｶ\n�
+ ��ックオフ: 19:04 (JST)\n会場: 蝓ｼ邇・/td>\n													\n				
+ 										53\,301\n試合結果: 0-1\n公式詳細ページ: https://data.
+ j-league.or.jp/SFMS02/?match_card_id=32441\n\n※Jリーグ公式データ
+ サイトより自動取得した日程情報です。
+LOCATION:蝓ｼ邇・/td>\n													\n														53\,301
+URL:https://data.j-league.or.jp/SFMS02/?match_card_id=32441
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+UID:jleague-antlers-20250923-442b0eb16dfa5f02@jleague.jp
+DTSTAMP:20261026T105822Z
+DTSTART;TZID=Asia/Tokyo:20250923T180300
+DTEND;TZID=Asia/Tokyo:20250923T200300
+SUMMARY:【鹿島】@ 鮖ｿ蟲ｶ（・ｪ・・ 隨ｬ・難ｼ醍ｯ�
+ ��ｬ・第律）
+DESCRIPTION:大会名: ・ｪ・・\n節 / ラウンド: 隨ｬ・難ｼ�
+ �ｯ隨ｬ・第律\n対戦カード: 鮖ｿ蟲ｶ vs ・｣螟ｧ髦ｪ
+ \nキックオフ: 18:03 (JST)\n会場: 繝｡繝ｫ繧ｹ繧ｿ\n試合�
+ �果: 3-1\nTV中継・配信: ・､・｡・ｺ・ｮ\n公式詳細ペー
+ ジ: https://data.j-league.or.jp/SFMS02/?match_card_id=32451\n\n※Jリー
+ グ公式データサイトより自動取得した日程情報です。
+LOCATION:繝｡繝ｫ繧ｹ繧ｿ
+URL:https://data.j-league.or.jp/SFMS02/?match_card_id=32451
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+UID:jleague-antlers-20250927-acc81bee47613cb4@jleague.jp
+DTSTAMP:20261026T105822Z
+DTSTART;TZID=Asia/Tokyo:20250927T170300
+DTEND;TZID=Asia/Tokyo:20250927T190300
+SUMMARY:【鹿島】@ 蜷榊商螻・/a>（・ｪ・・ 隨ｬ・難ｼ堤
+ ｯ隨ｬ・第律）
+DESCRIPTION:大会名: ・ｪ・・\n節 / ラウンド: 隨ｬ・難ｼ�
+ �ｯ隨ｬ・第律\n対戦カード: 蜷榊商螻・/a> vs 鮖ｿ蟲ｶ
+ \nキックオフ: 17:03 (JST)\n会場: 雎顔伐繧ｹ\n試合結果: 0-4
+ \n公式詳細ページ: https://data.j-league.or.jp/SFMS02/?match_card_id
+ =32466\n\n※Jリーグ公式データサイトより自動取得した日
+ 程情報です。
+LOCATION:雎顔伐繧ｹ
+URL:https://data.j-league.or.jp/SFMS02/?match_card_id=32466
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+UID:jleague-antlers-20251005-1650264b7449d14b@jleague.jp
+DTSTAMP:20261026T105822Z
+DTSTART;TZID=Asia/Tokyo:20251005T150300
+DTEND;TZID=Asia/Tokyo:20251005T170300
+SUMMARY:【鹿島】@ 鮖ｿ蟲ｶ（・ｪ・・ 隨ｬ・難ｼ鍋ｯ�
+ ��ｬ・捺律）
+DESCRIPTION:大会名: ・ｪ・・\n節 / ラウンド: 隨ｬ・難ｼ�
+ �ｯ隨ｬ・捺律\n対戦カード: 鮖ｿ蟲ｶ vs ・ｧ螟ｧ髦ｪ
+ \nキックオフ: 15:03 (JST)\n会場: 繝｡繝ｫ繧ｹ繧ｿ\n試合�
+ �果: 0-0\nTV中継・配信: ・､・｡・ｺ・ｮ\n公式詳細ペー
+ ジ: https://data.j-league.or.jp/SFMS02/?match_card_id=32472\n\n※Jリー
+ グ公式データサイトより自動取得した日程情報です。
+LOCATION:繝｡繝ｫ繧ｹ繧ｿ
+URL:https://data.j-league.or.jp/SFMS02/?match_card_id=32472
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+UID:jleague-antlers-20251017-e8daee5c68c8ea35@jleague.jp
+DTSTAMP:20261026T105822Z
+DTSTART;TZID=Asia/Tokyo:20251017T190300
+DTEND;TZID=Asia/Tokyo:20251017T210300
+SUMMARY:【鹿島】@ 逾樊虻（・ｪ・・ 隨ｬ・難ｼ皮ｯ隨�
+ ��・第律）
+DESCRIPTION:大会名: ・ｪ・・\n節 / ラウンド: 隨ｬ・難ｼ�
+ �ｯ隨ｬ・第律\n対戦カード: 逾樊虻 vs 鮖ｿ蟲ｶ\nキッ�
+ ��オフ: 19:03 (JST)\n会場: 繝弱お繧ｹ繧ｿ\n試合結果: 0-0\nT
+ V中継・配信: ・､・｡・ｺ・ｮ\n公式詳細ページ: https:/
+ /data.j-league.or.jp/SFMS02/?match_card_id=32488\n\n※Jリーグ公式デ
+ ータサイトより自動取得した日程情報です。
+LOCATION:繝弱お繧ｹ繧ｿ
+URL:https://data.j-league.or.jp/SFMS02/?match_card_id=32488
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+UID:jleague-antlers-20251025-17ce62a6024fe537@jleague.jp
+DTSTAMP:20261026T105822Z
+DTSTART;TZID=Asia/Tokyo:20251025T140300
+DTEND;TZID=Asia/Tokyo:20251025T160300
+SUMMARY:【鹿島】@ 莠ｬ驛ｽ（・ｪ・・ 隨ｬ・難ｼ慕ｯ�
+ ��ｬ・第律）
+DESCRIPTION:大会名: ・ｪ・・\n節 / ラウンド: 隨ｬ・難ｼ�
+ �ｯ隨ｬ・第律\n対戦カード: 莠ｬ驛ｽ vs 鮖ｿ蟲ｶ\nキ�
+ ��クオフ: 14:03 (JST)\n会場: 繧ｵ繝ｳ繧ｬ・ｳ\n試合結果: 
+ 1-1\nTV中継・配信: ・､・｡・ｺ・ｮ・擾ｼｫ・｢・ｳ�
+ �ｬ驛ｽ・磯鹸・会ｼ擾ｼｮ・ｨ・ｫ縲・｢・ｳ\n公式
+ 詳細ページ: https://data.j-league.or.jp/SFMS02/?match_card_id=32498\n
+ \n※Jリーグ公式データサイトより自動取得した日程情�
+ �です。
+LOCATION:繧ｵ繝ｳ繧ｬ・ｳ
+URL:https://data.j-league.or.jp/SFMS02/?match_card_id=32498
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+UID:jleague-antlers-20251108-4f14b71f6a1b567a@jleague.jp
+DTSTAMP:20261026T105822Z
+DTSTART;TZID=Asia/Tokyo:20251108T140300
+DTEND;TZID=Asia/Tokyo:20251108T160300
+SUMMARY:【鹿島】@ 鮖ｿ蟲ｶ（・ｪ・・ 隨ｬ・難ｼ也ｯ�
+ ��ｬ・第律）
+DESCRIPTION:大会名: ・ｪ・・\n節 / ラウンド: 隨ｬ・難ｼ�
+ �ｯ隨ｬ・第律\n対戦カード: 鮖ｿ蟲ｶ vs 讓ｪ豬廡C\nキ
+ ックオフ: 14:03 (JST)\n会場: 繝｡繝ｫ繧ｹ繧ｿ\n試合結果:
+  2-1\nTV中継・配信: ・､・｡・ｺ・ｮ・擾ｼｮ・ｨ・ｫ�
+ ��・｢・ｳ\n公式詳細ページ: https://data.j-league.or.jp/SFMS0
+ 2/?match_card_id=32501\n\n※Jリーグ公式データサイトより自�
+ �取得した日程情報です。
+LOCATION:繝｡繝ｫ繧ｹ繧ｿ
+URL:https://data.j-league.or.jp/SFMS02/?match_card_id=32501
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+UID:jleague-antlers-20251130-e5d6a1c020fb90c1@jleague.jp
+DTSTAMP:20261026T105822Z
+DTSTART;TZID=Asia/Tokyo:20251130T140500
+DTEND;TZID=Asia/Tokyo:20251130T160500
+SUMMARY:【鹿島】@ 譚ｱ莠ｬ・ｶ（・ｪ・・ 隨ｬ・難ｼ礼
+ ｯ隨ｬ・第律）
+DESCRIPTION:大会名: ・ｪ・・\n節 / ラウンド: 隨ｬ・難ｼ�
+ �ｯ隨ｬ・第律\n対戦カード: 譚ｱ莠ｬ・ｶ vs 鮖ｿ蟲ｶ
+ \nキックオフ: 14:05 (JST)\n会場: 蜻ｳ繧ｹ繧ｿ\n試合結果: 
+ 0-1\nTV中継・配信: ・､・｡・ｺ・ｮ・擾ｼｮ・ｨ・ｫ�
+ �・｢・ｳ\n公式詳細ページ: https://data.j-league.or.jp/SFMS02
+ /?match_card_id=32511\n\n※Jリーグ公式データサイトより自動
+ 取得した日程情報です。
+LOCATION:蜻ｳ繧ｹ繧ｿ
+URL:https://data.j-league.or.jp/SFMS02/?match_card_id=32511
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+UID:jleague-antlers-20251206-c19d44a720ac1b87@jleague.jp
+DTSTAMP:20261026T105822Z
+DTSTART;TZID=Asia/Tokyo:20251206T140300
+DTEND;TZID=Asia/Tokyo:20251206T160300
+SUMMARY:【鹿島】@ 鮖ｿ蟲ｶ（・ｪ・・ 隨ｬ・難ｼ倡ｯ�
+ ��ｬ・第律）
+DESCRIPTION:大会名: ・ｪ・・\n節 / ラウンド: 隨ｬ・難ｼ�
+ �ｯ隨ｬ・第律\n対戦カード: 鮖ｿ蟲ｶ vs 讓ｪ豬廡M\nキ
+ ックオフ: 14:03 (JST)\n会場: 繝｡繝ｫ繧ｹ繧ｿ\n試合結果:
+  2-1\nTV中継・配信: ・､・｡・ｺ・ｮ・擾ｼｮ・ｨ・ｫ�
+ ��・｢・ｳ\n公式詳細ページ: https://data.j-league.or.jp/SFMS0
+ 2/?match_card_id=32521\n\n※Jリーグ公式データサイトより自�
+ �取得した日程情報です。
+LOCATION:繝｡繝ｫ繧ｹ繧ｿ
+URL:https://data.j-league.or.jp/SFMS02/?match_card_id=32521
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+UID:jleague-antlers-20260807-68e0904224632b7f@jleague.jp
+DTSTAMP:20261026T105822Z
+DTSTART;TZID=Asia/Tokyo:20260807T192600
+DTEND;TZID=Asia/Tokyo:20260807T212600
+SUMMARY:【鹿島】@ 讓ｪ豬廡M（・ｪ・・ 隨ｬ・醍ｯ隨ｬ
+ ・第律）
+DESCRIPTION:大会名: ・ｪ・・\n節 / ラウンド: 隨ｬ・醍ｯ
+ 隨ｬ・第律\n対戦カード: 讓ｪ豬廡M vs 鮖ｿ蟲ｶ\nキック
+ オフ: 19:26 (JST)\n会場: MUFG蝗ｽ遶・/td>\n													\n								
+ 						63\,960\n試合結果: 3-4\n公式詳細ページ: https://data.j-le
+ ague.or.jp/SFMS02/?match_card_id=34517\n\n※Jリーグ公式データサ�
+ ��トより自動取得した日程情報です。
+LOCATION:MUFG蝗ｽ遶・/td>\n													\n														63\,960
+URL:https://data.j-league.or.jp/SFMS02/?match_card_id=34517
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+UID:jleague-antlers-20260815-bd4f40a24e0fcb50@jleague.jp
+DTSTAMP:20261026T105822Z
+DTSTART;TZID=Asia/Tokyo:20260815T180300
+DTEND;TZID=Asia/Tokyo:20260815T200300
+SUMMARY:【鹿島】@ 鮖ｿ蟲ｶ（・ｪ・・ 隨ｬ・堤ｯ隨ｬ�
+ ��呈律）
+DESCRIPTION:大会名: ・ｪ・・\n節 / ラウンド: 隨ｬ・堤ｯ
+ 隨ｬ・呈律\n対戦カード: 鮖ｿ蟲ｶ vs 蜷榊商螻・/a>\nキ�
+ ��クオフ: 18:03 (JST)\n会場: 繝｡繝ｫ繧ｹ繧ｿ\n試合結果: 
+ 2-1\nTV中継・配信: ・､・｡・ｺ・ｮ\n公式詳細ページ: h
+ ttps://data.j-league.or.jp/SFMS02/?match_card_id=34528\n\n※Jリーグ公
+ 式データサイトより自動取得した日程情報です。
+LOCATION:繝｡繝ｫ繧ｹ繧ｿ
+URL:https://data.j-league.or.jp/SFMS02/?match_card_id=34528
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+UID:jleague-antlers-20260822-3370018455115eed@jleague.jp
+DTSTAMP:20261026T105822Z
+DTSTART;TZID=Asia/Tokyo:20260822T180300
+DTEND;TZID=Asia/Tokyo:20260822T200300
+SUMMARY:【鹿島】@ 鮖ｿ蟲ｶ（・ｪ・・ 隨ｬ・鍋ｯ隨ｬ�
+ ��呈律）
+DESCRIPTION:大会名: ・ｪ・・\n節 / ラウンド: 隨ｬ・鍋ｯ
+ 隨ｬ・呈律\n対戦カード: 鮖ｿ蟲ｶ vs 遖丞ｲ｡\nキック�
+ ��フ: 18:03 (JST)\n会場: 繝｡繝ｫ繧ｹ繧ｿ\n試合結果: 3-2\nT
+ V中継・配信: ・､・｡・ｺ・ｮ\n公式詳細ページ: https:/
+ /data.j-league.or.jp/SFMS02/?match_card_id=34539\n\n※Jリーグ公式デ
+ ータサイトより自動取得した日程情報です。
+LOCATION:繝｡繝ｫ繧ｹ繧ｿ
+URL:https://data.j-league.or.jp/SFMS02/?match_card_id=34539
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+UID:jleague-antlers-20260829-299759424e7b4f0f@jleague.jp
+DTSTAMP:20261026T105822Z
+DTSTART;TZID=Asia/Tokyo:20260829T190300
+DTEND;TZID=Asia/Tokyo:20260829T210300
+SUMMARY:【鹿島】@ 譚ｱ莠ｬ・ｶ（・ｪ・・ 隨ｬ・皮ｯ�
+ ��ｬ・第律）
+DESCRIPTION:大会名: ・ｪ・・\n節 / ラウンド: 隨ｬ・皮ｯ
+ 隨ｬ・第律\n対戦カード: 譚ｱ莠ｬ・ｶ vs 鮖ｿ蟲ｶ\nキ�
+ ��クオフ: 19:03 (JST)\n会場: 蜻ｳ繧ｹ繧ｿ\n試合結果: 0-2\nT
+ V中継・配信: ・､・｡・ｺ・ｮ\n公式詳細ページ: https:/
+ /data.j-league.or.jp/SFMS02/?match_card_id=34552\n\n※Jリーグ公式デ
+ ータサイトより自動取得した日程情報です。
+LOCATION:蜻ｳ繧ｹ繧ｿ
+URL:https://data.j-league.or.jp/SFMS02/?match_card_id=34552
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+UID:jleague-antlers-20260902-c3b66814504bc064@jleague.jp
+DTSTAMP:20261026T105822Z
+DTSTART;TZID=Asia/Tokyo:20260902T190300
+DTEND;TZID=Asia/Tokyo:20260902T210300
+SUMMARY:【鹿島】@ 豌ｴ謌ｸ（・ｪ・・ 隨ｬ・慕ｯ隨ｬ�
+ ��第律）
+DESCRIPTION:大会名: ・ｪ・・\n節 / ラウンド: 隨ｬ・慕ｯ
+ 隨ｬ・第律\n対戦カード: 豌ｴ謌ｸ vs 鮖ｿ蟲ｶ\nキック�
+ ��フ: 19:03 (JST)\n会場: 豌ｴ謌ｸ菫｡繧ｹ\n試合結果: 4-2\nT
+ V中継・配信: ・､・｡・ｺ・ｮ・擾ｼｮ・ｨ・ｫ豌ｴ�
+ �ｸ\n公式詳細ページ: https://data.j-league.or.jp/SFMS02/?match_car
+ d_id=34557\n\n※Jリーグ公式データサイトより自動取得し�
+ �日程情報です。
+LOCATION:豌ｴ謌ｸ菫｡繧ｹ
+URL:https://data.j-league.or.jp/SFMS02/?match_card_id=34557
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+UID:jleague-antlers-20260906-2328f2c53e2f5b99@jleague.jp
+DTSTAMP:20261026T105822Z
+DTSTART;TZID=Asia/Tokyo:20260906T180300
+DTEND;TZID=Asia/Tokyo:20260906T200300
+SUMMARY:【鹿島】@ 鮖ｿ蟲ｶ（・ｪ・・ 隨ｬ・也ｯ隨ｬ�
+ ��呈律）
+DESCRIPTION:大会名: ・ｪ・・\n節 / ラウンド: 隨ｬ・也ｯ
+ 隨ｬ・呈律\n対戦カード: 鮖ｿ蟲ｶ vs 豬ｦ蜥・/a>\nキッ�
+ ��オフ: 18:03 (JST)\n会場: 繝｡繝ｫ繧ｹ繧ｿ\n試合結果: 0-1
+ \nTV中継・配信: ・､・｡・ｺ・ｮ\n公式詳細ページ: http
+ s://data.j-league.or.jp/SFMS02/?match_card_id=34568\n\n※Jリーグ公式
+ データサイトより自動取得した日程情報です。
+LOCATION:繝｡繝ｫ繧ｹ繧ｿ
+URL:https://data.j-league.or.jp/SFMS02/?match_card_id=34568
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+UID:jleague-antlers-20260911-a6e4b9c4b1f7704b@jleague.jp
+DTSTAMP:20261026T105822Z
+DTSTART;TZID=Asia/Tokyo:20260911T190400
+DTEND;TZID=Asia/Tokyo:20260911T210400
+SUMMARY:【鹿島】@ 逾樊虻（・ｪ・・ 隨ｬ・礼ｯ隨ｬ・�
+ ��律）
+DESCRIPTION:大会名: ・ｪ・・\n節 / ラウンド: 隨ｬ・礼ｯ
+ 隨ｬ・第律\n対戦カード: 逾樊虻 vs 鮖ｿ蟲ｶ\nキックオ�
+ ��: 19:04 (JST)\n会場: 繝弱お繧ｹ繧ｿ\n試合結果: 2-1\nTV中�
+ �・配信: ・､・｡・ｺ・ｮ\n公式詳細ページ: https://data.
+ j-league.or.jp/SFMS02/?match_card_id=34586\n\n※Jリーグ公式データ
+ サイトより自動取得した日程情報です。
+LOCATION:繝弱お繧ｹ繧ｿ
+URL:https://data.j-league.or.jp/SFMS02/?match_card_id=34586
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+UID:jleague-antlers-20260919-249ab75121f42b08@jleague.jp
+DTSTAMP:20261026T105822Z
+DTSTART;TZID=Asia/Tokyo:20260919T180300
+DTEND;TZID=Asia/Tokyo:20260919T200300
+SUMMARY:【鹿島】@ 蟾晏ｴ趣ｼｦ（・ｪ・・ 隨ｬ・倡ｯ�
+ ��ｬ・第律）
+DESCRIPTION:大会名: ・ｪ・・\n節 / ラウンド: 隨ｬ・倡ｯ
+ 隨ｬ・第律\n対戦カード: 蟾晏ｴ趣ｼｦ vs 鮖ｿ蟲ｶ\nキ�
+ ��クオフ: 18:03 (JST)\n会場: ・ｵ遲峨・鴨\n試合結果: 3-3\
+ nTV中継・配信: ・､・｡・ｺ・ｮ\n公式詳細ページ: https
+ ://data.j-league.or.jp/SFMS02/?match_card_id=34596\n\n※Jリーグ公式�
+ ��ータサイトより自動取得した日程情報です。
+LOCATION:・ｵ遲峨・鴨
+URL:https://data.j-league.or.jp/SFMS02/?match_card_id=34596
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+UID:jleague-antlers-20261009-9399c992394aacf8@jleague.jp
+DTSTAMP:20261026T105822Z
+DTSTART;TZID=Asia/Tokyo:20261009T190400
+DTEND;TZID=Asia/Tokyo:20261009T210400
+SUMMARY:【鹿島】@ 鮖ｿ蟲ｶ（・ｪ・・ 隨ｬ・咏ｯ隨ｬ�
+ ��第律）
+DESCRIPTION:大会名: ・ｪ・・\n節 / ラウンド: 隨ｬ・咏ｯ
+ 隨ｬ・第律\n対戦カード: 鮖ｿ蟲ｶ vs ・ｧ螟ｧ髦ｪ\nキ�
+ ��クオフ: 19:04 (JST)\n会場: 繝｡繝ｫ繧ｹ繧ｿ\n試合結果: 
+ 2-0\n公式詳細ページ: https://data.j-league.or.jp/SFMS02/?match_card
+ _id=34605\n\n※Jリーグ公式データサイトより自動取得した
+ 日程情報です。
+LOCATION:繝｡繝ｫ繧ｹ繧ｿ
+URL:https://data.j-league.or.jp/SFMS02/?match_card_id=34605
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+UID:jleague-antlers-20261017-edb16f30c9f11c76@jleague.jp
+DTSTAMP:20261026T105822Z
+DTSTART;TZID=Asia/Tokyo:20261017T150400
+DTEND;TZID=Asia/Tokyo:20261017T170400
+SUMMARY:【鹿島】@ 鮖ｿ蟲ｶ（・ｪ・・ 隨ｬ・托ｼ千ｯ�
+ ��ｬ・第律）
+DESCRIPTION:大会名: ・ｪ・・\n節 / ラウンド: 隨ｬ・托ｼ�
+ �ｯ隨ｬ・第律\n対戦カード: 鮖ｿ蟲ｶ vs 髟ｷ蟠・/a>\n�
+ ��ックオフ: 15:04 (JST)\n会場: 繝｡繝ｫ繧ｹ繧ｿ\n試合結�
+ �: 2-0\nTV中継・配信: ・､・｡・ｺ・ｮ\n公式詳細ページ
+ : https://data.j-league.or.jp/SFMS02/?match_card_id=34613\n\n※Jリーグ
+ 公式データサイトより自動取得した日程情報です。
+LOCATION:繝｡繝ｫ繧ｹ繧ｿ
+URL:https://data.j-league.or.jp/SFMS02/?match_card_id=34613
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+UID:jleague-antlers-20261021-148f9bb731e3ccaf@jleague.jp
+DTSTAMP:20261026T105822Z
+DTSTART;TZID=Asia/Tokyo:20261021T190300
+DTEND;TZID=Asia/Tokyo:20261021T210300
+SUMMARY:【鹿島】@ 莠ｬ驛ｽ（・ｪ・・ 隨ｬ・托ｼ醍ｯ�
+ ��ｬ・第律）
+DESCRIPTION:大会名: ・ｪ・・\n節 / ラウンド: 隨ｬ・托ｼ�
+ �ｯ隨ｬ・第律\n対戦カード: 莠ｬ驛ｽ vs 鮖ｿ蟲ｶ\nキ�
+ ��クオフ: 19:03 (JST)\n会場: 繧ｵ繝ｳ繧ｬ・ｳ\n試合結果: 
+ 2-2\nTV中継・配信: ・､・｡・ｺ・ｮ\n公式詳細ページ: h
+ ttps://data.j-league.or.jp/SFMS02/?match_card_id=34622\n\n※Jリーグ公
+ 式データサイトより自動取得した日程情報です。
+LOCATION:繧ｵ繝ｳ繧ｬ・ｳ
+URL:https://data.j-league.or.jp/SFMS02/?match_card_id=34622
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+UID:jleague-antlers-20261024-e0117eea704d9e0a@jleague.jp
+DTSTAMP:20261026T105822Z
+DTSTART;TZID=Asia/Tokyo:20261024T150300
+DTEND;TZID=Asia/Tokyo:20261024T170300
+SUMMARY:【鹿島】@ 鮖ｿ蟲ｶ（・ｪ・・ 隨ｬ・托ｼ堤ｯ�
+ ��ｬ・第律）
+DESCRIPTION:大会名: ・ｪ・・\n節 / ラウンド: 隨ｬ・托ｼ�
+ �ｯ隨ｬ・第律\n対戦カード: 鮖ｿ蟲ｶ vs 譟・/a>\nキッ�
+ ��オフ: 15:03 (JST)\n会場: 繝｡繝ｫ繧ｹ繧ｿ\n試合結果: 2-3
+ \nTV中継・配信: ・､・｡・ｺ・ｮ\n公式詳細ページ: http
+ s://data.j-league.or.jp/SFMS02/?match_card_id=34635\n\n※Jリーグ公式
+ データサイトより自動取得した日程情報です。
+LOCATION:繝｡繝ｫ繧ｹ繧ｿ
+URL:https://data.j-league.or.jp/SFMS02/?match_card_id=34635
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+UID:jleague-antlers-20261031-1367275d90cbf057@jleague.jp
+DTSTAMP:20261026T105822Z
+DTSTART;TZID=Asia/Tokyo:20261031T150000
+DTEND;TZID=Asia/Tokyo:20261031T170000
+SUMMARY:【鹿島】@ 鮖ｿ蟲ｶ（・ｪ・・ 隨ｬ・托ｼ鍋ｯ�
+ ��ｬ・第律）
+DESCRIPTION:大会名: ・ｪ・・\n節 / ラウンド: 隨ｬ・托ｼ�
+ �ｯ隨ｬ・第律\n対戦カード: 鮖ｿ蟲ｶ vs ・｣螟ｧ髦ｪ
+ \nキックオフ: 15:00 (JST)\n会場: 繝｡繝ｫ繧ｹ繧ｿ\nTV中継
+ ・配信: ・､・｡・ｺ・ｮ\n\n※Jリーグ公式データサイ�
+ ��より自動取得した日程情報です。
+LOCATION:繝｡繝ｫ繧ｹ繧ｿ
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+UID:jleague-antlers-20261107-b59b892a6717fafb@jleague.jp
+DTSTAMP:20261026T105822Z
+DTSTART;TZID=Asia/Tokyo:20261107T150000
+DTEND;TZID=Asia/Tokyo:20261107T170000
+SUMMARY:【鹿島】@ FC譚ｱ莠ｬ（・ｪ・・ 隨ｬ・托ｼ皮ｯ�
+ �隨ｬ・第律）
+DESCRIPTION:大会名: ・ｪ・・\n節 / ラウンド: 隨ｬ・托ｼ�
+ �ｯ隨ｬ・第律\n対戦カード: FC譚ｱ莠ｬ vs 鮖ｿ蟲ｶ\n�
+ �ックオフ: 15:00 (JST)\n会場: 蜻ｳ繧ｹ繧ｿ\nTV中継・配信:
+  ・､・｡・ｺ・ｮ\n\n※Jリーグ公式データサイトより�
+ �動取得した日程情報です。
+LOCATION:蜻ｳ繧ｹ繧ｿ
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+UID:jleague-antlers-20261120-70a6d2a7c4b52cf4@jleague.jp
+DTSTAMP:20261026T105822Z
+DTSTART;TZID=Asia/Tokyo:20261120T190000
+DTEND;TZID=Asia/Tokyo:20261120T210000
+SUMMARY:【鹿島】@ 鮖ｿ蟲ｶ（・ｪ・・ 隨ｬ・托ｼ慕ｯ�
+ ��ｬ・第律）
+DESCRIPTION:大会名: ・ｪ・・\n節 / ラウンド: 隨ｬ・托ｼ�
+ �ｯ隨ｬ・第律\n対戦カード: 鮖ｿ蟲ｶ vs 貂・ｰｴ\nキ�
+ ��クオフ: 19:00 (JST)\n会場: 繝｡繝ｫ繧ｹ繧ｿ\nTV中継・配
+ 信: ・､・｡・ｺ・ｮ\n\n※Jリーグ公式データサイトよ�
+ ��自動取得した日程情報です。
+LOCATION:繝｡繝ｫ繧ｹ繧ｿ
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+UID:jleague-antlers-20261128-c7bbeaed7bf027a8@jleague.jp
+DTSTAMP:20261026T105822Z
+DTSTART;TZID=Asia/Tokyo:20261128T150000
+DTEND;TZID=Asia/Tokyo:20261128T170000
+SUMMARY:【鹿島】@ 鮖ｿ蟲ｶ（・ｪ・・ 隨ｬ・托ｼ礼ｯ�
+ ��ｬ・第律）
+DESCRIPTION:大会名: ・ｪ・・\n節 / ラウンド: 隨ｬ・托ｼ�
+ �ｯ隨ｬ・第律\n対戦カード: 鮖ｿ蟲ｶ vs 蟯｡螻ｱ\nキ�
+ ��クオフ: 15:00 (JST)\n会場: 繝｡繝ｫ繧ｹ繧ｿ\nTV中継・配
+ 信: ・､・｡・ｺ・ｮ\n\n※Jリーグ公式データサイトよ�
+ ��自動取得した日程情報です。
+LOCATION:繝｡繝ｫ繧ｹ繧ｿ
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+UID:jleague-antlers-20261205-62a335edde778f2a@jleague.jp
+DTSTAMP:20261026T105822Z
+DTSTART;TZID=Asia/Tokyo:20261205T130000
+DTEND;TZID=Asia/Tokyo:20261205T150000
+SUMMARY:【鹿島】@ 蜊・痩（・ｪ・・ 隨ｬ・托ｼ倡ｯ隨�
+ ��・呈律）
+DESCRIPTION:大会名: ・ｪ・・\n節 / ラウンド: 隨ｬ・托ｼ�
+ �ｯ隨ｬ・呈律\n対戦カード: 蜊・痩 vs 鮖ｿ蟲ｶ\nキッ�
+ ��オフ: 13:00 (JST)\n会場: 繝輔け繧｢繝ｪ\nTV中継・配信: �
+ ��､・｡・ｺ・ｮ\n\n※Jリーグ公式データサイトより自�
+ ��取得した日程情報です。
+LOCATION:繝輔け繧｢繝ｪ
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+UID:jleague-antlers-20261213-d983193e1d6e5854@jleague.jp
+DTSTAMP:20261026T105822Z
+DTSTART;TZID=Asia/Tokyo:20261213T140000
+DTEND;TZID=Asia/Tokyo:20261213T160000
+SUMMARY:【鹿島】@ 蠎・ｳｶ（・ｪ・・ 隨ｬ・托ｼ咏ｯ�
+ ��ｬ・呈律）
+DESCRIPTION:大会名: ・ｪ・・\n節 / ラウンド: 隨ｬ・托ｼ�
+ �ｯ隨ｬ・呈律\n対戦カード: 蠎・ｳｶ vs 鮖ｿ蟲ｶ\nキ�
+ ��クオフ: 14:00 (JST)\n会場: ・･繝斐・繧ｹ\nTV中継・配信
+ : ・､・｡・ｺ・ｮ・擾ｼｮ・ｨ・ｫ蠎・ｳｶ\n\n※Jリ�
+ ��グ公式データサイトより自動取得した日程情報です。
+LOCATION:・･繝斐・繧ｹ
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+UID:jleague-antlers-20261216-d121155d2557f517@jleague.jp
+DTSTAMP:20261026T105822Z
+DTSTART;TZID=Asia/Tokyo:20261216T190000
+DTEND;TZID=Asia/Tokyo:20261216T210000
+SUMMARY:【鹿島】@ 鮖ｿ蟲ｶ（・ｪ・・ 隨ｬ・托ｼ也ｯ�
+ ��ｬ・呈律）
+DESCRIPTION:大会名: ・ｪ・・\n節 / ラウンド: 隨ｬ・托ｼ�
+ �ｯ隨ｬ・呈律\n対戦カード: 鮖ｿ蟲ｶ vs 逕ｺ逕ｰ\nキ�
+ ��クオフ: 19:00 (JST)\n会場: 繝｡繝ｫ繧ｹ繧ｿ\nTV中継・配
+ 信: ・､・｡・ｺ・ｮ\n\n※Jリーグ公式データサイトよ�
+ ��自動取得した日程情報です。
+LOCATION:繝｡繝ｫ繧ｹ繧ｿ
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+UID:jleague-antlers-20261219-21faf653bd4ec96c@jleague.jp
+DTSTAMP:20261026T105822Z
+DTSTART;TZID=Asia/Tokyo:20261219T150000
+DTEND;TZID=Asia/Tokyo:20261219T170000
+SUMMARY:【鹿島】@ 鮖ｿ蟲ｶ（・ｪ・・ 隨ｬ・抵ｼ千ｯ�
+ ��ｬ・第律）
+DESCRIPTION:大会名: ・ｪ・・\n節 / ラウンド: 隨ｬ・抵ｼ�
+ �ｯ隨ｬ・第律\n対戦カード: 鮖ｿ蟲ｶ vs 譚ｱ莠ｬ・ｶ
+ \nキックオフ: 15:00 (JST)\n会場: MUFG蝗ｽ遶・/td>\n												
+ 	\n														\n																&nbsp\;\n\n※Jリーグ公式データ
+ サイトより自動取得した日程情報です。
+LOCATION:MUFG蝗ｽ遶・/td>\n													\n														\n												
+ 				&nbsp\;
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+UID:jleague-antlers-20270213-8f2eff30b7a552ef@jleague.jp
+DTSTAMP:20261026T105822Z
+DTSTART;VALUE=DATE:20270213
+DTEND;VALUE=DATE:20270214
+SUMMARY:【鹿島】@ 鮖ｿ蟲ｶ（・ｪ・・ 隨ｬ・抵ｼ醍ｯ�
+ ��ｬ・第律）
+DESCRIPTION:大会名: ・ｪ・・\n節 / ラウンド: 隨ｬ・抵ｼ�
+ �ｯ隨ｬ・第律\n対戦カード: 鮖ｿ蟲ｶ vs 豌ｴ謌ｸ\nキ�
+ ��クオフ: 時間未定（または公式発表待ち）\n会場: 繝｡
+ 繝ｫ繧ｹ繧ｿ\n\n※Jリーグ公式データサイトより自動取
+ 得した日程情報です。
+LOCATION:繝｡繝ｫ繧ｹ繧ｿ
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+UID:jleague-antlers-20270220-cb3251504a746b81@jleague.jp
+DTSTAMP:20261026T105822Z
+DTSTART;VALUE=DATE:20270220
+DTEND;VALUE=DATE:20270221
+SUMMARY:【鹿島】@ 豬ｦ蜥・/a>（・ｪ・・ 隨ｬ・抵ｼ堤ｯ
+ 隨ｬ・第律）
+DESCRIPTION:大会名: ・ｪ・・\n節 / ラウンド: 隨ｬ・抵ｼ�
+ �ｯ隨ｬ・第律\n対戦カード: 豬ｦ蜥・/a> vs 鮖ｿ蟲ｶ\n�
+ ��ックオフ: 時間未定（または公式発表待ち）\n会場: 蝓
+ ｼ邇・/td>\n													\n														\n																&nbsp\;\n\n�
+ ��Jリーグ公式データサイトより自動取得した日程情報�
+ �す。
+LOCATION:蝓ｼ邇・/td>\n													\n														\n																
+ &nbsp\;
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+UID:jleague-antlers-20270227-f1ce3007310bfcbb@jleague.jp
+DTSTAMP:20261026T105822Z
+DTSTART;VALUE=DATE:20270227
+DTEND;VALUE=DATE:20270228
+SUMMARY:【鹿島】@ 蟯｡螻ｱ（・ｪ・・ 隨ｬ・抵ｼ鍋ｯ�
+ ��ｬ・第律）
+DESCRIPTION:大会名: ・ｪ・・\n節 / ラウンド: 隨ｬ・抵ｼ�
+ �ｯ隨ｬ・第律\n対戦カード: 蟯｡螻ｱ vs 鮖ｿ蟲ｶ\nキ�
+ ��クオフ: 時間未定（または公式発表待ち）\n会場: ・ｪ
+ ・ｦ・･繧ｹ\n\n※Jリーグ公式データサイトより自動取
+ 得した日程情報です。
+LOCATION:・ｪ・ｦ・･繧ｹ
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+UID:jleague-antlers-20270306-46cc62eae13b4bcd@jleague.jp
+DTSTAMP:20261026T105822Z
+DTSTART;VALUE=DATE:20270306
+DTEND;VALUE=DATE:20270307
+SUMMARY:【鹿島】@ 鮖ｿ蟲ｶ（・ｪ・・ 隨ｬ・抵ｼ皮ｯ�
+ ��ｬ・第律）
+DESCRIPTION:大会名: ・ｪ・・\n節 / ラウンド: 隨ｬ・抵ｼ�
+ �ｯ隨ｬ・第律\n対戦カード: 鮖ｿ蟲ｶ vs 蜊・痩\nキッ�
+ ��オフ: 時間未定（または公式発表待ち）\n会場: 繝｡繝
+ ｫ繧ｹ繧ｿ\n\n※Jリーグ公式データサイトより自動取得
+ した日程情報です。
+LOCATION:繝｡繝ｫ繧ｹ繧ｿ
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+UID:jleague-antlers-20270310-9b25a34fb142e99a@jleague.jp
+DTSTAMP:20261026T105822Z
+DTSTART;VALUE=DATE:20270310
+DTEND;VALUE=DATE:20270311
+SUMMARY:【鹿島】@ 逕ｺ逕ｰ（・ｪ・・ 隨ｬ・抵ｼ慕ｯ�
+ ��ｬ・第律）
+DESCRIPTION:大会名: ・ｪ・・\n節 / ラウンド: 隨ｬ・抵ｼ�
+ �ｯ隨ｬ・第律\n対戦カード: 逕ｺ逕ｰ vs 鮖ｿ蟲ｶ\nキ�
+ ��クオフ: 時間未定（または公式発表待ち）\n会場: ・ｧ
+ 繧ｹ繧ｿ\n\n※Jリーグ公式データサイトより自動取得し
+ た日程情報です。
+LOCATION:・ｧ繧ｹ繧ｿ
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+UID:jleague-antlers-20270313-35185e1c03116948@jleague.jp
+DTSTAMP:20261026T105822Z
+DTSTART;VALUE=DATE:20270313
+DTEND;VALUE=DATE:20270314
+SUMMARY:【鹿島】@ 鮖ｿ蟲ｶ（・ｪ・・ 隨ｬ・抵ｼ也ｯ�
+ ��ｬ・第律）
+DESCRIPTION:大会名: ・ｪ・・\n節 / ラウンド: 隨ｬ・抵ｼ�
+ �ｯ隨ｬ・第律\n対戦カード: 鮖ｿ蟲ｶ vs 蠎・ｳｶ\nキ�
+ ��クオフ: 時間未定（または公式発表待ち）\n会場: 繝｡
+ 繝ｫ繧ｹ繧ｿ\n\n※Jリーグ公式データサイトより自動取
+ 得した日程情報です。
+LOCATION:繝｡繝ｫ繧ｹ繧ｿ
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+UID:jleague-antlers-20270321-805acff2498e176b@jleague.jp
+DTSTAMP:20261026T105822Z
+DTSTART;VALUE=DATE:20270321
+DTEND;VALUE=DATE:20270322
+SUMMARY:【鹿島】@ 貂・ｰｴ（・ｪ・・ 隨ｬ・抵ｼ礼ｯ�
+ ��ｬ・呈律）
+DESCRIPTION:大会名: ・ｪ・・\n節 / ラウンド: 隨ｬ・抵ｼ�
+ �ｯ隨ｬ・呈律\n対戦カード: 貂・ｰｴ vs 鮖ｿ蟲ｶ\nキ�
+ ��クオフ: 時間未定（または公式発表待ち）\n会場: MUFG�
+ �ｽ遶・/td>\n													\n														\n																&nbsp\;\n\n
+ ※Jリーグ公式データサイトより自動取得した日程情報�
+ ��す。
+LOCATION:MUFG蝗ｽ遶・/td>\n													\n														\n												
+ 				&nbsp\;
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+UID:jleague-antlers-20270403-b77984b2039d3e57@jleague.jp
+DTSTAMP:20261026T105822Z
+DTSTART;VALUE=DATE:20270403
+DTEND;VALUE=DATE:20270404
+SUMMARY:【鹿島】@ 鮖ｿ蟲ｶ（・ｪ・・ 隨ｬ・抵ｼ倡ｯ�
+ ��ｬ・第律）
+DESCRIPTION:大会名: ・ｪ・・\n節 / ラウンド: 隨ｬ・抵ｼ�
+ �ｯ隨ｬ・第律\n対戦カード: 鮖ｿ蟲ｶ vs 讓ｪ豬廡M\nキ
+ ックオフ: 時間未定（または公式発表待ち）\n会場: 繝�
+ �繝ｫ繧ｹ繧ｿ\n\n※Jリーグ公式データサイトより自動�
+ �得した日程情報です。
+LOCATION:繝｡繝ｫ繧ｹ繧ｿ
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+UID:jleague-antlers-20270410-6554fc88082e091f@jleague.jp
+DTSTAMP:20261026T105822Z
+DTSTART;VALUE=DATE:20270410
+DTEND;VALUE=DATE:20270411
+SUMMARY:【鹿島】@ 蜷榊商螻・/a>（・ｪ・・ 隨ｬ・抵ｼ咏
+ ｯ隨ｬ・呈律）
+DESCRIPTION:大会名: ・ｪ・・\n節 / ラウンド: 隨ｬ・抵ｼ�
+ �ｯ隨ｬ・呈律\n対戦カード: 蜷榊商螻・/a> vs 鮖ｿ蟲ｶ
+ \nキックオフ: 時間未定（または公式発表待ち）\n会場: 
+ 笳乗悴螳壺酪\n\n※Jリーグ公式データサイトより自動取
+ 得した日程情報です。
+LOCATION:笳乗悴螳壺酪
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+UID:jleague-antlers-20270417-3d985dba2bf79505@jleague.jp
+DTSTAMP:20261026T105822Z
+DTSTART;VALUE=DATE:20270417
+DTEND;VALUE=DATE:20270418
+SUMMARY:【鹿島】@ ・｣螟ｧ髦ｪ（・ｪ・・ 隨ｬ・難ｼ千
+ ｯ隨ｬ・呈律）
+DESCRIPTION:大会名: ・ｪ・・\n節 / ラウンド: 隨ｬ・難ｼ�
+ �ｯ隨ｬ・呈律\n対戦カード: ・｣螟ｧ髦ｪ vs 鮖ｿ蟲ｶ
+ \nキックオフ: 時間未定（または公式発表待ち）\n会場: 
+ 繝上リ繧ｵ繧ｫ\n\n※Jリーグ公式データサイトより自動
+ 取得した日程情報です。
+LOCATION:繝上リ繧ｵ繧ｫ
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+UID:jleague-antlers-20270424-481851a8725cda09@jleague.jp
+DTSTAMP:20261026T105822Z
+DTSTART;VALUE=DATE:20270424
+DTEND;VALUE=DATE:20270425
+SUMMARY:【鹿島】@ 鮖ｿ蟲ｶ（・ｪ・・ 隨ｬ・難ｼ醍ｯ�
+ ��ｬ・第律）
+DESCRIPTION:大会名: ・ｪ・・\n節 / ラウンド: 隨ｬ・難ｼ�
+ �ｯ隨ｬ・第律\n対戦カード: 鮖ｿ蟲ｶ vs 莠ｬ驛ｽ\nキ�
+ ��クオフ: 時間未定（または公式発表待ち）\n会場: 繝｡
+ 繝ｫ繧ｹ繧ｿ\n\n※Jリーグ公式データサイトより自動取
+ 得した日程情報です。
+LOCATION:繝｡繝ｫ繧ｹ繧ｿ
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+UID:jleague-antlers-20270429-0c8dceefaad816f0@jleague.jp
+DTSTAMP:20261026T105822Z
+DTSTART;VALUE=DATE:20270429
+DTEND;VALUE=DATE:20270430
+SUMMARY:【鹿島】@ 鮖ｿ蟲ｶ（・ｪ・・ 隨ｬ・難ｼ堤ｯ�
+ ��ｬ・第律）
+DESCRIPTION:大会名: ・ｪ・・\n節 / ラウンド: 隨ｬ・難ｼ�
+ �ｯ隨ｬ・第律\n対戦カード: 鮖ｿ蟲ｶ vs 逾樊虻\nキッ�
+ ��オフ: 時間未定（または公式発表待ち）\n会場: 繝｡繝
+ ｫ繧ｹ繧ｿ\n\n※Jリーグ公式データサイトより自動取得
+ した日程情報です。
+LOCATION:繝｡繝ｫ繧ｹ繧ｿ
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+UID:jleague-antlers-20270503-f0f3ff2b52f31783@jleague.jp
+DTSTAMP:20261026T105822Z
+DTSTART;VALUE=DATE:20270503
+DTEND;VALUE=DATE:20270504
+SUMMARY:【鹿島】@ ・ｧ螟ｧ髦ｪ（・ｪ・・ 隨ｬ・難ｼ鍋
+ ｯ隨ｬ・第律）
+DESCRIPTION:大会名: ・ｪ・・\n節 / ラウンド: 隨ｬ・難ｼ�
+ �ｯ隨ｬ・第律\n対戦カード: ・ｧ螟ｧ髦ｪ vs 鮖ｿ蟲ｶ
+ \nキックオフ: 時間未定（または公式発表待ち）\n会場: 
+ 繝代リ繧ｹ繧ｿ\n\n※Jリーグ公式データサイトより自動
+ 取得した日程情報です。
+LOCATION:繝代リ繧ｹ繧ｿ
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+UID:jleague-antlers-20270509-8c160646bdea3d4f@jleague.jp
+DTSTAMP:20261026T105822Z
+DTSTART;VALUE=DATE:20270509
+DTEND;VALUE=DATE:20270510
+SUMMARY:【鹿島】@ 鮖ｿ蟲ｶ（・ｪ・・ 隨ｬ・難ｼ皮ｯ�
+ ��ｬ・第律）
+DESCRIPTION:大会名: ・ｪ・・\n節 / ラウンド: 隨ｬ・難ｼ�
+ �ｯ隨ｬ・第律\n対戦カード: 鮖ｿ蟲ｶ vs 蟾晏ｴ趣ｼｦ
+ \nキックオフ: 時間未定（または公式発表待ち）\n会場: 
+ 繝｡繝ｫ繧ｹ繧ｿ\n\n※Jリーグ公式データサイトより自
+ 動取得した日程情報です。
+LOCATION:繝｡繝ｫ繧ｹ繧ｿ
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+UID:jleague-antlers-20270515-cb32f9b4355a3202@jleague.jp
+DTSTAMP:20261026T105822Z
+DTSTART;VALUE=DATE:20270515
+DTEND;VALUE=DATE:20270516
+SUMMARY:【鹿島】@ 髟ｷ蟠・/a>（・ｪ・・ 隨ｬ・難ｼ慕ｯ
+ 隨ｬ・第律）
+DESCRIPTION:大会名: ・ｪ・・\n節 / ラウンド: 隨ｬ・難ｼ�
+ �ｯ隨ｬ・第律\n対戦カード: 髟ｷ蟠・/a> vs 鮖ｿ蟲ｶ\n�
+ ��ックオフ: 時間未定（または公式発表待ち）\n会場: 繝
+ 斐・繧ｹ繧ｿ\n\n※Jリーグ公式データサイトより自動取
+ 得した日程情報です。
+LOCATION:繝斐・繧ｹ繧ｿ
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+UID:jleague-antlers-20270522-5100dedd4c22d58f@jleague.jp
+DTSTAMP:20261026T105822Z
+DTSTART;VALUE=DATE:20270522
+DTEND;VALUE=DATE:20270523
+SUMMARY:【鹿島】@ 遖丞ｲ｡（・ｪ・・ 隨ｬ・難ｼ也ｯ�
+ ��ｬ・第律）
+DESCRIPTION:大会名: ・ｪ・・\n節 / ラウンド: 隨ｬ・難ｼ�
+ �ｯ隨ｬ・第律\n対戦カード: 遖丞ｲ｡ vs 鮖ｿ蟲ｶ\nキ�
+ ��クオフ: 時間未定（または公式発表待ち）\n会場: 繝吶
+ せ繧ｹ繧ｿ\n\n※Jリーグ公式データサイトより自動取得
+ した日程情報です。
+LOCATION:繝吶せ繧ｹ繧ｿ
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+UID:jleague-antlers-20270529-5bed7b7c7eb4d722@jleague.jp
+DTSTAMP:20261026T105822Z
+DTSTART;VALUE=DATE:20270529
+DTEND;VALUE=DATE:20270530
+SUMMARY:【鹿島】@ 譟・/a>（・ｪ・・ 隨ｬ・難ｼ礼ｯ隨�
+ ��・第律）
+DESCRIPTION:大会名: ・ｪ・・\n節 / ラウンド: 隨ｬ・難ｼ�
+ �ｯ隨ｬ・第律\n対戦カード: 譟・/a> vs 鮖ｿ蟲ｶ\nキッ�
+ ��オフ: 時間未定（または公式発表待ち）\n会場: 荳牙鵠
+ ・ｦ譟・/td>\n													\n														\n																&nbsp\;\n
+ \n※Jリーグ公式データサイトより自動取得した日程情�
+ �です。
+LOCATION:荳牙鵠・ｦ譟・/td>\n													\n														\n							
+ 									&nbsp\;
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+UID:jleague-antlers-20270606-93107b886b9413a4@jleague.jp
+DTSTAMP:20261026T105822Z
+DTSTART;VALUE=DATE:20270606
+DTEND;VALUE=DATE:20270607
+SUMMARY:【鹿島】@ 鮖ｿ蟲ｶ（・ｪ・・ 隨ｬ・難ｼ倡ｯ�
+ ��ｬ・第律）
+DESCRIPTION:大会名: ・ｪ・・\n節 / ラウンド: 隨ｬ・難ｼ�
+ �ｯ隨ｬ・第律\n対戦カード: 鮖ｿ蟲ｶ vs FC譚ｱ莠ｬ\n�
+ �ックオフ: 時間未定（または公式発表待ち）\n会場: 繝�
+ ��繝ｫ繧ｹ繧ｿ\nTV中継・配信: ・､・｡・ｺ・ｮ\n\n※J�
+ ��ーグ公式データサイトより自動取得した日程情報です
+ 。
+LOCATION:繝｡繝ｫ繧ｹ繧ｿ
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+END:VEVENT
+END:VCALENDAR

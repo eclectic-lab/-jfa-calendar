@@ -1,4 +1,4 @@
-name: Update JFA National Team Calendar
+name: Update Match Calendars (Japan National Team & Kashima Antlers)
 
 on:
   schedule:
@@ -10,6 +10,7 @@ on:
       - main
     paths:
       - 'main.py'
+      - 'j1_club.py'
       - '.github/workflows/update.yml'
       - 'requirements.txt'
 
@@ -35,18 +36,21 @@ jobs:
           python -m pip install --upgrade pip
           pip install -r requirements.txt
 
-      - name: Run calendar generator
+      - name: Run calendar generators
         run: |
+          echo "=== 1. Updating Japan National Team Calendar ==="
           python main.py
+          echo "=== 2. Updating Kashima Antlers Calendar ==="
+          python j1_club.py
 
       - name: Commit and push if changed
         run: |
           git config --local user.name "github-actions[bot]"
           git config --local user.email "github-actions[bot]@users.noreply.github.com"
-          git add japan_national_team.ics
+          git add japan_national_team.ics j1_club.ics
           if git diff --staged --quiet; then
-            echo "No changes to commit. Calendar is already up-to-date."
+            echo "No changes to commit. Calendars are already up-to-date."
           else
-            git commit -m "Auto update: japan_national_team.ics [skip ci]"
+            git commit -m "Auto update: match calendars (japan_national_team.ics, j1_club.ics) [skip ci]"
             git push
           fi
