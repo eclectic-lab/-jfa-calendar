@@ -98,14 +98,15 @@ iPhoneの標準「カレンダー」アプリに登録すると、予定が自�
 
 ```mermaid
 flowchart TD
-    subgraph Data Sources
-        A1[JFA公式サイト<br/>jfa.jp]
-        A2[Jリーグ公式データサイト<br/>data.j-league.or.jp]
+    subgraph Data Sources [データソース]
+        A1[JFA公式サイト<br/>jfa.jp (SAMURAI BLUE)]
+        A2[Jリーグ公式データサイト<br/>data.j-league.or.jp (J1・ルヴァン)]
+        A3[JFA公式サイト<br/>jfa.jp (天皇杯・ACL)]
     end
 
     subgraph GitHub Actions [GitHub Actions (毎日 04:00 JST)]
         B1[main.py<br/>日本代表スクレイパー]
-        B2[j1_club.py<br/>鹿島アントラーズスクレイパー]
+        B2[j1_club.py<br/>鹿島アントラーズスクレイパー<br/>(Jリーグ + JFA マージ)]
     end
 
     subgraph Calendars [Generated ICS Files]
@@ -119,8 +120,9 @@ flowchart TD
 
     A1 -->|HTMLパース| B1
     A2 -->|HTMLパース| B2
+    A3 -->|JSON/HTMLパース| B2
     B1 -->|RFC 5545生成| C1
-    B2 -->|RFC 5545生成| C2
+    B2 -->|スマートマージ & RFC 5545生成| C2
     C1 -->|Git Commit & Push| D
     C2 -->|Git Commit & Push| D
 ```
@@ -135,14 +137,14 @@ jfa-calendar/
 ├── japan_national_team.ics      # 日本代表 iCalendarファイル
 ├── j1_club.ics                 # 鹿島アントラーズ iCalendarファイル
 ├── main.py                     # 日本代表試合日程取得スクリプト
-├── j1_club.py                  # 鹿島アントラーズ試合日程取得スクリプト
+├── j1_club.py                  # 鹿島アントラーズ試合日程取得スクリプト（Jリーグ + JFA天皇杯・ACL）
 ├── README.md                   # 利用ガイド・仕様ドキュメント
 └── requirements.txt            # Python依存パッケージ
 ```
 
 - **スクリプト構成**:
   - `main.py`: JFA公式サイトのSAMURAI BLUEページから詳細ページを含めてスクレイピングし、`japan_national_team.ics` を出力。
-  - `j1_club.py`: J.League Data Site から鹿島アントラーズ（Team ID: 1）の公式戦日程テーブルをパースし、`j1_club.ics` を出力。
+  - `j1_club.py`: J.League Data Site から鹿島アントラーズ（Team ID: 1）の公式戦日程を取得するとともに、JFA公式サイトの天皇杯（`emperorscup`）およびACL（`acl_elite`, `acl_two`, `acl`）の公式スケジュールページ（JSON/HTML）からも鹿島の日程を自動取得し、スマートに統合・重複排除して `j1_club.ics` を出力。
   - どちらのスクリプトもスタンドアロンで実行可能であり、サイト仕様変更時にも互いに影響を与えない疎結合な構成です。
 - **ワークフロー (`.github/workflows/update.yml`)**:
   - 毎日定時（UTC 19:00 = JST 04:00）およびファイルプッシュ・手動実行トリガーに対応。

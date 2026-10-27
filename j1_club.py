@@ -1,9 +1,14 @@
 #!/usr/bin/env python3
 """
-Jリーグ公式データサイトからJ1 鹿島アントラーズの最新試合日程・結果を自動取得し、
-RFC 5545準拠のiCalendar（.ics）ファイルを自動生成するスクリプト。
+Jリーグ公式データサイトおよびJFA（日本サッカー協会）公式サイトから
+J1 鹿島アントラーズの最新試合日程・結果を自動取得し、
+RFC 5545準拠のiCalendar（.ics）ファイルを自動生成・マージするスクリプト。
 
-- 対象: 鹿島アントラーズ（J1リーグ、ルヴァンカップ、天皇杯など全公式戦）
+- 対象: 鹿島アントラーズ（J1リーグ、ルヴァンカップ、天皇杯、ACLなど全公式戦）
+- データソース:
+  1. J.League Data Site (J1リーグ、ルヴァンカップ、一部天皇杯など)
+  2. JFA公式 天皇杯スケジュール (最新ラウンド・トーナメント詳細)
+  3. JFA公式 ACL (AFC Champions League Elite / Two) スケジュール
 - タイムゾーン: Asia/Tokyo
 - 出力ファイル: j1_club.ics
 """
@@ -12,12 +17,13 @@ from __future__ import annotations
 
 import datetime
 import hashlib
+import json
 import logging
 import re
 import sys
 import time
 from dataclasses import dataclass
-from typing import List, Optional
+from typing import Dict, List, Optional, Set
 from urllib.parse import urljoin
 from zoneinfo import ZoneInfo
 
@@ -34,8 +40,9 @@ logger = logging.getLogger(__name__)
 
 # 定数設定
 JST = ZoneInfo("Asia/Tokyo")
-BASE_URL = "https://data.j-league.or.jp"
-SEARCH_URL = f"{BASE_URL}/SFMS01/search"
+JLEAGUE_DATA_BASE_URL = "https://data.j-league.or.jp"
+JLEAGUE_SEARCH_URL = f"{JLEAGUE_DATA_BASE_URL}/SFMS01/search"
+JFA_BASE_URL = "https://www.jfa.jp"
 OUTPUT_ICS_PATH = "j1_club.ics"
 
 # 鹿島アントラーズ設定
@@ -49,12 +56,36 @@ REQUEST_HEADERS = {
         "AppleWebKit/537.36 (KHTML, like Gecko) "
         "Chrome/124.0.0.0 Safari/537.36 (J1-Club-Calendar-Sync-Bot/1.0; +https://github.com/)"
     ),
-    "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8",
+    "Accept": "text/html,application/xhtml+xml,application/xml,application/json;q=0.9,*/*;q=0.8",
     "Accept-Language": "ja,en-US;q=0.9,en;q=0.8",
 }
 
 # サーバー負荷軽減のためのリクエスト間隔（秒）
-REQUEST_INTERVAL_SECONDS = 1.0
+REQUEST_INTERVAL_SECONDS = 0.5
+
+
+def is_kashima_team(team_name: str) -> bool:
+    """チーム名が鹿島アントラーズに該当するか判定"""
+    if not team_name:
+        return False
+    clean = re.sub(r"[\s　・]", "", team_name).lower()
+    return "鹿島" in clean or "アントラーズ" in clean or "antlers" in clean or "kashima" in clean
+
+
+def normalize_competition_category(comp_name: str) -> str:
+    """大会名を正規化して大分類キー（重複判定・UID用）を返す"""
+    if not comp_name:
+        return "other"
+    c = comp_name.lower()
+    if "天皇杯" in comp_name or "emperors" in c:
+        return "emperorscup"
+    if "ルヴァン" in comp_name or "levain" in c or "ナビスコ" in comp_name:
+        return "levain"
+    if "acl" in c or "afc" in c or "champions league" in c or "チャンピオンズリーグ" in comp_name:
+        return "acl"
+    if "ｊ１" in comp_name or "j1" in c or "jリーグ" in comp_name or "ｊリーグ" in comp_name:
+        return "j1"
+    return "other"
 
 
 @dataclass
@@ -70,11 +101,12 @@ class MatchEvent:
     kickoff_time: Optional[datetime.time] = None
     detail_url: Optional[str] = None
     broadcast: str = ""
+    source: str = "J.League Data Site"
 
     @property
     def is_home(self) -> bool:
         """鹿島がホームゲームかどうか"""
-        return CLUB_SHORT_NAME in self.home_team or CLUB_NAME in self.home_team
+        return is_kashima_team(self.home_team)
 
     @property
     def opponent(self) -> str:
@@ -84,19 +116,45 @@ class MatchEvent:
         return self.home_team if self.home_team else "対戦相手未定"
 
     @property
+    def short_competition(self) -> str:
+        """カレンダータイトル用に簡潔に短縮した大会名"""
+        comp = self.competition
+        cat = normalize_competition_category(comp)
+        if cat == "emperorscup":
+            return "天皇杯"
+        if cat == "acl":
+            if "elite" in comp.lower() or "エリート" in comp:
+                return "ACLE"
+            if "two" in comp.lower() or "２" in comp or "2" in comp:
+                return "ACL2"
+            return "ACL"
+        if cat == "levain":
+            return "ルヴァン杯"
+        if cat == "j1":
+            return "Ｊ１"
+        # 不要なプレフィックスや長い文言を切り落とし
+        clean = re.sub(r"明治安田(生命)?", "", comp).strip()
+        return clean if clean else comp
+
+    @property
     def uid(self) -> str:
-        """カレンダーイベント用の一意なUID（重複防止・更新識別用）"""
+        """
+        カレンダーイベント用の一意なUID（重複防止・更新識別用）
+        大会の大分類と日付、ホーム/アウェイをベースにハッシュ生成することで
+        表記揺れがあっても同一試合で安定したUIDを維持
+        """
         side = "home" if self.is_home else "away"
-        raw_key = f"{self.date.strftime('%Y%m%d')}_{self.competition}_{self.opponent}_{side}"
+        cat = normalize_competition_category(self.competition)
+        raw_key = f"{self.date.strftime('%Y%m%d')}_{cat}_{side}"
         hash_digest = hashlib.sha256(raw_key.encode("utf-8")).hexdigest()[:16]
-        return f"jleague-antlers-{self.date.strftime('%Y%m%d')}-{hash_digest}@jleague.jp"
+        return f"j1-club-antlers-{self.date.strftime('%Y%m%d')}-{hash_digest}@kashima.antlers"
 
     @property
     def summary(self) -> str:
         """イベントのタイトル（ホームはvs、アウェイは@）"""
         mark = "vs" if self.is_home else "@"
         sec_info = f" {self.section}" if self.section else ""
-        return f"【鹿島】{mark} {self.opponent}（{self.competition}{sec_info}）"
+        return f"【鹿島】{mark} {self.opponent}（{self.short_competition}{sec_info}）"
 
     @property
     def description(self) -> str:
@@ -117,13 +175,12 @@ class MatchEvent:
         if self.venue:
             lines.append(f"会場: {self.venue}")
 
-        # スコア判定（「vs」や空文字でなければ試合結果として表示）
+        # スコア判定（「vs」や空文字、ハイフンのみでなければ試合結果として表示）
         clean_score = self.score.strip()
         if clean_score and clean_score.lower() != "vs" and clean_score != "-":
             lines.append(f"試合結果: {clean_score}")
 
         if self.broadcast:
-            # &nbsp; 等の特殊文字を除去
             clean_bc = self.broadcast.replace("\xa0", " ").replace("&nbsp;", " ").strip()
             if clean_bc:
                 lines.append(f"TV中継・配信: {clean_bc}")
@@ -132,8 +189,68 @@ class MatchEvent:
             lines.append(f"公式詳細ページ: {self.detail_url}")
 
         lines.append("")
-        lines.append("※Jリーグ公式データサイトより自動取得した日程情報です。")
+        lines.append(f"※情報ソース: {self.source}")
         return "\n".join(lines)
+
+    def merge_with(self, other: MatchEvent) -> MatchEvent:
+        """
+        同一試合の2つのMatchEventを統合し、より充実したMatchEventを生成。
+        JFAの正式情報（詳細なラウンド名、正式会場名、PKスコア等）と
+        Jリーグデータサイトの情報（放送配信、詳細リンク等）を相互補完。
+        """
+        # キックオフ時間: 判明している方を優先
+        ko = self.kickoff_time or other.kickoff_time
+
+        # 大会名: 正式名称（より詳しい方）を優先
+        comp = self.competition if len(self.competition) >= len(other.competition) else other.competition
+
+        # 節 / ラウンド: より具体的なラウンド名（「ラウンド16」「準々決勝」「第1節」等）を優先
+        sec = self.section or other.section
+        for candidate in [other.section, self.section]:
+            if candidate and any(k in candidate for k in ["ラウンド", "回戦", "節", "準", "決勝"]):
+                sec = candidate
+                break
+
+        # ホーム / アウェイ チーム名: 正式名称・詳細名称を優先（例: セレッソ大阪 > Ｃ大阪）
+        home = self.home_team if len(self.home_team) >= len(other.home_team) else other.home_team
+        away = self.away_team if len(self.away_team) >= len(other.away_team) else other.away_team
+
+        # 会場名: より詳しいスタジアム名称を優先（例: メルカリスタジアム > メルスタ）
+        venue = self.venue if len(self.venue) >= len(other.venue) else other.venue
+
+        # スコア: 具体的なスコアが入っている方を優先
+        score = self.score
+        if not score or score.lower() in ("vs", "-"):
+            score = other.score
+        elif other.score and "pk" in other.score.lower() and "pk" not in score.lower():
+            score = other.score
+
+        # 中継・放送情報
+        broadcast = self.broadcast or other.broadcast
+
+        # 詳細URL
+        detail_url = self.detail_url or other.detail_url
+
+        # ソース表記
+        src_set = set()
+        for s in (self.source, other.source):
+            if s:
+                src_set.update(s.split(" & "))
+        combined_source = " & ".join(sorted(src_set))
+
+        return MatchEvent(
+            date=self.date,
+            competition=comp,
+            section=sec,
+            home_team=home,
+            away_team=away,
+            venue=venue,
+            score=score,
+            kickoff_time=ko,
+            detail_url=detail_url,
+            broadcast=broadcast,
+            source=combined_source,
+        )
 
 
 class J1ClubScraper:
@@ -146,7 +263,7 @@ class J1ClubScraper:
     def fetch_html(self, url: str, params: Optional[dict] = None) -> Optional[str]:
         """指定URLのHTMLを取得（エラーハンドリング付き）"""
         try:
-            logger.info(f"アクセス中: {url} (params={params})")
+            logger.info(f"[J.League Data Site] アクセス中: {url} (params={params})")
             resp = self.session.get(url, params=params, timeout=15)
             if resp.status_code != 200:
                 logger.warning(f"HTTPステータス {resp.status_code}: {url}")
@@ -164,7 +281,6 @@ class J1ClubScraper:
         """
         now = datetime.datetime.now(JST)
         current_year = now.year
-        # 1〜3月は前年のシーズン振り返りや残余日程も考慮して前年も含める
         if now.month <= 3:
             return [current_year - 1, current_year, current_year + 1]
         return [current_year, current_year + 1]
@@ -173,7 +289,7 @@ class J1ClubScraper:
         """対象年度の全スケジュールを取得して一覧化"""
         all_events: List[MatchEvent] = []
         target_years = self.get_target_years()
-        logger.info(f"取得対象年度: {target_years}")
+        logger.info(f"[J.League Data Site] 取得対象年度: {target_years}")
 
         for year in target_years:
             params = {
@@ -181,18 +297,12 @@ class J1ClubScraper:
                 "team_ids": CLUB_TEAM_ID,
                 "home_away_select": "0",  # 0 = 全て（ホーム＆アウェイ）
             }
-            events = self.scrape_year_schedule(SEARCH_URL, params)
+            events = self.scrape_year_schedule(JLEAGUE_SEARCH_URL, params)
             all_events.extend(events)
             time.sleep(REQUEST_INTERVAL_SECONDS)
 
-        # 重複排除（UID基準）＆ 日付順ソート
-        unique_events_dict = {event.uid: event for event in all_events}
-        sorted_events = sorted(
-            unique_events_dict.values(),
-            key=lambda e: (e.date, e.kickoff_time or datetime.time.min),
-        )
-        logger.info(f"合計 {len(sorted_events)} 件の鹿島アントラーズ試合日程を抽出しました。")
-        return sorted_events
+        logger.info(f"[J.League Data Site] 合計 {len(all_events)} 件の日程を抽出しました。")
+        return all_events
 
     def scrape_year_schedule(self, url: str, params: dict) -> List[MatchEvent]:
         """特定年度の検索結果ページからテーブル行を解析"""
@@ -203,7 +313,6 @@ class J1ClubScraper:
         soup = BeautifulSoup(html, "html.parser")
         events: List[MatchEvent] = []
 
-        # 検索結果テーブルの特定: table.search-table
         table = soup.find("table", class_="search-table") or soup.find("table", class_="table-base00")
         if not table:
             logger.warning(f"試合結果テーブルが見つかりませんでした: params={params}")
@@ -213,12 +322,10 @@ class J1ClubScraper:
         rows = tbody.find_all("tr")
 
         for tr in rows:
-            # ヘッダー行(thのみ)はスキップ
             if tr.find("th") and not tr.find("td"):
                 continue
 
             tds = tr.find_all("td")
-            # 必要なカラム数が揃っているかチェック（通常11列）
             if len(tds) < 8:
                 continue
 
@@ -232,21 +339,6 @@ class J1ClubScraper:
         return events
 
     def _parse_table_row(self, tds: list) -> Optional[MatchEvent]:
-        """
-        td要素リストからMatchEventを構築
-        J.League Data Site SFMS01テーブルカラム構造:
-        [0] シーズン (例: 2026/27, 2025)
-        [1] 大会 (例: Ｊ１, ルヴァンカップ)
-        [2] 節 (例: 第１節第２日)
-        [3] 試合日 (例: 25/02/15(土), 26/08/07(金))
-        [4] K/O時刻 (例: 15:03, 未定時は空文字)
-        [5] ホーム (例: 湘南, 鹿島)
-        [6] スコア (例: 1-0, vs) + 詳細リンク <a href="/SFMS02/?match_card_id=...">
-        [7] アウェイ (例: 鹿島, 東京Ｖ)
-        [8] スタジアム (例: レモンＳ, カシマ)
-        [9] 入場者数
-        [10] インターネット中継・TV放送 (例: DAZN)
-        """
         comp_text = tds[1].get_text(strip=True) if len(tds) > 1 else ""
         sec_text = tds[2].get_text(strip=True) if len(tds) > 2 else ""
         date_text = tds[3].get_text(strip=True) if len(tds) > 3 else ""
@@ -260,21 +352,17 @@ class J1ClubScraper:
         if not date_text or not (home_text or away_text):
             return None
 
-        # 日付パース
         parsed_date = self._parse_date(date_text)
         if not parsed_date:
-            logger.debug(f"日付のパースに失敗したためスキップ: {date_text}")
             return None
 
-        # キックオフ時間パース
         parsed_time = self._parse_kickoff_time(ko_text)
 
-        # 詳細ページURLの取得（スコアセル内のリンク）
         detail_url = None
         if len(tds) > 6:
             link_a = tds[6].find("a")
             if link_a and link_a.get("href"):
-                detail_url = urljoin(BASE_URL, link_a.get("href"))
+                detail_url = urljoin(JLEAGUE_DATA_BASE_URL, link_a.get("href"))
 
         return MatchEvent(
             date=parsed_date,
@@ -287,46 +375,456 @@ class J1ClubScraper:
             kickoff_time=parsed_time,
             detail_url=detail_url,
             broadcast=broadcast_text,
+            source="J.League Data Site",
         )
 
     def _parse_date(self, text: str) -> Optional[datetime.date]:
-        """
-        '25/02/15(土)', '2026/08/07(金)', '26/8/7' などの文字列から date オブジェクトを抽出
-        2桁年は2000年代として処理
-        """
-        # 全角数字・スラッシュを半角に変換
         clean_text = text.translate(str.maketrans("０１２３４５６７８９／", "0123456789/"))
         m = re.search(r"(\d{2,4})[./年](\d{1,2})[./月](\d{1,2})", clean_text)
         if not m:
             return None
 
         raw_year, month, day = int(m.group(1)), int(m.group(2)), int(m.group(3))
-        # 2桁年の場合は2000年代とみなす
-        if raw_year < 100:
-            year = 2000 + raw_year
-        else:
-            year = raw_year
-
+        year = 2000 + raw_year if raw_year < 100 else raw_year
         try:
             return datetime.date(year, month, day)
         except ValueError:
             return None
 
     def _parse_kickoff_time(self, text: str) -> Optional[datetime.time]:
-        """'15:03', '19:26' などの文字列から time オブジェクトを抽出"""
         if not text:
             return None
-
         clean_text = text.translate(str.maketrans("０１２３４５６７８９：", "0123456789:"))
         m = re.search(r"(\d{1,2}):(\d{2})", clean_text)
         if not m:
             return None
-
-        hour = int(m.group(1))
-        minute = int(m.group(2))
+        hour, minute = int(m.group(1)), int(m.group(2))
         if 0 <= hour < 24 and 0 <= minute < 60:
             return datetime.time(hour, minute)
         return None
+
+
+class JFAClubScraper:
+    """
+    JFA（日本サッカー協会）公式サイトから鹿島アントラーズの
+    天皇杯およびACL（AFC Champions League Elite / Two）の日程を取得するクラス。
+    JFAの標準データAPI（schedule.json）およびHTMLフォールバックにより自動取得。
+    """
+
+    def __init__(self, session: Optional[requests.Session] = None):
+        self.session = session or requests.Session()
+        self.session.headers.update(REQUEST_HEADERS)
+
+    def fetch_json(self, url: str) -> Optional[dict]:
+        """指定URLのJSONを取得"""
+        try:
+            logger.info(f"[JFA] JSON取得中: {url}")
+            resp = self.session.get(url, timeout=15)
+            if resp.status_code != 200:
+                logger.debug(f"[JFA] HTTP {resp.status_code}: {url}")
+                return None
+            resp.encoding = "utf-8"
+            return resp.json()
+        except Exception as e:
+            logger.debug(f"[JFA] JSON取得スキップ [{url}]: {e}")
+            return None
+
+    def fetch_html(self, url: str) -> Optional[str]:
+        """指定URLのHTMLを取得"""
+        try:
+            logger.info(f"[JFA] HTML取得中: {url}")
+            resp = self.session.get(url, timeout=15)
+            if resp.status_code != 200:
+                logger.debug(f"[JFA] HTTP {resp.status_code}: {url}")
+                return None
+            resp.encoding = resp.apparent_encoding or "utf-8"
+            return resp.text
+        except Exception as e:
+            logger.debug(f"[JFA] HTML取得エラー [{url}]: {e}")
+            return None
+
+    def scrape_all_schedules(self, target_years: List[int]) -> List[MatchEvent]:
+        """天皇杯およびACLから鹿島アントラーズの試合日程をすべて抽出"""
+        events: List[MatchEvent] = []
+
+        logger.info(f"[JFA] 天皇杯・ACL 取得開始 (対象年度: {target_years})")
+        # 1. 天皇杯の取得
+        emp_events = self.scrape_emperors_cup(target_years)
+        events.extend(emp_events)
+
+        # 2. ACL (ACLE, ACL Two, ACL) の取得
+        acl_events = self.scrape_acl(target_years)
+        events.extend(acl_events)
+
+        logger.info(f"[JFA] 天皇杯 {len(emp_events)} 件, ACL {len(acl_events)} 件, 合計 {len(events)} 件を抽出しました。")
+        return events
+
+    # -------------------------------------------------------------
+    # 天皇杯 (Emperor's Cup) 取得処理
+    # -------------------------------------------------------------
+    def scrape_emperors_cup(self, target_years: List[int]) -> List[MatchEvent]:
+        """JFA天皇杯スケジュールページおよびJSONから鹿島の試合日程を取得"""
+        events: List[MatchEvent] = []
+        found_match_keys: Set[str] = set()
+
+        # 大会トップから年度リストを発見
+        available_years = self._discover_tournament_years(f"{JFA_BASE_URL}/match/emperorscup/")
+        years_to_check = sorted(list(set(target_years + available_years)))
+
+        for year in years_to_check:
+            # 1. 公式JSONエンドポイント
+            json_url = f"{JFA_BASE_URL}/match/emperorscup_{year}/match/schedule.json"
+            data = self.fetch_json(json_url)
+            if data:
+                parsed = self._parse_jfa_schedule_json(
+                    data,
+                    default_competition=f"天皇杯 JFA 第{year}回全日本サッカー選手権大会",
+                    detail_base_url=f"{JFA_BASE_URL}/match/emperorscup_{year}/",
+                    source_label="JFA (天皇杯)",
+                )
+                for ev in parsed:
+                    key = f"{ev.date}_{ev.opponent}"
+                    if key not in found_match_keys:
+                        found_match_keys.add(key)
+                        events.append(ev)
+            else:
+                # 2. JSONが取得できない場合のHTMLフォールバック
+                html_url = f"{JFA_BASE_URL}/match/emperorscup_{year}/schedule_result/"
+                html_events = self._parse_jfa_schedule_html(
+                    html_url,
+                    default_competition="天皇杯",
+                    source_label="JFA (天皇杯)",
+                )
+                for ev in html_events:
+                    key = f"{ev.date}_{ev.opponent}"
+                    if key not in found_match_keys:
+                        found_match_keys.add(key)
+                        events.append(ev)
+
+            time.sleep(REQUEST_INTERVAL_SECONDS)
+
+        return events
+
+    # -------------------------------------------------------------
+    # ACL (AFC Champions League Elite & Two) 取得処理
+    # -------------------------------------------------------------
+    def scrape_acl(self, target_years: List[int]) -> List[MatchEvent]:
+        """JFA ACLページ群から鹿島の試合日程を取得"""
+        events: List[MatchEvent] = []
+        found_match_keys: Set[str] = set()
+
+        acl_competitions = [
+            ("acl_elite", "AFCチャンピオンズリーグ Elite"),
+            ("acl_two", "AFCチャンピオンズリーグ Two"),
+            ("acl", "AFCチャンピオンズリーグ"),
+        ]
+
+        # 代表的なステージディレクトリ
+        common_stages = [
+            "east",
+            "round16",
+            "quarterfinals",
+            "semifinals",
+            "final",
+            "playoff",
+            "",
+            "groupA",
+            "groupB",
+            "groupC",
+            "groupD",
+            "groupE",
+            "groupF",
+            "groupG",
+            "groupH",
+        ]
+
+        for comp_slug, comp_title in acl_competitions:
+            # トップページから対象年度を発見
+            top_url = f"{JFA_BASE_URL}/match/{comp_slug}/"
+            available_years = self._discover_tournament_years(top_url)
+            years_to_check = sorted(list(set(target_years + available_years)))
+
+            for year in years_to_check:
+                # HTMLからステージ一覧（jsonPath）を自動検出
+                base_page_url = f"{JFA_BASE_URL}/match/{comp_slug}_{year}/schedule_result/"
+                discovered_stages = self._discover_acl_stages(base_page_url)
+                stages_to_query = list(dict.fromkeys(discovered_stages + common_stages))
+
+                for stage in stages_to_query:
+                    stage_sub = f"{stage}/" if stage else ""
+                    json_url = f"{JFA_BASE_URL}/match/{comp_slug}_{year}/{stage_sub}match/schedule.json"
+                    data = self.fetch_json(json_url)
+                    if data:
+                        parsed = self._parse_jfa_schedule_json(
+                            data,
+                            default_competition=f"{comp_title} {year}/{year+1}",
+                            detail_base_url=f"{JFA_BASE_URL}/match/{comp_slug}_{year}/",
+                            source_label=f"JFA ({comp_title})",
+                        )
+                        for ev in parsed:
+                            key = f"{ev.date}_{ev.opponent}"
+                            if key not in found_match_keys:
+                                found_match_keys.add(key)
+                                events.append(ev)
+
+                time.sleep(REQUEST_INTERVAL_SECONDS)
+
+        return events
+
+    def _discover_tournament_years(self, url: str) -> List[int]:
+        """ページ内のセレクトボックス等から大会年度一覧を検出"""
+        html = self.fetch_html(url)
+        if not html:
+            return []
+        soup = BeautifulSoup(html, "html.parser")
+        years: List[int] = []
+        for opt in soup.find_all("option"):
+            val = opt.get("value", "")
+            text = opt.get_text()
+            m = re.search(r"(\d{4})", val) or re.search(r"(\d{4})年", text)
+            if m:
+                years.append(int(m.group(1)))
+        return list(set(years))
+
+    def _discover_acl_stages(self, url: str) -> List[str]:
+        """ACL日程ページHTMLのJavaScriptコードからjsonPathステージ名を抽出"""
+        html = self.fetch_html(url)
+        if not html:
+            return []
+        stages = []
+        # 例: ['east',''], ['round16',''], ['final','']
+        matches = re.findall(r"\['([a-zA-Z0-9_-]+)',\s*['\"]", html)
+        for stage in matches:
+            if stage and stage not in stages:
+                stages.append(stage)
+        return stages
+
+    def _parse_jfa_schedule_json(
+        self,
+        data: dict,
+        default_competition: str,
+        detail_base_url: str,
+        source_label: str,
+    ) -> List[MatchEvent]:
+        """JFAのmatch/schedule.jsonを解析し、鹿島アントラーズの試合を抽出"""
+        events: List[MatchEvent] = []
+        schedule_list = data.get("matchScheduleList", {})
+        comp_name = schedule_list.get("competitionName") or default_competition
+        matches = schedule_list.get("matchSchedule", [])
+
+        for item in matches:
+            home_name = item.get("homeTeamName", "").strip()
+            away_name = item.get("awayTeamName", "").strip()
+
+            # 鹿島アントラーズが参加している試合か判定
+            if not (is_kashima_team(home_name) or is_kashima_team(away_name)):
+                continue
+
+            date_str = item.get("matchDate", "").strip()
+            if not date_str or date_str == "未定":
+                continue
+
+            # 日付パース
+            clean_date_str = date_str.replace("-", "/").translate(str.maketrans("０１２３４５６７８９", "0123456789"))
+            m = re.search(r"(\d{4})/(\d{1,2})/(\d{1,2})", clean_date_str)
+            if not m:
+                continue
+            try:
+                parsed_date = datetime.date(int(m.group(1)), int(m.group(2)), int(m.group(3)))
+            except ValueError:
+                continue
+
+            # キックオフ時間パース
+            time_str = item.get("matchTime", "").strip()
+            parsed_time = None
+            if time_str and time_str != "未定":
+                tm = re.search(r"(\d{1,2}):(\d{2})", time_str)
+                if tm:
+                    hour, minute = int(tm.group(1)), int(tm.group(2))
+                    if 0 <= hour < 24 and 0 <= minute < 60:
+                        parsed_time = datetime.time(hour, minute)
+
+            # 会場
+            venue = item.get("venueFullName") or item.get("venue") or ""
+
+            # ラウンド・節
+            section = item.get("matchTypeName", "").strip()
+
+            # スコア
+            score_dict = item.get("score") or {}
+            home_score = str(score_dict.get("homeScore", "")).strip()
+            away_score = str(score_dict.get("awayScore", "")).strip()
+            score_text = ""
+            if home_score and away_score:
+                score_text = f"{home_score}-{away_score}"
+                home_pk = str(score_dict.get("homePKScore", "")).strip()
+                away_pk = str(score_dict.get("awayPKScore", "")).strip()
+                if home_pk and away_pk:
+                    score_text += f" (PK {home_pk}-{away_pk})"
+
+            # 詳細URL
+            match_no = item.get("matchNumber", "")
+            official_report = item.get("officialReportURL", "")
+            detail_url = None
+            if official_report:
+                detail_url = urljoin(detail_base_url, official_report)
+            elif match_no:
+                detail_url = urljoin(detail_base_url, f"match_page/m{match_no}.html")
+            else:
+                detail_url = urljoin(detail_base_url, "schedule_result/")
+
+            event = MatchEvent(
+                date=parsed_date,
+                competition=comp_name,
+                section=section,
+                home_team=home_name,
+                away_team=away_name,
+                venue=venue,
+                score=score_text,
+                kickoff_time=parsed_time,
+                detail_url=detail_url,
+                broadcast="",
+                source=source_label,
+            )
+            events.append(event)
+
+        return events
+
+    def _parse_jfa_schedule_html(
+        self,
+        url: str,
+        default_competition: str,
+        source_label: str,
+    ) -> List[MatchEvent]:
+        """HTMLテーブル構造から鹿島の試合をパースするフォールバック処理"""
+        html = self.fetch_html(url)
+        if not html:
+            return []
+
+        soup = BeautifulSoup(html, "html.parser")
+        events: List[MatchEvent] = []
+
+        tables = soup.find_all("table")
+        for table in tables:
+            rows = table.find_all("tr")
+            for tr in rows:
+                row_text = tr.get_text()
+                if not is_kashima_team(row_text):
+                    continue
+
+                tds = tr.find_all("td")
+                if len(tds) < 3:
+                    continue
+
+                # JFA標準の試合行構造
+                try:
+                    date_match = re.search(r"(\d{4})[./年](\d{1,2})[./月](\d{1,2})", row_text)
+                    if not date_match:
+                        continue
+                    p_date = datetime.date(int(date_match.group(1)), int(date_match.group(2)), int(date_match.group(3)))
+
+                    time_match = re.search(r"(\d{1,2}):(\d{2})", row_text)
+                    p_time = None
+                    if time_match:
+                        p_time = datetime.time(int(time_match.group(1)), int(time_match.group(2)))
+
+                    home_team = ""
+                    away_team = ""
+                    teams = re.findall(r"([^\s\d\-–—vsVS:：/／()（）]+(?:\s[^\s\d\-–—vsVS:：/／()（）]+)*)", row_text)
+                    for t in teams:
+                        if is_kashima_team(t):
+                            home_team = t
+                            break
+
+                    events.append(MatchEvent(
+                        date=p_date,
+                        competition=default_competition,
+                        section="",
+                        home_team=home_team or CLUB_NAME,
+                        away_team=away_team,
+                        venue="",
+                        score="",
+                        kickoff_time=p_time,
+                        detail_url=url,
+                        broadcast="",
+                        source=source_label,
+                    ))
+                except Exception as e:
+                    logger.debug(f"HTML行パーススキップ: {e}")
+
+        return events
+
+
+# -------------------------------------------------------------
+# イベント統合・マージ処理
+# -------------------------------------------------------------
+def is_same_match(e1: MatchEvent, e2: MatchEvent) -> bool:
+    """
+    2つのMatchEventが同一試合かどうかを判定
+    同日に行われ、かつホーム/アウェイ関係や大会種別・対戦相手が合致するか検証
+    """
+    if e1.date != e2.date:
+        return False
+
+    # 同じ日であれば、鹿島が同じ日に2試合することはないため原則同一試合
+    # ホーム/アウェイ関係が一致していれば確実
+    if e1.is_home == e2.is_home:
+        return True
+
+    # 大会カテゴリ（天皇杯、ACLなど）が一致していれば同一試合
+    c1 = normalize_competition_category(e1.competition)
+    c2 = normalize_competition_category(e2.competition)
+    if c1 != "other" and c1 == c2:
+        return True
+
+    return False
+
+
+def merge_schedule_events(
+    jleague_events: List[MatchEvent],
+    jfa_events: List[MatchEvent],
+) -> List[MatchEvent]:
+    """
+    Jリーグ公式データサイトのイベント群とJFA公式サイト（天皇杯・ACL）のイベント群をスマートに統合。
+    重複する試合は互いの詳細情報を合成して1つにし、新規試合はそのまま追加。
+    """
+    merged_list: List[MatchEvent] = []
+    used_jfa_indices: Set[int] = set()
+
+    # 1. Jリーグイベントをベースに、JFA側に同一試合があればマージ
+    for j_ev in jleague_events:
+        matched = False
+        for idx, jfa_ev in enumerate(jfa_events):
+            if idx not in used_jfa_indices and is_same_match(j_ev, jfa_ev):
+                merged_ev = j_ev.merge_with(jfa_ev)
+                merged_list.append(merged_ev)
+                used_jfa_indices.add(idx)
+                matched = True
+                logger.info(f"試合日程を統合しました: {merged_ev.date} {merged_ev.summary}")
+                break
+        if not matched:
+            merged_list.append(j_ev)
+
+    # 2. Jリーグ側にはなくJFA側にのみ存在する試合（天皇杯の先の日程やACLなど）を追加
+    for idx, jfa_ev in enumerate(jfa_events):
+        if idx not in used_jfa_indices:
+            merged_list.append(jfa_ev)
+            logger.info(f"JFAから新規日程を追加しました: {jfa_ev.date} {jfa_ev.summary}")
+
+    # 3. UIDによる最終重複排除（万が一の同日同条件）
+    unique_events_dict: Dict[str, MatchEvent] = {}
+    for ev in merged_list:
+        if ev.uid in unique_events_dict:
+            unique_events_dict[ev.uid] = unique_events_dict[ev.uid].merge_with(ev)
+        else:
+            unique_events_dict[ev.uid] = ev
+
+    # 4. 日付・キックオフ時間順にソート
+    sorted_events = sorted(
+        unique_events_dict.values(),
+        key=lambda e: (e.date, e.kickoff_time or datetime.time.min),
+    )
+    return sorted_events
 
 
 class ICalGenerator:
@@ -377,7 +875,7 @@ class ICalGenerator:
             "CALSCALE:GREGORIAN",
             "METHOD:PUBLISH",
             "X-WR-CALNAME:鹿島アントラーズ 試合日程",
-            "X-WR-CALDESC:Jリーグ公式データサイトより自動取得した鹿島アントラーズの最新試合日程",
+            "X-WR-CALDESC:Jリーグ公式データサイトおよびJFA公式サイトより自動取得した鹿島アントラーズの最新試合日程",
             "X-WR-TIMEZONE:Asia/Tokyo",
             "REFRESH-INTERVAL;VALUE=DURATION:P1D",
             "X-PUBLISHED-TTL:P1D",
@@ -434,16 +932,30 @@ class ICalGenerator:
 def main() -> int:
     """メイン実行処理"""
     logger.info("=== J1 鹿島アントラーズ 試合日程取得スクリプト 開始 ===")
-    scraper = J1ClubScraper()
-    events = scraper.scrape_all_schedules()
 
-    if not events:
+    # 1. Jリーグ公式データサイトからスクレイピング
+    logger.info("--- [1/3] Jリーグ公式データサイトからの日程取得 ---")
+    jleague_scraper = J1ClubScraper()
+    target_years = jleague_scraper.get_target_years()
+    jleague_events = jleague_scraper.scrape_all_schedules()
+    logger.info(f"Jリーグ公式データサイト取得結果: {len(jleague_events)} 件")
+
+    # 2. JFA公式サイト（天皇杯およびACL）からスクレイピング
+    logger.info("--- [2/3] JFA公式サイト（天皇杯・ACL）からの日程取得 ---")
+    jfa_scraper = JFAClubScraper(session=jleague_scraper.session)
+    jfa_events = jfa_scraper.scrape_all_schedules(target_years)
+    logger.info(f"JFA公式取得結果: {len(jfa_events)} 件")
+
+    # 3. 日程のマージと重複排除
+    logger.info("--- [3/3] 日程データのマージ・重複排除処理 ---")
+    merged_events = merge_schedule_events(jleague_events, jfa_events)
+
+    if not merged_events:
         logger.warning("試合日程が1件も取得できませんでした。サイト構造が変更された可能性があります。")
-        # 既存ファイル破壊防止のため正常終了
         return 0
 
-    logger.info(f"{len(events)} 件の試合日程からiCalendarデータを生成中...")
-    ics_content = ICalGenerator.generate(events)
+    logger.info(f"合計 {len(merged_events)} 件の試合日程（Jリーグ: {len(jleague_events)}, JFA: {len(jfa_events)}）からiCalendarデータを生成中...")
+    ics_content = ICalGenerator.generate(merged_events)
 
     with open(OUTPUT_ICS_PATH, "w", encoding="utf-8", newline="") as f:
         f.write(ics_content)
