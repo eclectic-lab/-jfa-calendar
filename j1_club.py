@@ -91,14 +91,15 @@ def normalize_competition_category(comp_name: str) -> str:
     """大会名を正規化して大分類キー（重複判定・UID用）を返す"""
     if not comp_name:
         return "other"
-    c = comp_name.lower()
+    # 全角→半角変換してから比較することで「Ｊ１」「ｊ１」どちらも正しく判定
+    c = to_halfwidth(comp_name).lower()
     if "天皇杯" in comp_name or "emperors" in c:
         return "emperorscup"
     if "ルヴァン" in comp_name or "levain" in c or "ナビスコ" in comp_name:
         return "levain"
     if "acl" in c or "afc" in c or "champions league" in c or "チャンピオンズリーグ" in comp_name:
         return "acl"
-    if "ｊ１" in comp_name or "j1" in c or "jリーグ" in comp_name or "ｊリーグ" in comp_name:
+    if "j1" in c or "jリーグ" in comp_name:
         return "j1"
     return "other"
 
