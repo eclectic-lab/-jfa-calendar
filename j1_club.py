@@ -72,6 +72,21 @@ def is_kashima_team(team_name: str) -> bool:
     return "鹿島" in clean or "アントラーズ" in clean or "antlers" in clean or "kashima" in clean
 
 
+def to_halfwidth(text: str) -> str:
+    """全角英数字・記号を半角に変換する"""
+    if not text:
+        return text
+    return text.translate(str.maketrans(
+        "ＡＢＣＤＥＦＧＨＩＪＫＬＭＮＯＰＱＲＳＴＵＶＷＸＹＺ"
+        "ａｂｃｄｅｆｇｈｉｊｋｌｍｎｏｐｑｒｓｔｕｖｗｘｙｚ"
+        "０１２３４５６７８９"
+        "　！＂＃＄％＆＇（）＊＋，－．／：；＜＝＞？＠［＼］＾＿｀｛｜｝～",
+        "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
+        "abcdefghijklmnopqrstuvwxyz"
+        "0123456789"
+        " !\"#$%&'()*+,-./:;<=>?@[\\]^_`{|}~"
+    ))
+
 def normalize_competition_category(comp_name: str) -> str:
     """大会名を正規化して大分類キー（重複判定・UID用）を返す"""
     if not comp_name:
@@ -149,7 +164,7 @@ class MatchEvent:
     def summary(self) -> str:
         """イベントのタイトル（例: J1[H]ガンバ大阪【第5節】）"""
         ha = "H" if self.is_home else "A"
-        sec_info = f"【{self.section}】" if self.section else ""
+        sec_info = f"【{to_halfwidth(self.section)}】" if self.section else ""
         return f"{self.short_competition}[{ha}]{self.opponent}{sec_info}"
 
     @property

@@ -52,6 +52,22 @@ REQUEST_HEADERS = {
 REQUEST_INTERVAL_SECONDS = 1.0
 
 
+def to_halfwidth(text: str) -> str:
+    """全角英数字・記号を半角に変換する"""
+    if not text:
+        return text
+    return text.translate(str.maketrans(
+        "ＡＢＣＤＥＦＧＨＩＪＫＬＭＮＯＰＱＲＳＴＵＶＷＸＹＺ"
+        "ａｂｃｄｅｆｇｈｉｊｋｌｍｎｏｐｑｒｓｔｕｖｗｘｙｚ"
+        "０１２３４５６７８９"
+        "　！＂＃＄％＆＇（）＊＋，－．／：；＜＝＞？＠［＼］＾＿｀｛｜｝～",
+        "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
+        "abcdefghijklmnopqrstuvwxyz"
+        "0123456789"
+        " !\"#$%&'()*+,-./:;<=>?@[\\]^_`{|}~"
+    ))
+
+
 @dataclass
 class MatchEvent:
     """試合日程情報を保持するデータクラス"""
@@ -98,8 +114,8 @@ class MatchEvent:
     def summary(self) -> str:
         """イベントのタイトル（例: 代表[H]ウルグアイ【W杯アジア予選】）"""
         ha = "H" if self.is_home else "A"
-        opponent_text = self.opponent if self.opponent and self.opponent != "-" else "未定"
-        comp_info = f"【{self.competition}】" if self.competition else ""
+        opponent_text = to_halfwidth(self.opponent) if self.opponent and self.opponent != "-" else "未定"
+        comp_info = f"【{to_halfwidth(self.competition)}】" if self.competition else ""
         return f"代表[{ha}]{opponent_text}{comp_info}"
 
     @property
