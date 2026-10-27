@@ -117,21 +117,17 @@ class MatchEvent:
 
     @property
     def short_competition(self) -> str:
-        """カレンダータイトル用に簡潔に短縮した大会名"""
+        """カレンダータイトル用に簡潔に短縮した大会名（略称）"""
         comp = self.competition
         cat = normalize_competition_category(comp)
         if cat == "emperorscup":
-            return "天皇杯"
+            return "天"
         if cat == "acl":
-            if "elite" in comp.lower() or "エリート" in comp:
-                return "ACLE"
-            if "two" in comp.lower() or "２" in comp or "2" in comp:
-                return "ACL2"
-            return "ACL"
+            return "AC"
         if cat == "levain":
-            return "ルヴァン杯"
+            return "LC"
         if cat == "j1":
-            return "Ｊ１"
+            return "J1"
         # 不要なプレフィックスや長い文言を切り落とし
         clean = re.sub(r"明治安田(生命)?", "", comp).strip()
         return clean if clean else comp
@@ -151,10 +147,10 @@ class MatchEvent:
 
     @property
     def summary(self) -> str:
-        """イベントのタイトル（ホームはvs、アウェイは@）"""
-        mark = "vs" if self.is_home else "@"
-        sec_info = f" {self.section}" if self.section else ""
-        return f"【鹿島】{mark} {self.opponent}（{self.short_competition}{sec_info}）"
+        """イベントのタイトル（例: J1[H]ガンバ大阪【第5節】）"""
+        ha = "H" if self.is_home else "A"
+        sec_info = f"【{self.section}】" if self.section else ""
+        return f"{self.short_competition}[{ha}]{self.opponent}{sec_info}"
 
     @property
     def description(self) -> str:

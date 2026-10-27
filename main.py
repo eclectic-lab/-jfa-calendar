@@ -71,10 +71,36 @@ class MatchEvent:
         return f"jfa-match-{self.date.strftime('%Y%m%d')}-{hash_digest}@jfa.jp"
 
     @property
+    def is_home(self) -> bool:
+        """会場名から日本国内開催か判定（ホーム試合か否か）"""
+        if not self.venue:
+            return True  # 不明の場合はホームとみなす
+        JAPAN_KEYWORDS = [
+            "東京", "大阪", "横浜", "名古屋", "福岡", "札幌", "仙台", "神戸",
+            "埼玉", "千葉", "石川", "静岡", "広島", "宮城", "新潟", "松本",
+            "沖縄", "北海道", "青森", "岩手", "秋田", "山形",
+            "茨城", "栃木", "群馬", "神奈川", "富山",
+            "福井", "山梨", "長野", "岐阜", "愛知", "三重",
+            "滋賀", "京都", "兵庫", "奈良", "和歌山", "鳥取", "島根",
+            "岡山", "山口", "徳島", "香川", "愛媛", "高知",
+            "佐賀", "長崎", "熊本", "大分", "宮崎", "鹿児島",
+            "国立競技場", "日産スタジアム", "ドエーム", "ドラゴンズスタジアム",
+            "ガンバ大阪スタジアム", "ノエビアスタジアム", "エコパスタジアム",
+            "パナソニックスタジアム", "マリノールスタジアム", "シリウススタジアム",
+            "スキャンディコスタジアム", "ブランメルスタジアム",
+            "レビンスタジアム", "エコパチスタジアム", "モイーエカスタザン",
+            "ヤンマースタジアム", "メッツ ライフパーク", "メルカリスタジアム",
+            "Japan", "JAPAN",
+        ]
+        return any(kw in self.venue for kw in JAPAN_KEYWORDS)
+
+    @property
     def summary(self) -> str:
-        """イベントのタイトル"""
+        """イベントのタイトル（例: 代表[H]ウルグアイ【W杯アジア予選】）"""
+        ha = "H" if self.is_home else "A"
         opponent_text = self.opponent if self.opponent and self.opponent != "-" else "未定"
-        return f"【日本代表】vs {opponent_text}（{self.competition}）"
+        comp_info = f"【{self.competition}】" if self.competition else ""
+        return f"代表[{ha}]{opponent_text}{comp_info}"
 
     @property
     def description(self) -> str:
