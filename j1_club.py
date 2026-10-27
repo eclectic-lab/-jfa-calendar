@@ -87,6 +87,26 @@ def to_halfwidth(text: str) -> str:
         " !\"#$%&'()*+,-./:;<=>?@[\\]^_`{|}~"
     ))
 
+# チーム名の短縮表記マッピング（キーの部分文字列が一致した場合に短縮表記を返す）
+# 優先度順に記載（長い・より具体的なものを先に）
+TEAM_SHORT_NAMES: list[tuple[str, str]] = [
+    ("セレッソ大阪", "C大阪"),
+    ("Ｃ大阪", "C大阪"),
+    ("ヴァンフォーレ甲府", "甲府"),
+    ("川崎Ｆ", "川崎F"),
+    ("東京Ｖ", "東京V"),
+    ("Ｇ大阪", "G大阪"),
+]
+
+
+def normalize_team_name(team_name: str) -> str:
+    """チーム名を短縮表記に変換する（辞書に登録のないチームはそのまま返す）"""
+    for keyword, short in TEAM_SHORT_NAMES:
+        if keyword in team_name:
+            return short
+    return team_name
+
+
 def normalize_competition_category(comp_name: str) -> str:
     """大会名を正規化して大分類キー（重複判定・UID用）を返す"""
     if not comp_name:
@@ -163,10 +183,11 @@ class MatchEvent:
 
     @property
     def summary(self) -> str:
-        """イベントのタイトル（例: J1[H]ガンバ大阪【第5節】）"""
+        """イベントのタイトル（例: J1[H]C大阪【第5節】）"""
         ha = "H" if self.is_home else "A"
         sec_info = f"【{to_halfwidth(self.section)}】" if self.section else ""
-        return f"{self.short_competition}[{ha}]{self.opponent}{sec_info}"
+        opponent_display = normalize_team_name(self.opponent)
+        return f"{self.short_competition}[{ha}]{opponent_display}{sec_info}"
 
     @property
     def description(self) -> str:
