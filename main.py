@@ -12,14 +12,19 @@ from __future__ import annotations
 
 import datetime
 import hashlib
+import json
 import logging
 import re
 import sys
 import time
 from dataclasses import dataclass
-from typing import List, Optional
+from typing import Dict, List, Optional, Tuple
 from urllib.parse import urljoin
-from zoneinfo import ZoneInfo
+try:
+    from zoneinfo import ZoneInfo
+    JST = ZoneInfo("Asia/Tokyo")
+except Exception:
+    JST = datetime.timezone(datetime.timedelta(hours=9), name="JST")
 
 import requests
 from bs4 import BeautifulSoup
@@ -33,7 +38,6 @@ logging.basicConfig(
 logger = logging.getLogger(__name__)
 
 # 定数
-JST = ZoneInfo("Asia/Tokyo")
 BASE_URL = "https://www.jfa.jp"
 SCHEDULE_BASE_URL = "https://www.jfa.jp/samuraiblue/schedule_result/"
 OUTPUT_ICS_PATH = "japan_national_team.ics"
@@ -49,7 +53,59 @@ REQUEST_HEADERS = {
 }
 
 # 相手サーバー負荷軽減のためのリクエスト間隔（秒）
-REQUEST_INTERVAL_SECONDS = 1.0
+REQUEST_INTERVAL_SECONDS = 0.5
+
+# 日本国内判定用キーワード
+JAPAN_KEYWORDS = [
+    "東京", "大阪", "横浜", "名古屋", "福岡", "札幌", "仙台", "神戸",
+    "埼玉", "千葉", "石川", "静岡", "広島", "宮城", "新潟", "松本",
+    "沖縄", "北海道", "青森", "岩手", "秋田", "山形",
+    "茨城", "栃木", "群馬", "神奈川", "富山",
+    "福井", "山梨", "長野", "岐阜", "愛知", "三重",
+    "滋賀", "京都", "兵庫", "奈良", "和歌山", "鳥取", "島根",
+    "岡山", "山口", "徳島", "香川", "愛媛", "高知",
+    "佐賀", "長崎", "熊本", "大分", "宮崎", "鹿児島",
+    "国立競技場", "日産スタジアム", "パナソニックスタジアム", "パナソニック スタジアム",
+    "エディオンピースウイング広島", "キューアンドエースタジアムみやぎ",
+    "Japan", "JAPAN",
+]
+
+# 海外会場・国別の日本時間との時差（JST - 現地時間、単位: 時間）
+VENUE_TIME_DIFF = {
+    # アメリカ・メキシコ・カナダ (W杯 2026 JFA公式サイト定義準拠)
+    "バンクーバー(カナダ)／BCプレイスバンクーバー": 16,
+    "シアトル(アメリカ)／シアトルスタジアム": 16,
+    "サンフランシスコ・ベイエリア(アメリカ)／サンフランシスコベイエリアスタジアム": 16,
+    "ロサンゼルス(アメリカ)／ロサンゼルススタジアム": 16,
+    "グアダラハラ(メキシコ)／グアダラハラスタジアム": 15,
+    "メキシコシティ(メキシコ)／メキシコシティスタジアム": 15,
+    "モンテレイ(メキシコ)／モンテレイスタジアム": 15,
+    "ヒューストン(アメリカ)／ヒューストンスタジアム": 14,
+    "ダラス(アメリカ)／ダラススタジアム": 14,
+    "カンザスシティ(アメリカ)／カンザスシティスタジアム": 14,
+    "アトランタ(アメリカ)／アトランタスタジアム": 13,
+    "マイアミ(アメリカ)／マイアミスタジアム": 13,
+    "トロント(カナダ)／トロントスタジアム": 13,
+    "ボストン(アメリカ)／ボストンスタジアム": 13,
+    "フィラデルフィア(アメリカ)／フィラデルフィアスタジアム": 13,
+    "ニューヨーク(アメリカ)／ニューヨークニュージャージースタジアム": 13,
+    # サウジアラビア (AFC アジアカップ 2027)
+    "Prince Abdullah Al Faisal Sports City Stadium": 6,
+    "Al Shabab Stadium": 6,
+    "King Saud University Stadium": 6,
+    "サウジアラビア": 6,
+    "ジッダ": 6,
+    "ジェッダ": 6,
+    "リヤド": 6,
+    # シンガポール
+    "シンガポールナショナルスタジアム": 1,
+    "シンガポール": 1,
+    # イギリス
+    "グラスゴー(スコットランド)／ハムデン・パーク": 8,
+    "ロンドン(イングランド)／ウェンブリー・スタジアム": 8,
+    "スコットランド": 8,
+    "イングランド": 8,
+}
 
 
 def to_halfwidth(text: str) -> str:
@@ -90,29 +146,12 @@ class MatchEvent:
     def is_home(self) -> bool:
         """会場名から日本国内開催か判定（ホーム試合か否か）"""
         if not self.venue:
-            return True  # 不明の場合はホームとみなす
-        JAPAN_KEYWORDS = [
-            "東京", "大阪", "横浜", "名古屋", "福岡", "札幌", "仙台", "神戸",
-            "埼玉", "千葉", "石川", "静岡", "広島", "宮城", "新潟", "松本",
-            "沖縄", "北海道", "青森", "岩手", "秋田", "山形",
-            "茨城", "栃木", "群馬", "神奈川", "富山",
-            "福井", "山梨", "長野", "岐阜", "愛知", "三重",
-            "滋賀", "京都", "兵庫", "奈良", "和歌山", "鳥取", "島根",
-            "岡山", "山口", "徳島", "香川", "愛媛", "高知",
-            "佐賀", "長崎", "熊本", "大分", "宮崎", "鹿児島",
-            "国立競技場", "日産スタジアム", "ドエーム", "ドラゴンズスタジアム",
-            "ガンバ大阪スタジアム", "ノエビアスタジアム", "エコパスタジアム",
-            "パナソニックスタジアム", "マリノールスタジアム", "シリウススタジアム",
-            "スキャンディコスタジアム", "ブランメルスタジアム",
-            "レビンスタジアム", "エコパチスタジアム", "モイーエカスタザン",
-            "ヤンマースタジアム", "メッツ ライフパーク", "メルカリスタジアム",
-            "Japan", "JAPAN",
-        ]
+            return True
         return any(kw in self.venue for kw in JAPAN_KEYWORDS)
 
     @property
     def summary(self) -> str:
-        """イベントのタイトル（例: 代表[H]ウルグアイ【W杯アジア予選】）"""
+        """イベントのタイトル（例: 代表[H]ウルグアイ【キリンチャレンジカップ2026】）"""
         ha = "H" if self.is_home else "A"
         opponent_text = to_halfwidth(self.opponent) if self.opponent and self.opponent != "-" else "未定"
         comp_info = f"【{to_halfwidth(self.competition)}】" if self.competition else ""
@@ -150,22 +189,28 @@ class JFAScraper:
     def __init__(self, session: Optional[requests.Session] = None):
         self.session = session or requests.Session()
         self.session.headers.update(REQUEST_HEADERS)
-        self.cached_details: dict[str, Optional[datetime.time]] = {}
+        self.cached_page_html: Dict[str, str] = {}
+        self.json_matches_by_year: Dict[int, List[dict]] = {}
 
     def fetch_html(self, url: str) -> Optional[str]:
-        """指定URLのHTMLを取得（エラーハンドリング付き）"""
+        """指定URLのHTMLを取得（エラーハンドリング・エンコーディング自動補正付き）"""
+        if url in self.cached_page_html:
+            return self.cached_page_html[url]
+
         try:
             logger.info(f"アクセス中: {url}")
             resp = self.session.get(url, timeout=15)
-            resp.raise_for_state = False
             if resp.status_code != 200:
                 logger.warning(f"HTTPステータス {resp.status_code}: {url}")
+                self.cached_page_html[url] = ""
                 return None
-            # エンコーディングの自動判別補正
             resp.encoding = resp.apparent_encoding or "utf-8"
-            return resp.text
+            html_text = resp.text
+            self.cached_page_html[url] = html_text
+            return html_text
         except requests.RequestException as e:
             logger.error(f"リクエストエラー [{url}]: {e}")
+            self.cached_page_html[url] = ""
             return None
 
     def get_target_years(self) -> List[int]:
@@ -179,10 +224,8 @@ class JFAScraper:
         all_events: List[MatchEvent] = []
         target_years = self.get_target_years()
 
-        # トップページからアーカイブ選択肢があれば年度を取得
         available_years = self._discover_available_years()
         years_to_scrape = sorted(list(set(target_years + available_years)))
-        # あまりに昔の年まで遡らないよう、今年以降（または前年含む直近）に限定
         now_year = datetime.datetime.now(JST).year
         years_to_scrape = [y for y in years_to_scrape if y >= now_year - 1 and y <= now_year + 2]
 
@@ -212,7 +255,6 @@ class JFAScraper:
             for opt in select_elem.find_all("option"):
                 val = opt.get("value", "")
                 text = opt.get_text()
-                # URLから年度抽出
                 match = re.search(r"(\d{4})\.html", val) or re.search(r"(\d{4})年", text)
                 if match:
                     years.append(int(match.group(1)))
@@ -227,7 +269,6 @@ class JFAScraper:
         soup = BeautifulSoup(html, "html.parser")
         events: List[MatchEvent] = []
 
-        # テーブルの探索: class="col6" または tableタグ
         tables = soup.find_all("table")
         schedule_table = None
         for table in tables:
@@ -244,7 +285,6 @@ class JFAScraper:
         rows = tbody.find_all("tr")
 
         for tr in rows:
-            # thを含むヘッダー行はスキップ
             if tr.find("th") or not tr.find_all("td"):
                 continue
 
@@ -255,11 +295,15 @@ class JFAScraper:
             try:
                 event = self._parse_table_row(tds, default_year)
                 if event:
-                    # 詳細ページからキックオフ時間の取得を試みる
-                    if event.detail_url:
-                        kickoff = self._fetch_kickoff_time(event.detail_url)
-                        if kickoff:
-                            event.kickoff_time = kickoff
+                    resolved_date, kickoff = self._resolve_kickoff_datetime(
+                        target_date=event.date,
+                        opponent=event.opponent,
+                        comp=event.competition,
+                        venue=event.venue,
+                        detail_url=event.detail_url,
+                    )
+                    event.date = resolved_date
+                    event.kickoff_time = kickoff
                     events.append(event)
             except Exception as e:
                 logger.error(f"行の解析中にエラーが発生しました: {e}", exc_info=True)
@@ -268,7 +312,6 @@ class JFAScraper:
 
     def _parse_table_row(self, tds: list, default_year: int) -> Optional[MatchEvent]:
         """td要素リストからMatchEventを構築"""
-        # クラス名による特定、または列インデックスによるフォールバック
         date_td = None
         comp_td = None
         score_td = None
@@ -289,7 +332,6 @@ class JFAScraper:
             elif "place" in class_str:
                 place_td = td
 
-        # クラス名で見つからなかった場合のインデックスフォールバック (通常: 日付, 試合名, スコア, 対戦相手, 会場)
         if not date_td and len(tds) >= 1:
             date_td = tds[0]
         if not comp_td and len(tds) >= 2:
@@ -310,13 +352,11 @@ class JFAScraper:
         if not date_text or not comp_text:
             return None
 
-        # 日付のパース
         parsed_date = self._parse_date(date_text, default_year)
         if not parsed_date:
             logger.debug(f"日付のパースに失敗したためスキップ: {date_text}")
             return None
 
-        # 詳細ページURLの取得
         detail_url = None
         if comp_td:
             link_a = comp_td.find("a")
@@ -333,20 +373,14 @@ class JFAScraper:
         )
 
     def _parse_date(self, text: str, default_year: int) -> Optional[datetime.date]:
-        """
-        '3/20(木・祝)', '2027/1/11(月)', '12/30(水)' などの文字列から date オブジェクトを抽出
-        """
-        # 全角英数を半角に変換
+        """文字列から date オブジェクトを抽出"""
         clean_text = text.translate(str.maketrans("０１２３４５６７８９／", "0123456789/"))
 
-        # 年・月・日パターン
-        # 1) YYYY/M/D or YYYY年M月D日
         m = re.search(r"(\d{4})[./年](\d{1,2})[./月](\d{1,2})", clean_text)
         if m:
             year, month, day = int(m.group(1)), int(m.group(2)), int(m.group(3))
             return datetime.date(year, month, day)
 
-        # 2) M/D or M月D日（年はdefault_year）
         m2 = re.search(r"(\d{1,2})[./月](\d{1,2})", clean_text)
         if m2:
             month, day = int(m2.group(1)), int(m2.group(2))
@@ -354,44 +388,190 @@ class JFAScraper:
 
         return None
 
-    def _fetch_kickoff_time(self, url: str) -> Optional[datetime.time]:
-        """詳細ページにアクセスしてキックオフ時間を取得（負荷軽減スリープ付き）"""
-        if url in self.cached_details:
-            return self.cached_details[url]
+    def _resolve_kickoff_datetime(
+        self,
+        target_date: datetime.date,
+        opponent: str,
+        comp: str,
+        venue: str,
+        detail_url: Optional[str],
+    ) -> Tuple[datetime.date, Optional[datetime.time]]:
+        """
+        公式JSON、詳細ページ、時差計算を統合して正確な日本時間（JST）の日時を解決する。
+        """
+        resolved_date = target_date
+        resolved_time: Optional[datetime.time] = None
 
-        time.sleep(REQUEST_INTERVAL_SECONDS)
-        html = self.fetch_html(url)
-        if not html:
-            self.cached_details[url] = None
+        # 1. 公式JSONからのマッチング・時差算出
+        matched_json = self._find_json_match(target_date, opponent, comp, venue)
+        if matched_json:
+            jst_dt = self._calculate_jst_from_json(matched_json, venue)
+            if jst_dt:
+                resolved_date = jst_dt.date()
+                resolved_time = jst_dt.time()
+                logger.debug(f"JSONより取得: {opponent} -> {resolved_date} {resolved_time} (JST)")
+
+        # 2. 詳細ページがある場合、ページ内の特定表記を解析
+        if detail_url:
+            time.sleep(REQUEST_INTERVAL_SECONDS)
+            html = self.fetch_html(detail_url)
+            if html:
+                soup = BeautifulSoup(html, "html.parser")
+                text = soup.get_text()
+
+                # 未定・調整中の確認
+                if "キックオフ時間調整中" in text or "キックオフ未定" in text:
+                    if opponent in ["未定", "-"] or "対戦国調整中" in text or opponent in text:
+                        logger.info(f"キックオフ未定と確認: {opponent} ({detail_url})")
+                        return (target_date, None)
+
+                # 最優先: 「日本時間 H:MM」の明記（アウェイ戦での表記）
+                # 例: "日本時間 3/29(日) 2:00", "日本時間 4/1(水) 3:45"
+                m_jst = re.search(
+                    r'日本時間(?:[^\d\n\r]*\d{1,2}/\d{1,2}(?:\([^\)]+\))?)?[^\d\n\r]*(\d{1,2})[:：](\d{2})',
+                    text,
+                )
+                if m_jst:
+                    h, mi = int(m_jst.group(1)), int(m_jst.group(2))
+                    if 0 <= h < 24 and 0 <= mi < 60:
+                        resolved_time = datetime.time(h, mi)
+                        logger.info(f"詳細ページより日本時間取得成功 [{detail_url}]: {resolved_time.strftime('%H:%M')}")
+
+                # JSONで取得できなかった場合のフォールバック（日本国内開催）
+                elif not resolved_time:
+                    is_japan = any(k in venue for k in JAPAN_KEYWORDS)
+                    if is_japan:
+                        # 複数時間表記 (例: 15:10/19:10キックオフ予定 -> 第2試合が代表戦)
+                        m_multi = re.search(r'(\d{1,2}:\d{2})\s*/\s*(\d{1,2}:\d{2})\s*(?:キックオフ|KickOff)', text, re.I)
+                        if m_multi:
+                            h, mi = map(int, m_multi.group(2).split(':'))
+                            resolved_time = datetime.time(h, mi)
+                            logger.info(f"詳細ページ複数時間表記より取得 [{detail_url}]: {resolved_time.strftime('%H:%M')}")
+                        else:
+                            patterns = [
+                                r'(\d{1,2})[:：](\d{2})\s*(?:KickOff|キックオフ|KICK\s*OFF)',
+                                r'(\d{1,2})時(\d{2})分\s*(?:KickOff|キックオフ|KICK\s*OFF)?',
+                                r'(?:KickOff|キックオフ)\s*[:：]?\s*(\d{1,2})[:：](\d{2})',
+                            ]
+                            for pat in patterns:
+                                m = re.search(pat, text, re.I)
+                                if m:
+                                    h, mi = int(m.group(1)), int(m.group(2))
+                                    if 0 <= h < 24 and 0 <= mi < 60:
+                                        resolved_time = datetime.time(h, mi)
+                                        logger.info(f"詳細ページキックオフ時刻取得 [{detail_url}]: {resolved_time.strftime('%H:%M')}")
+                                        break
+
+        if resolved_time:
+            logger.info(f"試合時間決定: {resolved_date} {resolved_time.strftime('%H:%M')} JST | vs {opponent}")
+        else:
+            logger.info(f"試合時間未定: {resolved_date} | vs {opponent}")
+
+        return (resolved_date, resolved_time)
+
+    def _load_json_matches(self, year: int) -> List[dict]:
+        """JFA公式の年度別全代表戦JSONを取得してキャッシュ"""
+        if year in self.json_matches_by_year:
+            return self.json_matches_by_year[year]
+
+        url = f"https://www.jfa.jp/national_team/inc/schedule_result/samuraiblue_{year}.json"
+        try:
+            logger.info(f"JSONデータ取得中: {url}")
+            resp = self.session.get(url, timeout=15)
+            if resp.status_code == 200:
+                resp.encoding = resp.apparent_encoding or "utf-8"
+                text = resp.text
+                # JFA公式JSONの文法エラー（カンマ欠落・末尾余分カンマ）を補正
+                cleaned = re.sub(r'("|\d|true|false|null)\s*\n(\s*")', r'\1,\n\2', text)
+                cleaned = re.sub(r',\s*([}\]])', r'\1', cleaned)
+                data = json.loads(cleaned)
+                matches = data.get("match", [])
+                jp_matches = [
+                    m for m in matches
+                    if "日本" in m.get("homeTeamName", "") or "日本" in m.get("awayTeamName", "")
+                ]
+                self.json_matches_by_year[year] = jp_matches
+                return jp_matches
+        except Exception as e:
+            logger.warning(f"公式JSON取得・解析スキップ [{url}]: {e}")
+
+        self.json_matches_by_year[year] = []
+        return []
+
+    def _find_json_match(
+        self,
+        target_date: datetime.date,
+        opponent: str,
+        comp: str,
+        venue: str,
+    ) -> Optional[dict]:
+        """公式JSON内の日本代表戦リストから、対象試合を照合して特定"""
+        years = [target_date.year, target_date.year - 1, target_date.year + 1]
+        clean_opp = re.sub(r'\s+', '', opponent).lower()
+        clean_comp = re.sub(r'\s+', '', comp).lower()
+
+        candidates = []
+        for y in years:
+            matches = self._load_json_matches(y)
+            for m in matches:
+                home = m.get("homeTeamName", "")
+                away = m.get("awayTeamName", "")
+                m_opp = home if "日本" not in home else away
+                clean_m_opp = re.sub(r'\s+', '', m_opp).lower()
+
+                m_date_str = m.get("matchDate", "")
+                if not m_date_str:
+                    continue
+                try:
+                    my, mm, md = map(int, m_date_str.split('/'))
+                    m_date = datetime.date(my, mm, md)
+                except Exception:
+                    continue
+
+                opp_match = bool(clean_opp and clean_m_opp and (clean_opp in clean_m_opp or clean_m_opp in clean_opp))
+                date_diff = abs((m_date - target_date).days)
+
+                if date_diff <= 1:
+                    score = 0
+                    if opp_match:
+                        score += 10
+                    clean_m_comp = re.sub(r'\s+', '', m.get("competitionName", "")).lower()
+                    if clean_comp in clean_m_comp or clean_m_comp in clean_comp:
+                        score += 5
+                    if date_diff == 0:
+                        score += 3
+                    if score >= 8:
+                        candidates.append((score, m))
+
+        if candidates:
+            candidates.sort(key=lambda x: x[0], reverse=True)
+            return candidates[0][1]
+        return None
+
+    def _calculate_jst_from_json(self, m: dict, fallback_venue: str) -> Optional[datetime.datetime]:
+        """公式JSONの現地日時から時差を適用して日本時間（JST）を算出"""
+        m_date_str = m.get("matchDate", "")
+        m_time_str = m.get("matchTime", "")
+        if not m_date_str or not m_time_str:
             return None
 
-        soup = BeautifulSoup(html, "html.parser")
-        kickoff_time: Optional[datetime.time] = None
+        try:
+            my, mm, md = map(int, m_date_str.split('/'))
+            mh, mmi = map(int, m_time_str.split(':'))
+            local_dt = datetime.datetime(my, mm, md, mh, mmi)
+        except Exception:
+            return None
 
-        # パターン1: <div class="text-schedule">... 19:35 KickOff ...</div>
-        schedule_div = soup.find("div", class_="text-schedule")
-        div_text = schedule_div.get_text() if schedule_div else soup.get_text()
-
-        # 正規表現パターン
-        # 例: 19:35 KickOff, 19:30キックオフ, 19時35分
-        patterns = [
-            r"(\d{1,2}):(\d{2})\s*(?:KickOff|キックオフ|KICK\s*OFF)",
-            r"(\d{1,2})時(\d{2})分\s*(?:KickOff|キックオフ|KICK\s*OFF)?",
-            r"(?:KickOff|キックオフ)\s*[:：]?\s*(\d{1,2}):(\d{2})",
-        ]
-
-        for pat in patterns:
-            match = re.search(pat, div_text, re.IGNORECASE)
-            if match:
-                hour = int(match.group(1))
-                minute = int(match.group(2))
-                if 0 <= hour < 24 and 0 <= minute < 60:
-                    kickoff_time = datetime.time(hour, minute)
-                    logger.info(f"キックオフ時刻取得成功 [{url}]: {kickoff_time.strftime('%H:%M')}")
+        venue_text = m.get("venue", "") + " " + m.get("venueFullName", "") + " " + fallback_venue
+        diff = 0
+        if not any(k in venue_text for k in JAPAN_KEYWORDS):
+            for v_key, d_val in VENUE_TIME_DIFF.items():
+                if v_key in venue_text:
+                    diff = d_val
                     break
 
-        self.cached_details[url] = kickoff_time
-        return kickoff_time
+        jst_dt = (local_dt + datetime.timedelta(hours=diff)).replace(tzinfo=JST)
+        return jst_dt
 
 
 class ICalGenerator:
@@ -504,7 +684,6 @@ def main() -> int:
 
     if not events:
         logger.warning("試合日程が1件も取得できませんでした。サイト構造が変更された可能性があります。")
-        # 既存のファイルがあれば壊さないように終了ステータス0で抜けるか警告
         return 0
 
     logger.info(f"{len(events)} 件の試合日程からiCalendarデータを生成中...")
