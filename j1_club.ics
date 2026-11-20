@@ -21,17 +21,17 @@ END:STANDARD
 END:VTIMEZONE
 BEGIN:VEVENT
 UID:j1-club-antlers-20150225-a7c764ec1cee3003@kashima.antlers
-DTSTAMP:20261120T014426Z
+DTSTAMP:20261120T104856Z
 DTSTART;TZID=Asia/Tokyo:20150225T190000
 DTEND;TZID=Asia/Tokyo:20150225T210000
 SUMMARY:AC[H]ウェスタン・シドニー・ワンダラーズ【第1節
  】
-DESCRIPTION:大会名: AFCチャンピオンズリーグ2015　groupH\n節
-  / ラウンド: 第1節\n対戦カード: 鹿島アントラーズ vs ウ
+DESCRIPTION:大会名: AFCチャンピオンズリーグ2015　groupH\n節 
+ / ラウンド: 第1節\n対戦カード: 鹿島アントラーズ vs ウ
  ェスタン・シドニー・ワンダラーズ\nキックオフ: 19:00 (
  JST)\n会場: 茨城県立カシマサッカースタジアム\n試合結
- : 1-3\n公式詳細ページ: https://www.jfa.jp/match/acl_2015/match_pa
- ge/m1.html\n\n※情報ソース: JFA (AFCチャンピオンズリーグ)
+ 果: 1-3\n公式詳細ページ: https://www.jfa.jp/match/acl_2015/match_p
+ age/m1.html\n\n※情報ソース: JFA (AFCチャンピオンズリーグ)
 LOCATION:茨城県立カシマサッカースタジアム
 URL:https://www.jfa.jp/match/acl_2015/match_page/m1.html
 STATUS:CONFIRMED
@@ -39,16 +39,16 @@ TRANSP:OPAQUE
 END:VEVENT
 BEGIN:VEVENT
 UID:j1-club-antlers-20150304-792bd0c9b07de3a6@kashima.antlers
-DTSTAMP:20261120T014426Z
+DTSTAMP:20261120T104856Z
 DTSTART;TZID=Asia/Tokyo:20150304T193000
 DTEND;TZID=Asia/Tokyo:20150304T213000
 SUMMARY:AC[A]ＦＣソウル【第2節】
-DESCRIPTION:大会名: AFCチャンピオンズリーグ2015　groupH\n節
-  / ラウンド: 第2節\n対戦カード: ＦＣソウル vs 鹿島アン
+DESCRIPTION:大会名: AFCチャンピオンズリーグ2015　groupH\n節 
+ / ラウンド: 第2節\n対戦カード: ＦＣソウル vs 鹿島アン
  トラーズ\nキックオフ: 19:30 (JST)\n会場: ソウルワールド
- ップスタジアム\n試合結果: 1-0\n公式詳細ページ: https:/
- /www.jfa.jp/match/acl_2015/match_page/m4.html\n\n※情報ソース: JFA (
- AFCチャンピオンズリーグ)
+ カップスタジアム\n試合結果: 1-0\n公式詳細ページ: https:
+ //www.jfa.jp/match/acl_2015/match_page/m4.html\n\n※情報ソース: JFA 
+ (AFCチャンピオンズリーグ)
 LOCATION:ソウルワールドカップスタジアム
 URL:https://www.jfa.jp/match/acl_2015/match_page/m4.html
 STATUS:CONFIRMED
@@ -56,12 +56,12 @@ TRANSP:OPAQUE
 END:VEVENT
 BEGIN:VEVENT
 UID:j1-club-antlers-20150318-6b0d16bf28184783@kashima.antlers
-DTSTAMP:20261120T014426Z
+DTSTAMP:20261120T104856Z
 DTSTART;TZID=Asia/Tokyo:20150318T200000
 DTEND;TZID=Asia/Tokyo:20150318T220000
 SUMMARY:AC[A]広州恒大【第3節】
-DESCRIPTION:大会名: AFCチャンピオンズリーグ2015　groupH\n節
-  / ラウンド: 第3節\n対戦カード: 広州恒大 vs 鹿島アント
+DESCRIPTION:大会名: AFCチャンピオンズリーグ2015　groupH\n節 
+ / ラウンド: 第3節\n対戦カード: 広州恒大 vs 鹿島アント
  ラーズ\nキックオフ: 20:00 (JST)\n会場: 広州天河体育中心\
  n試合結果: 4-3\n公式詳細ページ: https://www.jfa.jp/match/acl_20
  15/match_page/m6.html\n\n※情報ソース: JFA (AFCチャンピオンズ
@@ -73,16 +73,16 @@ TRANSP:OPAQUE
 END:VEVENT
 BEGIN:VEVENT
 UID:j1-club-antlers-20150407-a17bcd7d00333065@kashima.antlers
-DTSTAMP:20261120T014426Z
+DTSTAMP:20261120T104856Z
 DTSTART;TZID=Asia/Tokyo:20150407T190000
 DTEND;TZID=Asia/Tokyo:20150407T210000
 SUMMARY:AC[H]広州恒大【第4節】
-DESCRIPTION:大会名: AFCチャンピオンズリーグ2015　groupH\n節
-  / ラウンド: 第4節\n対戦カード: 鹿島アントラーズ vs 広
+DESCRIPTION:大会名: AFCチャンピオンズリーグ2015　groupH\n節 
+ / ラウンド: 第4節\n対戦カード: 鹿島アントラーズ vs 広
  州恒大\nキックオフ: 19:00 (JST)\n会場: 茨城県立カシマサ
- カースタジアム\n試合結果: 2-1\n公式詳細ページ: https:/
- /www.jfa.jp/match/acl_2015/match_page/m8.html\n\n※情報ソース: JFA (
- AFCチャンピオンズリーグ)
+ ッカースタジアム\n試合結果: 2-1\n公式詳細ページ: https:
+ //www.jfa.jp/match/acl_2015/match_page/m8.html\n\n※情報ソース: JFA 
+ (AFCチャンピオンズリーグ)
 LOCATION:茨城県立カシマサッカースタジアム
 URL:https://www.jfa.jp/match/acl_2015/match_page/m8.html
 STATUS:CONFIRMED
@@ -90,17 +90,17 @@ TRANSP:OPAQUE
 END:VEVENT
 BEGIN:VEVENT
 UID:j1-club-antlers-20150421-66d90b1b74bdfe55@kashima.antlers
-DTSTAMP:20261120T014426Z
+DTSTAMP:20261120T104856Z
 DTSTART;TZID=Asia/Tokyo:20150421T193000
 DTEND;TZID=Asia/Tokyo:20150421T213000
 SUMMARY:AC[A]ウェスタン・シドニー・ワンダラーズ【第5節
  】
-DESCRIPTION:大会名: AFCチャンピオンズリーグ2015　groupH\n節
-  / ラウンド: 第5節\n対戦カード: ウェスタン・シドニー
- ワンダラーズ vs 鹿島アントラーズ\nキックオフ: 19:30 (
- JST)\n会場: パラマッタスタジアム\n試合結果: 1-2\n公式詳
- 細ページ: https://www.jfa.jp/match/acl_2015/match_page/m9.html\n\n※
- 報ソース: JFA (AFCチャンピオンズリーグ)
+DESCRIPTION:大会名: AFCチャンピオンズリーグ2015　groupH\n節 
+ / ラウンド: 第5節\n対戦カード: ウェスタン・シドニー
+ ・ワンダラーズ vs 鹿島アントラーズ\nキックオフ: 19:30 
+ (JST)\n会場: パラマッタスタジアム\n試合結果: 1-2\n公式
+ 詳細ページ: https://www.jfa.jp/match/acl_2015/match_page/m9.html\n\n
+ ※情報ソース: JFA (AFCチャンピオンズリーグ)
 LOCATION:パラマッタスタジアム
 URL:https://www.jfa.jp/match/acl_2015/match_page/m9.html
 STATUS:CONFIRMED
@@ -108,16 +108,16 @@ TRANSP:OPAQUE
 END:VEVENT
 BEGIN:VEVENT
 UID:j1-club-antlers-20150505-bb8bbdec1505c9b7@kashima.antlers
-DTSTAMP:20261120T014426Z
+DTSTAMP:20261120T104856Z
 DTSTART;TZID=Asia/Tokyo:20150505T200000
 DTEND;TZID=Asia/Tokyo:20150505T220000
 SUMMARY:AC[H]ＦＣソウル【第6節】
-DESCRIPTION:大会名: AFCチャンピオンズリーグ2015　groupH\n節
-  / ラウンド: 第6節\n対戦カード: 鹿島アントラーズ vs Ｆ
+DESCRIPTION:大会名: AFCチャンピオンズリーグ2015　groupH\n節 
+ / ラウンド: 第6節\n対戦カード: 鹿島アントラーズ vs Ｆ
  Ｃソウル\nキックオフ: 20:00 (JST)\n会場: 茨城県立カシマ
- ッカースタジアム\n試合結果: 2-3\n公式詳細ページ: http
- s://www.jfa.jp/match/acl_2015/match_page/m11.html\n\n※情報ソース: J
- FA (AFCチャンピオンズリーグ)
+ サッカースタジアム\n試合結果: 2-3\n公式詳細ページ: htt
+ ps://www.jfa.jp/match/acl_2015/match_page/m11.html\n\n※情報ソース: 
+ JFA (AFCチャンピオンズリーグ)
 LOCATION:茨城県立カシマサッカースタジアム
 URL:https://www.jfa.jp/match/acl_2015/match_page/m11.html
 STATUS:CONFIRMED
@@ -125,16 +125,16 @@ TRANSP:OPAQUE
 END:VEVENT
 BEGIN:VEVENT
 UID:j1-club-antlers-20150909-312773821a34deef@kashima.antlers
-DTSTAMP:20261120T014426Z
+DTSTAMP:20261120T104856Z
 DTSTART;TZID=Asia/Tokyo:20150909T190000
 DTEND;TZID=Asia/Tokyo:20150909T210000
 SUMMARY:天[H]ＦＣ琉球【2回戦】
 DESCRIPTION:大会名: 第95回天皇杯全日本サッカー選手権大
- \n節 / ラウンド: ２回戦\n対戦カード: 鹿島アントラー
-  vs ＦＣ琉球\nキックオフ: 19:00 (JST)\n会場: カシマサッ
- ースタジアム\n試合結果: 3-1\n公式詳細ページ: https://ww
- w.jfa.jp/match/schedule_result/pdf/m41.pdf\n\n※情報ソース: JFA (天
- 皇杯)
+ 会\n節 / ラウンド: ２回戦\n対戦カード: 鹿島アントラー
+ ズ vs ＦＣ琉球\nキックオフ: 19:00 (JST)\n会場: カシマサッ
+ カースタジアム\n試合結果: 3-1\n公式詳細ページ: https://w
+ ww.jfa.jp/match/schedule_result/pdf/m41.pdf\n\n※情報ソース: JFA (
+ 天皇杯)
 LOCATION:カシマサッカースタジアム
 URL:https://www.jfa.jp/match/schedule_result/pdf/m41.pdf
 STATUS:CONFIRMED
@@ -142,16 +142,16 @@ TRANSP:OPAQUE
 END:VEVENT
 BEGIN:VEVENT
 UID:j1-club-antlers-20151014-60cf900186be05f2@kashima.antlers
-DTSTAMP:20261120T014426Z
+DTSTAMP:20261120T104856Z
 DTSTART;TZID=Asia/Tokyo:20151014T190000
 DTEND;TZID=Asia/Tokyo:20151014T210000
 SUMMARY:天[H]水戸ホーリーホック【3回戦】
 DESCRIPTION:大会名: 第95回天皇杯全日本サッカー選手権大
- \n節 / ラウンド: ３回戦\n対戦カード: 鹿島アントラー
-  vs 水戸ホーリーホック\nキックオフ: 19:00 (JST)\n会場: 
- シマサッカースタジアム\n試合結果: 0-0 (PK 2-3)\n公式詳
- 細ページ: https://www.jfa.jp/match/schedule_result/pdf/m63.pdf\n\n※
- 報ソース: JFA (天皇杯)
+ 会\n節 / ラウンド: ３回戦\n対戦カード: 鹿島アントラー
+ ズ vs 水戸ホーリーホック\nキックオフ: 19:00 (JST)\n会場: 
+ カシマサッカースタジアム\n試合結果: 0-0 (PK 2-3)\n公式
+ 詳細ページ: https://www.jfa.jp/match/schedule_result/pdf/m63.pdf\n\n
+ ※情報ソース: JFA (天皇杯)
 LOCATION:カシマサッカースタジアム
 URL:https://www.jfa.jp/match/schedule_result/pdf/m63.pdf
 STATUS:CONFIRMED
@@ -159,16 +159,16 @@ TRANSP:OPAQUE
 END:VEVENT
 BEGIN:VEVENT
 UID:j1-club-antlers-20160903-79d80474a0acbe40@kashima.antlers
-DTSTAMP:20261120T014426Z
+DTSTAMP:20261120T104856Z
 DTSTART;TZID=Asia/Tokyo:20160903T183000
 DTEND;TZID=Asia/Tokyo:20160903T203000
 SUMMARY:天[H]カターレ富山【2回戦】
 DESCRIPTION:大会名: 第96回天皇杯全日本サッカー選手権大
- \n節 / ラウンド: ２回戦\n対戦カード: 鹿島アントラー
-  vs カターレ富山\nキックオフ: 18:30 (JST)\n会場: 茨城県
- カシマサッカースタジアム\n試合結果: 3-0\n公式詳細ペ
- ージ: https://www.jfa.jp/match/schedule_result/pdf/m45.pdf\n\n※情報
- ース: JFA (天皇杯)
+ 会\n節 / ラウンド: ２回戦\n対戦カード: 鹿島アントラー
+ ズ vs カターレ富山\nキックオフ: 18:30 (JST)\n会場: 茨城県
+ 立カシマサッカースタジアム\n試合結果: 3-0\n公式詳細
+ ページ: https://www.jfa.jp/match/schedule_result/pdf/m45.pdf\n\n※情
+ 報ソース: JFA (天皇杯)
 LOCATION:茨城県立カシマサッカースタジアム
 URL:https://www.jfa.jp/match/schedule_result/pdf/m45.pdf
 STATUS:CONFIRMED
@@ -176,16 +176,16 @@ TRANSP:OPAQUE
 END:VEVENT
 BEGIN:VEVENT
 UID:j1-club-antlers-20160922-c872c186a3c46ee7@kashima.antlers
-DTSTAMP:20261120T014426Z
+DTSTAMP:20261120T104856Z
 DTSTART;TZID=Asia/Tokyo:20160922T150000
 DTEND;TZID=Asia/Tokyo:20160922T170000
 SUMMARY:天[H]ファジアーノ岡山【3回戦】
 DESCRIPTION:大会名: 第96回天皇杯全日本サッカー選手権大
- \n節 / ラウンド: ３回戦\n対戦カード: 鹿島アントラー
-  vs ファジアーノ岡山\nキックオフ: 15:00 (JST)\n会場: 茨
- 県立カシマサッカースタジアム\n試合結果: 2-1\n公式詳
- 細ページ: https://www.jfa.jp/match/schedule_result/pdf/m65.pdf\n\n※
- 報ソース: JFA (天皇杯)
+ 会\n節 / ラウンド: ３回戦\n対戦カード: 鹿島アントラー
+ ズ vs ファジアーノ岡山\nキックオフ: 15:00 (JST)\n会場: 茨
+ 城県立カシマサッカースタジアム\n試合結果: 2-1\n公式
+ 詳細ページ: https://www.jfa.jp/match/schedule_result/pdf/m65.pdf\n\n
+ ※情報ソース: JFA (天皇杯)
 LOCATION:茨城県立カシマサッカースタジアム
 URL:https://www.jfa.jp/match/schedule_result/pdf/m65.pdf
 STATUS:CONFIRMED
@@ -193,16 +193,16 @@ TRANSP:OPAQUE
 END:VEVENT
 BEGIN:VEVENT
 UID:j1-club-antlers-20161112-fa5789ad9b932c8f@kashima.antlers
-DTSTAMP:20261120T014426Z
+DTSTAMP:20261120T104856Z
 DTSTART;TZID=Asia/Tokyo:20161112T140000
 DTEND;TZID=Asia/Tokyo:20161112T160000
 SUMMARY:天[H]ヴィッセル神戸【4回戦】
 DESCRIPTION:大会名: 第96回天皇杯全日本サッカー選手権大
- \n節 / ラウンド: ４回戦\n対戦カード: 鹿島アントラー
-  vs ヴィッセル神戸\nキックオフ: 14:00 (JST)\n会場: ノエ
- アスタジアム神戸\n試合結果: 2-1\n公式詳細ページ: http
- s://www.jfa.jp/match/schedule_result/pdf/m75.pdf\n\n※情報ソース: JF
- A (天皇杯)
+ 会\n節 / ラウンド: ４回戦\n対戦カード: 鹿島アントラー
+ ズ vs ヴィッセル神戸\nキックオフ: 14:00 (JST)\n会場: ノエ
+ ビアスタジアム神戸\n試合結果: 2-1\n公式詳細ページ: htt
+ ps://www.jfa.jp/match/schedule_result/pdf/m75.pdf\n\n※情報ソース: J
+ FA (天皇杯)
 LOCATION:ノエビアスタジアム神戸
 URL:https://www.jfa.jp/match/schedule_result/pdf/m75.pdf
 STATUS:CONFIRMED
@@ -210,16 +210,16 @@ TRANSP:OPAQUE
 END:VEVENT
 BEGIN:VEVENT
 UID:j1-club-antlers-20161224-704e4414275dfd4d@kashima.antlers
-DTSTAMP:20261120T014426Z
+DTSTAMP:20261120T104856Z
 DTSTART;TZID=Asia/Tokyo:20161224T130000
 DTEND;TZID=Asia/Tokyo:20161224T150000
 SUMMARY:天[H]サンフレッチェ広島【準々決勝】
 DESCRIPTION:大会名: 第96回天皇杯全日本サッカー選手権大
- \n節 / ラウンド: 準々決勝\n対戦カード: 鹿島アントラ
- ズ vs サンフレッチェ広島\nキックオフ: 13:00 (JST)\n会場
- : 茨城県立カシマサッカースタジアム\n試合結果: 1-0\n公
- 式詳細ページ: https://www.jfa.jp/match/schedule_result/pdf/m82.pdf\n
- \n※情報ソース: JFA (天皇杯)
+ 会\n節 / ラウンド: 準々決勝\n対戦カード: 鹿島アントラ
+ ーズ vs サンフレッチェ広島\nキックオフ: 13:00 (JST)\n会
+ 場: 茨城県立カシマサッカースタジアム\n試合結果: 1-0\n
+ 公式詳細ページ: https://www.jfa.jp/match/schedule_result/pdf/m82.pd
+ f\n\n※情報ソース: JFA (天皇杯)
 LOCATION:茨城県立カシマサッカースタジアム
 URL:https://www.jfa.jp/match/schedule_result/pdf/m82.pdf
 STATUS:CONFIRMED
@@ -227,16 +227,16 @@ TRANSP:OPAQUE
 END:VEVENT
 BEGIN:VEVENT
 UID:j1-club-antlers-20161229-dd4b73500577504d@kashima.antlers
-DTSTAMP:20261120T014426Z
+DTSTAMP:20261120T104856Z
 DTSTART;TZID=Asia/Tokyo:20161229T130500
 DTEND;TZID=Asia/Tokyo:20161229T150500
 SUMMARY:天[A]横浜Ｆ・マリノス【準決勝】
 DESCRIPTION:大会名: 第96回天皇杯全日本サッカー選手権大
- \n節 / ラウンド: 準決勝\n対戦カード: 横浜Ｆ・マリノ
-  vs 鹿島アントラーズ\nキックオフ: 13:05 (JST)\n会場: ヤ
- マースタジアム長居\n試合結果: 0-2\n公式詳細ページ: h
- ttps://www.jfa.jp/match/schedule_result/pdf/m85.pdf\n\n※情報ソース:
-  JFA (天皇杯)
+ 会\n節 / ラウンド: 準決勝\n対戦カード: 横浜Ｆ・マリノ
+ ス vs 鹿島アントラーズ\nキックオフ: 13:05 (JST)\n会場: ヤ
+ ンマースタジアム長居\n試合結果: 0-2\n公式詳細ページ: 
+ https://www.jfa.jp/match/schedule_result/pdf/m85.pdf\n\n※情報ソース
+ : JFA (天皇杯)
 LOCATION:ヤンマースタジアム長居
 URL:https://www.jfa.jp/match/schedule_result/pdf/m85.pdf
 STATUS:CONFIRMED
@@ -244,16 +244,16 @@ TRANSP:OPAQUE
 END:VEVENT
 BEGIN:VEVENT
 UID:j1-club-antlers-20170101-0e54c4b18303d8db@kashima.antlers
-DTSTAMP:20261120T014426Z
+DTSTAMP:20261120T104856Z
 DTSTART;TZID=Asia/Tokyo:20170101T140000
 DTEND;TZID=Asia/Tokyo:20170101T160000
 SUMMARY:天[H]川崎フロンターレ【決勝戦】
 DESCRIPTION:大会名: 第96回天皇杯全日本サッカー選手権大
- \n節 / ラウンド: 決勝戦\n対戦カード: 鹿島アントラー
-  vs 川崎フロンターレ\nキックオフ: 14:00 (JST)\n会場: 市
- 吹田サッカースタジアム\n試合結果: 2-1\n公式詳細ペー
- ジ: https://www.jfa.jp/match/schedule_result/pdf/m87.pdf\n\n※情報ソ
- ス: JFA (天皇杯)
+ 会\n節 / ラウンド: 決勝戦\n対戦カード: 鹿島アントラー
+ ズ vs 川崎フロンターレ\nキックオフ: 14:00 (JST)\n会場: 市
+ 立吹田サッカースタジアム\n試合結果: 2-1\n公式詳細ペ
+ ージ: https://www.jfa.jp/match/schedule_result/pdf/m87.pdf\n\n※情報
+ ソース: JFA (天皇杯)
 LOCATION:市立吹田サッカースタジアム
 URL:https://www.jfa.jp/match/schedule_result/pdf/m87.pdf
 STATUS:CONFIRMED
@@ -261,16 +261,16 @@ TRANSP:OPAQUE
 END:VEVENT
 BEGIN:VEVENT
 UID:j1-club-antlers-20170621-a072d51cb2641fda@kashima.antlers
-DTSTAMP:20261120T014426Z
+DTSTAMP:20261120T104856Z
 DTSTART;TZID=Asia/Tokyo:20170621T190000
 DTEND;TZID=Asia/Tokyo:20170621T210000
 SUMMARY:天[H]ＦＣマルヤス岡崎【2回戦】
 DESCRIPTION:大会名: 第97回天皇杯全日本サッカー選手権大
- \n節 / ラウンド: ２回戦\n対戦カード: 鹿島アントラー
-  vs ＦＣマルヤス岡崎\nキックオフ: 19:00 (JST)\n会場: 茨
- 県立カシマサッカースタジアム\n試合結果: 5-0\n公式詳
- 細ページ: https://www.jfa.jp/match/schedule_result/pdf/m25.pdf\n\n※
- 報ソース: JFA (天皇杯)
+ 会\n節 / ラウンド: ２回戦\n対戦カード: 鹿島アントラー
+ ズ vs ＦＣマルヤス岡崎\nキックオフ: 19:00 (JST)\n会場: 茨
+ 城県立カシマサッカースタジアム\n試合結果: 5-0\n公式
+ 詳細ページ: https://www.jfa.jp/match/schedule_result/pdf/m25.pdf\n\n
+ ※情報ソース: JFA (天皇杯)
 LOCATION:茨城県立カシマサッカースタジアム
 URL:https://www.jfa.jp/match/schedule_result/pdf/m25.pdf
 STATUS:CONFIRMED
@@ -278,16 +278,16 @@ TRANSP:OPAQUE
 END:VEVENT
 BEGIN:VEVENT
 UID:j1-club-antlers-20170712-d2f7a2e5a8c3d3cc@kashima.antlers
-DTSTAMP:20261120T014426Z
+DTSTAMP:20261120T104856Z
 DTSTART;TZID=Asia/Tokyo:20170712T190000
 DTEND;TZID=Asia/Tokyo:20170712T210000
 SUMMARY:天[H]モンテディオ山形【3回戦】
 DESCRIPTION:大会名: 第97回天皇杯全日本サッカー選手権大
- \n節 / ラウンド: ３回戦\n対戦カード: 鹿島アントラー
-  vs モンテディオ山形\nキックオフ: 19:00 (JST)\n会場: ND
- フトスタジアム山形\n試合結果: 5-0\n公式詳細ページ: ht
- tps://www.jfa.jp/match/schedule_result/pdf/m57.pdf\n\n※情報ソース: 
- JFA (天皇杯)
+ 会\n節 / ラウンド: ３回戦\n対戦カード: 鹿島アントラー
+ ズ vs モンテディオ山形\nキックオフ: 19:00 (JST)\n会場: ND
+ ソフトスタジアム山形\n試合結果: 5-0\n公式詳細ページ: 
+ https://www.jfa.jp/match/schedule_result/pdf/m57.pdf\n\n※情報ソース
+ : JFA (天皇杯)
 LOCATION:NDソフトスタジアム山形
 URL:https://www.jfa.jp/match/schedule_result/pdf/m57.pdf
 STATUS:CONFIRMED
@@ -295,16 +295,16 @@ TRANSP:OPAQUE
 END:VEVENT
 BEGIN:VEVENT
 UID:j1-club-antlers-20170920-277e611f8a8a2798@kashima.antlers
-DTSTAMP:20261120T014426Z
+DTSTAMP:20261120T104856Z
 DTSTART;TZID=Asia/Tokyo:20170920T190000
 DTEND;TZID=Asia/Tokyo:20170920T210000
 SUMMARY:天[A]浦和レッズ【4回戦】
 DESCRIPTION:大会名: 第97回天皇杯全日本サッカー選手権大
- \n節 / ラウンド: ４回戦\n対戦カード: 浦和レッズ vs 鹿
- 島アントラーズ\nキックオフ: 19:00 (JST)\n会場: 熊谷スポ
- ツ文化公園陸上競技場\n試合結果: 2-4\n公式詳細ページ
- : https://www.jfa.jp/match/schedule_result/pdf/m74.pdf\n\n※情報ソー
- : JFA (天皇杯)
+ 会\n節 / ラウンド: ４回戦\n対戦カード: 浦和レッズ vs 
+ 鹿島アントラーズ\nキックオフ: 19:00 (JST)\n会場: 熊谷ス
+ ポーツ文化公園陸上競技場\n試合結果: 2-4\n公式詳細ペ
+ ージ: https://www.jfa.jp/match/schedule_result/pdf/m74.pdf\n\n※情報
+ ソース: JFA (天皇杯)
 LOCATION:熊谷スポーツ文化公園陸上競技場
 URL:https://www.jfa.jp/match/schedule_result/pdf/m74.pdf
 STATUS:CONFIRMED
@@ -312,16 +312,16 @@ TRANSP:OPAQUE
 END:VEVENT
 BEGIN:VEVENT
 UID:j1-club-antlers-20171025-3a9c1947bcda661e@kashima.antlers
-DTSTAMP:20261120T014426Z
+DTSTAMP:20261120T104856Z
 DTSTART;TZID=Asia/Tokyo:20171025T190000
 DTEND;TZID=Asia/Tokyo:20171025T210000
 SUMMARY:天[A]ヴィッセル神戸【準々決勝】
 DESCRIPTION:大会名: 第97回天皇杯全日本サッカー選手権大
- \n節 / ラウンド: 準々決勝\n対戦カード: ヴィッセル神
-  vs 鹿島アントラーズ\nキックオフ: 19:00 (JST)\n会場: 神
- 総合運動公園ユニバー記念競技場\n試合結果: 1-1 (PK 5-4
- )\n公式詳細ページ: https://www.jfa.jp/match/schedule_result/pdf/m81
- .pdf\n\n※情報ソース: JFA (天皇杯)
+ 会\n節 / ラウンド: 準々決勝\n対戦カード: ヴィッセル神
+ 戸 vs 鹿島アントラーズ\nキックオフ: 19:00 (JST)\n会場: 神
+ 戸総合運動公園ユニバー記念競技場\n試合結果: 1-1 (PK 5-
+ 4)\n公式詳細ページ: https://www.jfa.jp/match/schedule_result/pdf/m8
+ 1.pdf\n\n※情報ソース: JFA (天皇杯)
 LOCATION:神戸総合運動公園ユニバー記念競技場
 URL:https://www.jfa.jp/match/schedule_result/pdf/m81.pdf
 STATUS:CONFIRMED
@@ -329,16 +329,16 @@ TRANSP:OPAQUE
 END:VEVENT
 BEGIN:VEVENT
 UID:j1-club-antlers-20180214-03632ed544ea26bd@kashima.antlers
-DTSTAMP:20261120T014426Z
+DTSTAMP:20261120T104856Z
 DTSTART;TZID=Asia/Tokyo:20180214T190000
 DTEND;TZID=Asia/Tokyo:20180214T210000
 SUMMARY:AC[H]上海申花【第1節】
-DESCRIPTION:大会名: AFCチャンピオンズリーグ2018　groupH\n節
-  / ラウンド: 第1節\n対戦カード: 鹿島アントラーズ vs 上
+DESCRIPTION:大会名: AFCチャンピオンズリーグ2018　groupH\n節 
+ / ラウンド: 第1節\n対戦カード: 鹿島アントラーズ vs 上
  海申花\nキックオフ: 19:00 (JST)\n会場: 茨城県立カシマサ
- カースタジアム\n試合結果: 1-1\n公式詳細ページ: https:/
- /www.jfa.jp/match/acl_2018/match_page/m2.html\n\n※情報ソース: JFA (
- AFCチャンピオンズリーグ)
+ ッカースタジアム\n試合結果: 1-1\n公式詳細ページ: https:
+ //www.jfa.jp/match/acl_2018/match_page/m2.html\n\n※情報ソース: JFA 
+ (AFCチャンピオンズリーグ)
 LOCATION:茨城県立カシマサッカースタジアム
 URL:https://www.jfa.jp/match/acl_2018/match_page/m2.html
 STATUS:CONFIRMED
@@ -346,16 +346,16 @@ TRANSP:OPAQUE
 END:VEVENT
 BEGIN:VEVENT
 UID:j1-club-antlers-20180221-8253a5ec03cf681c@kashima.antlers
-DTSTAMP:20261120T014426Z
+DTSTAMP:20261120T104856Z
 DTSTART;TZID=Asia/Tokyo:20180221T190000
 DTEND;TZID=Asia/Tokyo:20180221T210000
 SUMMARY:AC[A]水原三星ブルーウィングス【第2節】
-DESCRIPTION:大会名: AFCチャンピオンズリーグ2018　groupH\n節
-  / ラウンド: 第2節\n対戦カード: 水原三星ブルーウィン
- ス vs 鹿島アントラーズ\nキックオフ: 19:00 (JST)\n会場: 
- 原ワールドカップスタジアム\n試合結果: 1-2\n公式詳細
- ページ: https://www.jfa.jp/match/acl_2018/match_page/m3.html\n\n※情
- ソース: JFA (AFCチャンピオンズリーグ)
+DESCRIPTION:大会名: AFCチャンピオンズリーグ2018　groupH\n節 
+ / ラウンド: 第2節\n対戦カード: 水原三星ブルーウィン
+ グス vs 鹿島アントラーズ\nキックオフ: 19:00 (JST)\n会場: 
+ 水原ワールドカップスタジアム\n試合結果: 1-2\n公式詳
+ 細ページ: https://www.jfa.jp/match/acl_2018/match_page/m3.html\n\n※
+ 情報ソース: JFA (AFCチャンピオンズリーグ)
 LOCATION:水原ワールドカップスタジアム
 URL:https://www.jfa.jp/match/acl_2018/match_page/m3.html
 STATUS:CONFIRMED
@@ -363,16 +363,16 @@ TRANSP:OPAQUE
 END:VEVENT
 BEGIN:VEVENT
 UID:j1-club-antlers-20180307-de4c1281ce354ef1@kashima.antlers
-DTSTAMP:20261120T014426Z
+DTSTAMP:20261120T104856Z
 DTSTART;TZID=Asia/Tokyo:20180307T193000
 DTEND;TZID=Asia/Tokyo:20180307T213000
 SUMMARY:AC[A]シドニーFC【第3節】
-DESCRIPTION:大会名: AFCチャンピオンズリーグ2018　groupH\n節
-  / ラウンド: 第3節\n対戦カード: シドニーFC vs 鹿島アン
- ラーズ\nキックオフ: 19:30 (JST)\n会場: シドニー・フッ
- ボールスタジアム\n試合結果: 0-2\n公式詳細ページ: https
- ://www.jfa.jp/match/acl_2018/match_page/m6.html\n\n※情報ソース: JFA
-  (AFCチャンピオンズリーグ)
+DESCRIPTION:大会名: AFCチャンピオンズリーグ2018　groupH\n節 
+ / ラウンド: 第3節\n対戦カード: シドニーFC vs 鹿島アン
+ トラーズ\nキックオフ: 19:30 (JST)\n会場: シドニー・フッ
+ トボールスタジアム\n試合結果: 0-2\n公式詳細ページ: htt
+ ps://www.jfa.jp/match/acl_2018/match_page/m6.html\n\n※情報ソース: J
+ FA (AFCチャンピオンズリーグ)
 LOCATION:シドニー・フットボールスタジアム
 URL:https://www.jfa.jp/match/acl_2018/match_page/m6.html
 STATUS:CONFIRMED
@@ -380,16 +380,16 @@ TRANSP:OPAQUE
 END:VEVENT
 BEGIN:VEVENT
 UID:j1-club-antlers-20180313-378e6d9993bc1374@kashima.antlers
-DTSTAMP:20261120T014426Z
+DTSTAMP:20261120T104856Z
 DTSTART;TZID=Asia/Tokyo:20180313T190000
 DTEND;TZID=Asia/Tokyo:20180313T210000
 SUMMARY:AC[H]シドニーFC【第4節】
-DESCRIPTION:大会名: AFCチャンピオンズリーグ2018　groupH\n節
-  / ラウンド: 第4節\n対戦カード: 鹿島アントラーズ vs シ
+DESCRIPTION:大会名: AFCチャンピオンズリーグ2018　groupH\n節 
+ / ラウンド: 第4節\n対戦カード: 鹿島アントラーズ vs シ
  ドニーFC\nキックオフ: 19:00 (JST)\n会場: 茨城県立カシマ
- ッカースタジアム\n試合結果: 1-1\n公式詳細ページ: https
- ://www.jfa.jp/match/acl_2018/match_page/m8.html\n\n※情報ソース: JFA
-  (AFCチャンピオンズリーグ)
+ サッカースタジアム\n試合結果: 1-1\n公式詳細ページ: htt
+ ps://www.jfa.jp/match/acl_2018/match_page/m8.html\n\n※情報ソース: J
+ FA (AFCチャンピオンズリーグ)
 LOCATION:茨城県立カシマサッカースタジアム
 URL:https://www.jfa.jp/match/acl_2018/match_page/m8.html
 STATUS:CONFIRMED
@@ -397,16 +397,16 @@ TRANSP:OPAQUE
 END:VEVENT
 BEGIN:VEVENT
 UID:j1-club-antlers-20180403-357ed6163089e3ab@kashima.antlers
-DTSTAMP:20261120T014426Z
+DTSTAMP:20261120T104856Z
 DTSTART;TZID=Asia/Tokyo:20180403T200000
 DTEND;TZID=Asia/Tokyo:20180403T220000
 SUMMARY:AC[A]上海申花【第5節】
-DESCRIPTION:大会名: AFCチャンピオンズリーグ2018　groupH\n節
-  / ラウンド: 第5節\n対戦カード: 上海申花 vs 鹿島アント
+DESCRIPTION:大会名: AFCチャンピオンズリーグ2018　groupH\n節 
+ / ラウンド: 第5節\n対戦カード: 上海申花 vs 鹿島アント
  ラーズ\nキックオフ: 20:00 (JST)\n会場: 上海虹口足球場\n
- 合結果: 2-2\n公式詳細ページ: https://www.jfa.jp/match/acl_2018/
- match_page/m10.html\n\n※情報ソース: JFA (AFCチャンピオンズ
- ーグ)
+ 試合結果: 2-2\n公式詳細ページ: https://www.jfa.jp/match/acl_201
+ 8/match_page/m10.html\n\n※情報ソース: JFA (AFCチャンピオンズ
+ リーグ)
 LOCATION:上海虹口足球場
 URL:https://www.jfa.jp/match/acl_2018/match_page/m10.html
 STATUS:CONFIRMED
@@ -414,16 +414,16 @@ TRANSP:OPAQUE
 END:VEVENT
 BEGIN:VEVENT
 UID:j1-club-antlers-20180417-a2c88cebe7687096@kashima.antlers
-DTSTAMP:20261120T014426Z
+DTSTAMP:20261120T104856Z
 DTSTART;TZID=Asia/Tokyo:20180417T190000
 DTEND;TZID=Asia/Tokyo:20180417T210000
 SUMMARY:AC[H]水原三星ブルーウィングス【第6節】
-DESCRIPTION:大会名: AFCチャンピオンズリーグ2018　groupH\n節
-  / ラウンド: 第6節\n対戦カード: 鹿島アントラーズ vs 水
+DESCRIPTION:大会名: AFCチャンピオンズリーグ2018　groupH\n節 
+ / ラウンド: 第6節\n対戦カード: 鹿島アントラーズ vs 水
  原三星ブルーウィングス\nキックオフ: 19:00 (JST)\n会場: 
- 城県立カシマサッカースタジアム\n試合結果: 0-1\n公式
- 詳細ページ: https://www.jfa.jp/match/acl_2018/match_page/m11.html\n\n
- ※情報ソース: JFA (AFCチャンピオンズリーグ)
+ 茨城県立カシマサッカースタジアム\n試合結果: 0-1\n公
+ 式詳細ページ: https://www.jfa.jp/match/acl_2018/match_page/m11.html\
+ n\n※情報ソース: JFA (AFCチャンピオンズリーグ)
 LOCATION:茨城県立カシマサッカースタジアム
 URL:https://www.jfa.jp/match/acl_2018/match_page/m11.html
 STATUS:CONFIRMED
@@ -431,13 +431,13 @@ TRANSP:OPAQUE
 END:VEVENT
 BEGIN:VEVENT
 UID:j1-club-antlers-20180509-6b287d2fe34d6e3b@kashima.antlers
-DTSTAMP:20261120T014426Z
+DTSTAMP:20261120T104856Z
 DTSTART;TZID=Asia/Tokyo:20180509T190000
 DTEND;TZID=Asia/Tokyo:20180509T210000
 SUMMARY:AC[H]上海上港【第1節】
-DESCRIPTION:大会名: AFCチャンピオンズリーグ2018  ラウンド
- 16\n節 / ラウンド: 第1節\n対戦カード: 鹿島アントラーズ
-  vs 上海上港\nキックオフ: 19:00 (JST)\n会場: 茨城県立カシ
+DESCRIPTION:大会名: AFCチャンピオンズリーグ2018  ラウンド1
+ 6\n節 / ラウンド: 第1節\n対戦カード: 鹿島アントラーズ 
+ vs 上海上港\nキックオフ: 19:00 (JST)\n会場: 茨城県立カシ
  マサッカースタジアム\n試合結果: 3-1\n公式詳細ページ: 
  https://www.jfa.jp/match/acl_2018/match_page/m7.html\n\n※情報ソース
  : JFA (AFCチャンピオンズリーグ)
@@ -448,16 +448,16 @@ TRANSP:OPAQUE
 END:VEVENT
 BEGIN:VEVENT
 UID:j1-club-antlers-20180516-aa8fec401d063dbe@kashima.antlers
-DTSTAMP:20261120T014426Z
+DTSTAMP:20261120T104856Z
 DTSTART;TZID=Asia/Tokyo:20180516T200000
 DTEND;TZID=Asia/Tokyo:20180516T220000
 SUMMARY:AC[A]上海上港【第2節】
-DESCRIPTION:大会名: AFCチャンピオンズリーグ2018  ラウンド
- 16\n節 / ラウンド: 第2節\n対戦カード: 上海上港 vs 鹿島
+DESCRIPTION:大会名: AFCチャンピオンズリーグ2018  ラウンド1
+ 6\n節 / ラウンド: 第2節\n対戦カード: 上海上港 vs 鹿島ア
  ントラーズ\nキックオフ: 20:00 (JST)\n会場: 上海体育場\n
- 合結果: 2-1\n公式詳細ページ: https://www.jfa.jp/match/acl_2018
- /match_page/m16.html\n\n※情報ソース: JFA (AFCチャンピオンズ
- ーグ)
+ 試合結果: 2-1\n公式詳細ページ: https://www.jfa.jp/match/acl_201
+ 8/match_page/m16.html\n\n※情報ソース: JFA (AFCチャンピオンズ
+ リーグ)
 LOCATION:上海体育場
 URL:https://www.jfa.jp/match/acl_2018/match_page/m16.html
 STATUS:CONFIRMED
@@ -465,16 +465,16 @@ TRANSP:OPAQUE
 END:VEVENT
 BEGIN:VEVENT
 UID:j1-club-antlers-20180606-f95ac514c4efc681@kashima.antlers
-DTSTAMP:20261120T014426Z
+DTSTAMP:20261120T104856Z
 DTSTART;TZID=Asia/Tokyo:20180606T190000
 DTEND;TZID=Asia/Tokyo:20180606T210000
 SUMMARY:天[H]Ｈｏｎｄａ ＦＣ【2回戦】
-DESCRIPTION:大会名: 天皇杯 JFA 第98回全日本サッカー選手
- 大会\n節 / ラウンド: ２回戦\n対戦カード: 鹿島アント
+DESCRIPTION:大会名: 天皇杯 JFA 第98回全日本サッカー選手権
+ 大会\n節 / ラウンド: ２回戦\n対戦カード: 鹿島アントラ
  ーズ vs Ｈｏｎｄａ ＦＣ\nキックオフ: 19:00 (JST)\n会場: 
- 城県立カシマサッカースタジアム\n試合結果: 6-1\n公式
- 詳細ページ: https://www.jfa.jp/match/schedule_result/pdf/m41.pdf\n\n
- 情報ソース: JFA (天皇杯)
+ 茨城県立カシマサッカースタジアム\n試合結果: 6-1\n公
+ 式詳細ページ: https://www.jfa.jp/match/schedule_result/pdf/m41.pdf\n
+ \n※情報ソース: JFA (天皇杯)
 LOCATION:茨城県立カシマサッカースタジアム
 URL:https://www.jfa.jp/match/schedule_result/pdf/m41.pdf
 STATUS:CONFIRMED
@@ -482,12 +482,12 @@ TRANSP:OPAQUE
 END:VEVENT
 BEGIN:VEVENT
 UID:j1-club-antlers-20180711-d95e8d257154e2c0@kashima.antlers
-DTSTAMP:20261120T014426Z
+DTSTAMP:20261120T104856Z
 DTSTART;TZID=Asia/Tokyo:20180711T183000
 DTEND;TZID=Asia/Tokyo:20180711T203000
 SUMMARY:天[H]FC町田ゼルビア【3回戦】
-DESCRIPTION:大会名: 天皇杯 JFA 第98回全日本サッカー選手
- 大会\n節 / ラウンド: ３回戦\n対戦カード: 鹿島アント
+DESCRIPTION:大会名: 天皇杯 JFA 第98回全日本サッカー選手権
+ 大会\n節 / ラウンド: ３回戦\n対戦カード: 鹿島アントラ
  ーズ vs FC町田ゼルビア\nキックオフ: 18:30 (JST)\n会場: 町
  田市立陸上競技場\n試合結果: 5-1\n公式詳細ページ: https:
  //www.jfa.jp/match/schedule_result/pdf/m65.pdf\n\n※情報ソース: JFA 
@@ -499,16 +499,16 @@ TRANSP:OPAQUE
 END:VEVENT
 BEGIN:VEVENT
 UID:j1-club-antlers-20180828-583cda7c6d533a94@kashima.antlers
-DTSTAMP:20261120T014426Z
+DTSTAMP:20261120T104856Z
 DTSTART;TZID=Asia/Tokyo:20180828T190000
 DTEND;TZID=Asia/Tokyo:20180828T210000
 SUMMARY:AC[H]天津権健【準々決勝】
-DESCRIPTION:大会名: AFCチャンピオンズリーグ2018　ノック
- ウトステージ\n節 / ラウンド: 準々決勝\n対戦カード: 
+DESCRIPTION:大会名: AFCチャンピオンズリーグ2018　ノックア
+ ウトステージ\n節 / ラウンド: 準々決勝\n対戦カード: 鹿
  島アントラーズ vs 天津権健\nキックオフ: 19:00 (JST)\n会
- : 茨城県立カシマサッカースタジアム\n試合結果: 2-0\n
- 式詳細ページ: https://www.jfa.jp/match/acl_2018/match_page/m3.html
- \n\n※情報ソース: JFA (AFCチャンピオンズリーグ)
+ 場: 茨城県立カシマサッカースタジアム\n試合結果: 2-0\n
+ 公式詳細ページ: https://www.jfa.jp/match/acl_2018/match_page/m3.htm
+ l\n\n※情報ソース: JFA (AFCチャンピオンズリーグ)
 LOCATION:茨城県立カシマサッカースタジアム
 URL:https://www.jfa.jp/match/acl_2018/match_page/m3.html
 STATUS:CONFIRMED
@@ -516,16 +516,16 @@ TRANSP:OPAQUE
 END:VEVENT
 BEGIN:VEVENT
 UID:j1-club-antlers-20180918-2b3b6818506c7a57@kashima.antlers
-DTSTAMP:20261120T014426Z
+DTSTAMP:20261120T104856Z
 DTSTART;TZID=Asia/Tokyo:20180918T193000
 DTEND;TZID=Asia/Tokyo:20180918T213000
 SUMMARY:AC[A]天津権健【準々決勝】
-DESCRIPTION:大会名: AFCチャンピオンズリーグ2018　ノック
- ウトステージ\n節 / ラウンド: 準々決勝\n対戦カード: 
+DESCRIPTION:大会名: AFCチャンピオンズリーグ2018　ノックア
+ ウトステージ\n節 / ラウンド: 準々決勝\n対戦カード: 天
  津権健 vs 鹿島アントラーズ\nキックオフ: 19:30 (JST)\n会
- : 澳門奧林匹克体育中心運動場\n試合結果: 0-3\n公式詳
- ページ: https://www.jfa.jp/match/acl_2018/match_page/m7.html\n\n※
- 報ソース: JFA (AFCチャンピオンズリーグ)
+ 場: 澳門奧林匹克体育中心運動場\n試合結果: 0-3\n公式詳
+ 細ページ: https://www.jfa.jp/match/acl_2018/match_page/m7.html\n\n※
+ 情報ソース: JFA (AFCチャンピオンズリーグ)
 LOCATION:澳門奧林匹克体育中心運動場
 URL:https://www.jfa.jp/match/acl_2018/match_page/m7.html
 STATUS:CONFIRMED
@@ -533,11 +533,11 @@ TRANSP:OPAQUE
 END:VEVENT
 BEGIN:VEVENT
 UID:j1-club-antlers-20180926-81a66fc604099969@kashima.antlers
-DTSTAMP:20261120T014426Z
+DTSTAMP:20261120T104856Z
 DTSTART;TZID=Asia/Tokyo:20180926T190000
 DTEND;TZID=Asia/Tokyo:20180926T210000
 SUMMARY:天[H]サンフレッチェ広島【ラウンド16】
-DESCRIPTION:大会名: 天皇杯 JFA 第98回全日本サッカー選手
+DESCRIPTION:大会名: 天皇杯 JFA 第98回全日本サッカー選手権
  大会\n節 / ラウンド: ラウンド16\n対戦カード: 鹿島アン
  トラーズ vs サンフレッチェ広島\nキックオフ: 19:00 (JST)\
  n会場: 茨城県立カシマサッカースタジアム\n試合結果: 2
@@ -550,17 +550,17 @@ TRANSP:OPAQUE
 END:VEVENT
 BEGIN:VEVENT
 UID:j1-club-antlers-20181003-8ee58f0a40dfdf49@kashima.antlers
-DTSTAMP:20261120T014426Z
+DTSTAMP:20261120T104856Z
 DTSTART;TZID=Asia/Tokyo:20181003T190000
 DTEND;TZID=Asia/Tokyo:20181003T210000
 SUMMARY:AC[H]水原三星ブルーウィングス【準決勝】
-DESCRIPTION:大会名: AFCチャンピオンズリーグ2018　ノック
- ウトステージ\n節 / ラウンド: 準決勝\n対戦カード: 鹿
+DESCRIPTION:大会名: AFCチャンピオンズリーグ2018　ノックア
+ ウトステージ\n節 / ラウンド: 準決勝\n対戦カード: 鹿島
  アントラーズ vs 水原三星ブルーウィングス\nキックオ
- : 19:00 (JST)\n会場: 茨城県立カシマサッカースタジアム\
- n試合結果: 3-2\n公式詳細ページ: https://www.jfa.jp/match/acl_20
- 18/match_page/m10.html\n\n※情報ソース: JFA (AFCチャンピオン
- リーグ)
+ フ: 19:00 (JST)\n会場: 茨城県立カシマサッカースタジアム
+ \n試合結果: 3-2\n公式詳細ページ: https://www.jfa.jp/match/acl_2
+ 018/match_page/m10.html\n\n※情報ソース: JFA (AFCチャンピオン
+ ズリーグ)
 LOCATION:茨城県立カシマサッカースタジアム
 URL:https://www.jfa.jp/match/acl_2018/match_page/m10.html
 STATUS:CONFIRMED
@@ -568,17 +568,17 @@ TRANSP:OPAQUE
 END:VEVENT
 BEGIN:VEVENT
 UID:j1-club-antlers-20181024-6c22732963834cb1@kashima.antlers
-DTSTAMP:20261120T014426Z
+DTSTAMP:20261120T104856Z
 DTSTART;TZID=Asia/Tokyo:20181024T190000
 DTEND;TZID=Asia/Tokyo:20181024T210000
 SUMMARY:AC[A]水原三星ブルーウィングス【準決勝】
-DESCRIPTION:大会名: AFCチャンピオンズリーグ2018　ノック
- ウトステージ\n節 / ラウンド: 準決勝\n対戦カード: 水
+DESCRIPTION:大会名: AFCチャンピオンズリーグ2018　ノックア
+ ウトステージ\n節 / ラウンド: 準決勝\n対戦カード: 水原
  三星ブルーウィングス vs 鹿島アントラーズ\nキックオ
- : 19:00 (JST)\n会場: 水原ワールドカップスタジアム\n試
- 結果: 3-3\n公式詳細ページ: https://www.jfa.jp/match/acl_2018/mat
- ch_page/m12.html\n\n※情報ソース: JFA (AFCチャンピオンズリ
- グ)
+ フ: 19:00 (JST)\n会場: 水原ワールドカップスタジアム\n試
+ 合結果: 3-3\n公式詳細ページ: https://www.jfa.jp/match/acl_2018/m
+ atch_page/m12.html\n\n※情報ソース: JFA (AFCチャンピオンズリ
+ ーグ)
 LOCATION:水原ワールドカップスタジアム
 URL:https://www.jfa.jp/match/acl_2018/match_page/m12.html
 STATUS:CONFIRMED
@@ -586,16 +586,16 @@ TRANSP:OPAQUE
 END:VEVENT
 BEGIN:VEVENT
 UID:j1-club-antlers-20181103-d10ba8f78cabb56b@kashima.antlers
-DTSTAMP:20261120T014426Z
+DTSTAMP:20261120T104856Z
 DTSTART;TZID=Asia/Tokyo:20181103T150000
 DTEND;TZID=Asia/Tokyo:20181103T170000
 SUMMARY:AC[H]ペルセポリス【決勝戦】
-DESCRIPTION:大会名: AFCチャンピオンズリーグ2018　ノック
- ウトステージ\n節 / ラウンド: 決勝戦\n対戦カード: 鹿
+DESCRIPTION:大会名: AFCチャンピオンズリーグ2018　ノックア
+ ウトステージ\n節 / ラウンド: 決勝戦\n対戦カード: 鹿島
  アントラーズ vs ペルセポリス\nキックオフ: 15:00 (JST)\n
- 場: 茨城県立カシマサッカースタジアム\n試合結果: 2-0
- \n公式詳細ページ: https://www.jfa.jp/match/acl_2018/match_page/m13.
- html\n\n※情報ソース: JFA (AFCチャンピオンズリーグ)
+ 会場: 茨城県立カシマサッカースタジアム\n試合結果: 2-
+ 0\n公式詳細ページ: https://www.jfa.jp/match/acl_2018/match_page/m13
+ .html\n\n※情報ソース: JFA (AFCチャンピオンズリーグ)
 LOCATION:茨城県立カシマサッカースタジアム
 URL:https://www.jfa.jp/match/acl_2018/match_page/m13.html
 STATUS:CONFIRMED
@@ -603,16 +603,16 @@ TRANSP:OPAQUE
 END:VEVENT
 BEGIN:VEVENT
 UID:j1-club-antlers-20181110-d10accb08b324431@kashima.antlers
-DTSTAMP:20261120T014426Z
+DTSTAMP:20261120T104856Z
 DTSTART;TZID=Asia/Tokyo:20181110T183000
 DTEND;TZID=Asia/Tokyo:20181110T203000
 SUMMARY:AC[A]ペルセポリス【決勝戦】
-DESCRIPTION:大会名: AFCチャンピオンズリーグ2018　ノック
- ウトステージ\n節 / ラウンド: 決勝戦\n対戦カード: ペ
+DESCRIPTION:大会名: AFCチャンピオンズリーグ2018　ノックア
+ ウトステージ\n節 / ラウンド: 決勝戦\n対戦カード: ペル
  セポリス vs 鹿島アントラーズ\nキックオフ: 18:30 (JST)\n
- 場: アザディスタジアム\n試合結果: 0-0\n公式詳細ペー
- : https://www.jfa.jp/match/acl_2018/match_page/m14.html\n\n※情報ソ
- ス: JFA (AFCチャンピオンズリーグ)
+ 会場: アザディスタジアム\n試合結果: 0-0\n公式詳細ペー
+ ジ: https://www.jfa.jp/match/acl_2018/match_page/m14.html\n\n※情報ソ
+ ース: JFA (AFCチャンピオンズリーグ)
 LOCATION:アザディスタジアム
 URL:https://www.jfa.jp/match/acl_2018/match_page/m14.html
 STATUS:CONFIRMED
@@ -620,16 +620,16 @@ TRANSP:OPAQUE
 END:VEVENT
 BEGIN:VEVENT
 UID:j1-club-antlers-20181121-cd626a43cf8b95b5@kashima.antlers
-DTSTAMP:20261120T014426Z
+DTSTAMP:20261120T104856Z
 DTSTART;TZID=Asia/Tokyo:20181121T190000
 DTEND;TZID=Asia/Tokyo:20181121T210000
 SUMMARY:天[H]甲府【準々決勝】
-DESCRIPTION:大会名: 天皇杯 JFA 第98回全日本サッカー選手
- 大会\n節 / ラウンド: 準々決勝\n対戦カード: 鹿島アン
+DESCRIPTION:大会名: 天皇杯 JFA 第98回全日本サッカー選手権
+ 大会\n節 / ラウンド: 準々決勝\n対戦カード: 鹿島アント
  ラーズ vs ヴァンフォーレ甲府\nキックオフ: 19:00 (JST)\n
- 場: 山梨中銀スタジアム\n試合結果: 1-0\n公式詳細ペー
- : https://www.jfa.jp/match/schedule_result/pdf/m82.pdf\n\n※情報ソ
- ス: JFA (天皇杯)
+ 会場: 山梨中銀スタジアム\n試合結果: 1-0\n公式詳細ペー
+ ジ: https://www.jfa.jp/match/schedule_result/pdf/m82.pdf\n\n※情報ソ
+ ース: JFA (天皇杯)
 LOCATION:山梨中銀スタジアム
 URL:https://www.jfa.jp/match/schedule_result/pdf/m82.pdf
 STATUS:CONFIRMED
@@ -637,16 +637,16 @@ TRANSP:OPAQUE
 END:VEVENT
 BEGIN:VEVENT
 UID:j1-club-antlers-20181205-4da59f4497603b58@kashima.antlers
-DTSTAMP:20261120T014426Z
+DTSTAMP:20261120T104856Z
 DTSTART;TZID=Asia/Tokyo:20181205T190000
 DTEND;TZID=Asia/Tokyo:20181205T210000
 SUMMARY:天[A]浦和レッズ【準決勝】
-DESCRIPTION:大会名: 天皇杯 JFA 第98回全日本サッカー選手
- 大会\n節 / ラウンド: 準決勝\n対戦カード: 浦和レッズ v
- s 鹿島アントラーズ\nキックオフ: 19:00 (JST)\n会場: 茨城
+DESCRIPTION:大会名: 天皇杯 JFA 第98回全日本サッカー選手権
+ 大会\n節 / ラウンド: 準決勝\n対戦カード: 浦和レッズ vs
+  鹿島アントラーズ\nキックオフ: 19:00 (JST)\n会場: 茨城県
  立カシマサッカースタジアム\n試合結果: 1-0\n公式詳細
- ージ: https://www.jfa.jp/match/schedule_result/pdf/m85.pdf\n\n※情
- ソース: JFA (天皇杯)
+ ページ: https://www.jfa.jp/match/schedule_result/pdf/m85.pdf\n\n※情
+ 報ソース: JFA (天皇杯)
 LOCATION:茨城県立カシマサッカースタジアム
 URL:https://www.jfa.jp/match/schedule_result/pdf/m85.pdf
 STATUS:CONFIRMED
@@ -654,16 +654,16 @@ TRANSP:OPAQUE
 END:VEVENT
 BEGIN:VEVENT
 UID:j1-club-antlers-20190219-f46450b88bb30774@kashima.antlers
-DTSTAMP:20261120T014426Z
+DTSTAMP:20261120T104856Z
 DTSTART;TZID=Asia/Tokyo:20190219T190000
 DTEND;TZID=Asia/Tokyo:20190219T210000
 SUMMARY:AC[H]ニューカッスル・ジェッツ【第1節】
-DESCRIPTION:大会名: AFCチャンピオンズリーグ2019 playoff\n節 
- / ラウンド: 第1節\n対戦カード: 鹿島アントラーズ vs ニ
- ーカッスル・ジェッツ\nキックオフ: 19:00 (JST)\n会場: 
- 城県立カシマサッカースタジアム\n試合結果: 4-1\n公式
- 細ページ: https://www.jfa.jp/match/acl_2019/match_page/m2.html\n\n
- 情報ソース: JFA (AFCチャンピオンズリーグ)
+DESCRIPTION:大会名: AFCチャンピオンズリーグ2019 playoff\n節 /
+  ラウンド: 第1節\n対戦カード: 鹿島アントラーズ vs ニ
+ ューカッスル・ジェッツ\nキックオフ: 19:00 (JST)\n会場: 
+ 茨城県立カシマサッカースタジアム\n試合結果: 4-1\n公
+ 式詳細ページ: https://www.jfa.jp/match/acl_2019/match_page/m2.html\n
+ \n※情報ソース: JFA (AFCチャンピオンズリーグ)
 LOCATION:茨城県立カシマサッカースタジアム
 URL:https://www.jfa.jp/match/acl_2019/match_page/m2.html
 STATUS:CONFIRMED
@@ -671,12 +671,12 @@ TRANSP:OPAQUE
 END:VEVENT
 BEGIN:VEVENT
 UID:j1-club-antlers-20190305-1d8c8b1374e5652f@kashima.antlers
-DTSTAMP:20261120T014426Z
+DTSTAMP:20261120T104856Z
 DTSTART;TZID=Asia/Tokyo:20190305T190000
 DTEND;TZID=Asia/Tokyo:20190305T210000
 SUMMARY:AC[H]ジョホール・ダルル・タクジム【第1節】
-DESCRIPTION:大会名: AFCチャンピオンズリーグ2019　groupE\n節
-  / ラウンド: 第1節\n対戦カード: 鹿島アントラーズ vs ジ
+DESCRIPTION:大会名: AFCチャンピオンズリーグ2019　groupE\n節 
+ / ラウンド: 第1節\n対戦カード: 鹿島アントラーズ vs ジ
  ョホール・ダルル・タクジム\nキックオフ: 19:00 (JST)\n会
  場: 茨城県立カシマサッカースタジアム\n試合結果: 2-1\n
  公式詳細ページ: https://www.jfa.jp/match/acl_2019/match_page/m2.htm
@@ -688,16 +688,16 @@ TRANSP:OPAQUE
 END:VEVENT
 BEGIN:VEVENT
 UID:j1-club-antlers-20190312-08995eb7e0768fab@kashima.antlers
-DTSTAMP:20261120T014426Z
+DTSTAMP:20261120T104856Z
 DTSTART;TZID=Asia/Tokyo:20190312T153000
 DTEND;TZID=Asia/Tokyo:20190312T173000
 SUMMARY:AC[A]山東魯能【第2節】
-DESCRIPTION:大会名: AFCチャンピオンズリーグ2019　groupE\n節
-  / ラウンド: 第2節\n対戦カード: 山東魯能 vs 鹿島アント
+DESCRIPTION:大会名: AFCチャンピオンズリーグ2019　groupE\n節 
+ / ラウンド: 第2節\n対戦カード: 山東魯能 vs 鹿島アント
  ラーズ\nキックオフ: 15:30 (JST)\n会場: 済南オリンピック
- ポーツセンター\n試合結果: 2-2\n公式詳細ページ: https:/
- /www.jfa.jp/match/acl_2019/match_page/m3.html\n\n※情報ソース: JFA (
- AFCチャンピオンズリーグ)
+ スポーツセンター\n試合結果: 2-2\n公式詳細ページ: https:
+ //www.jfa.jp/match/acl_2019/match_page/m3.html\n\n※情報ソース: JFA 
+ (AFCチャンピオンズリーグ)
 LOCATION:済南オリンピックスポーツセンター
 URL:https://www.jfa.jp/match/acl_2019/match_page/m3.html
 STATUS:CONFIRMED
@@ -705,16 +705,16 @@ TRANSP:OPAQUE
 END:VEVENT
 BEGIN:VEVENT
 UID:j1-club-antlers-20190409-a721e5cd4e3963b6@kashima.antlers
-DTSTAMP:20261120T014426Z
+DTSTAMP:20261120T104856Z
 DTSTART;TZID=Asia/Tokyo:20190409T183000
 DTEND;TZID=Asia/Tokyo:20190409T203000
 SUMMARY:AC[A]慶南FC【第3節】
-DESCRIPTION:大会名: AFCチャンピオンズリーグ2019　groupE\n節
-  / ラウンド: 第3節\n対戦カード: 慶南FC vs 鹿島アントラ
- ズ\nキックオフ: 18:30 (JST)\n会場: 昌原サッカーセンタ
- \n試合結果: 2-3\n公式詳細ページ: https://www.jfa.jp/match/acl_
- 2019/match_page/m6.html\n\n※情報ソース: JFA (AFCチャンピオン
- リーグ)
+DESCRIPTION:大会名: AFCチャンピオンズリーグ2019　groupE\n節 
+ / ラウンド: 第3節\n対戦カード: 慶南FC vs 鹿島アントラ
+ ーズ\nキックオフ: 18:30 (JST)\n会場: 昌原サッカーセンタ
+ ー\n試合結果: 2-3\n公式詳細ページ: https://www.jfa.jp/match/ac
+ l_2019/match_page/m6.html\n\n※情報ソース: JFA (AFCチャンピオ
+ ンズリーグ)
 LOCATION:昌原サッカーセンター
 URL:https://www.jfa.jp/match/acl_2019/match_page/m6.html
 STATUS:CONFIRMED
@@ -722,16 +722,16 @@ TRANSP:OPAQUE
 END:VEVENT
 BEGIN:VEVENT
 UID:j1-club-antlers-20190424-8d89d55ad5a48db0@kashima.antlers
-DTSTAMP:20261120T014426Z
+DTSTAMP:20261120T104856Z
 DTSTART;TZID=Asia/Tokyo:20190424T190000
 DTEND;TZID=Asia/Tokyo:20190424T210000
 SUMMARY:AC[H]慶南FC【第4節】
-DESCRIPTION:大会名: AFCチャンピオンズリーグ2019　groupE\n節
-  / ラウンド: 第4節\n対戦カード: 鹿島アントラーズ vs 慶
+DESCRIPTION:大会名: AFCチャンピオンズリーグ2019　groupE\n節 
+ / ラウンド: 第4節\n対戦カード: 鹿島アントラーズ vs 慶
  南FC\nキックオフ: 19:00 (JST)\n会場: 茨城県立カシマサッ
- ースタジアム\n試合結果: 0-1\n公式詳細ページ: https://www
- .jfa.jp/match/acl_2019/match_page/m8.html\n\n※情報ソース: JFA (AFC
- ャンピオンズリーグ)
+ カースタジアム\n試合結果: 0-1\n公式詳細ページ: https://w
+ ww.jfa.jp/match/acl_2019/match_page/m8.html\n\n※情報ソース: JFA (AF
+ Cチャンピオンズリーグ)
 LOCATION:茨城県立カシマサッカースタジアム
 URL:https://www.jfa.jp/match/acl_2019/match_page/m8.html
 STATUS:CONFIRMED
@@ -739,18 +739,18 @@ TRANSP:OPAQUE
 END:VEVENT
 BEGIN:VEVENT
 UID:j1-club-antlers-20190508-070ee218e6d26d1f@kashima.antlers
-DTSTAMP:20261120T014426Z
+DTSTAMP:20261120T104856Z
 DTSTART;TZID=Asia/Tokyo:20190508T204500
 DTEND;TZID=Asia/Tokyo:20190508T224500
 SUMMARY:AC[A]ジョホール・ダルル・タクジム【第5節】
-DESCRIPTION:大会名: AFCチャンピオンズリーグ2019　groupE\n節
-  / ラウンド: 第5節\n対戦カード: ジョホール・ダルル・
- クジム vs 鹿島アントラーズ\nキックオフ: 20:45 (JST)\n会
- 場: タン・スリ・ダトー・ハジ・ハッサン・ユヌススタ
- ジアム\n試合結果: 1-0\n公式詳細ページ: https://www.jfa.jp/ma
- tch/acl_2019/match_page/m10.html\n\n※情報ソース: JFA (AFCチャン
- オンズリーグ)
-LOCATION:タン・スリ・ダトー・ハジ・ハッサン・ユヌス
+DESCRIPTION:大会名: AFCチャンピオンズリーグ2019　groupE\n節 
+ / ラウンド: 第5節\n対戦カード: ジョホール・ダルル・
+ タクジム vs 鹿島アントラーズ\nキックオフ: 20:45 (JST)\n
+ 会場: タン・スリ・ダトー・ハジ・ハッサン・ユヌスス
+ タジアム\n試合結果: 1-0\n公式詳細ページ: https://www.jfa.jp
+ /match/acl_2019/match_page/m10.html\n\n※情報ソース: JFA (AFCチャ
+ ンピオンズリーグ)
+LOCATION:タン・スリ・ダトー・ハジ・ハッサン・ユヌスス
  タジアム
 URL:https://www.jfa.jp/match/acl_2019/match_page/m10.html
 STATUS:CONFIRMED
@@ -758,16 +758,16 @@ TRANSP:OPAQUE
 END:VEVENT
 BEGIN:VEVENT
 UID:j1-club-antlers-20190522-7b88d26717a28544@kashima.antlers
-DTSTAMP:20261120T014426Z
+DTSTAMP:20261120T104856Z
 DTSTART;TZID=Asia/Tokyo:20190522T190000
 DTEND;TZID=Asia/Tokyo:20190522T210000
 SUMMARY:AC[H]山東魯能【第6節】
-DESCRIPTION:大会名: AFCチャンピオンズリーグ2019　groupE\n節
-  / ラウンド: 第6節\n対戦カード: 鹿島アントラーズ vs 山
+DESCRIPTION:大会名: AFCチャンピオンズリーグ2019　groupE\n節 
+ / ラウンド: 第6節\n対戦カード: 鹿島アントラーズ vs 山
  東魯能\nキックオフ: 19:00 (JST)\n会場: 茨城県立カシマサ
- カースタジアム\n試合結果: 2-1\n公式詳細ページ: https:/
- /www.jfa.jp/match/acl_2019/match_page/m12.html\n\n※情報ソース: JFA 
- (AFCチャンピオンズリーグ)
+ ッカースタジアム\n試合結果: 2-1\n公式詳細ページ: https:
+ //www.jfa.jp/match/acl_2019/match_page/m12.html\n\n※情報ソース: JFA
+  (AFCチャンピオンズリーグ)
 LOCATION:茨城県立カシマサッカースタジアム
 URL:https://www.jfa.jp/match/acl_2019/match_page/m12.html
 STATUS:CONFIRMED
@@ -775,16 +775,16 @@ TRANSP:OPAQUE
 END:VEVENT
 BEGIN:VEVENT
 UID:j1-club-antlers-20190618-acb3108d69e1a77c@kashima.antlers
-DTSTAMP:20261120T014426Z
+DTSTAMP:20261120T104856Z
 DTSTART;TZID=Asia/Tokyo:20190618T190000
 DTEND;TZID=Asia/Tokyo:20190618T210000
 SUMMARY:AC[H]サンフレッチェ広島【第1節】
-DESCRIPTION:大会名: AFCチャンピオンズリーグ2019  ラウンド
- 16\n節 / ラウンド: 第1節\n対戦カード: 鹿島アントラーズ
-  vs サンフレッチェ広島\nキックオフ: 19:00 (JST)\n会場: 茨
+DESCRIPTION:大会名: AFCチャンピオンズリーグ2019  ラウンド1
+ 6\n節 / ラウンド: 第1節\n対戦カード: 鹿島アントラーズ 
+ vs サンフレッチェ広島\nキックオフ: 19:00 (JST)\n会場: 茨
  城県立カシマサッカースタジアム\n試合結果: 1-0\n公式
- 細ページ: https://www.jfa.jp/match/acl_2019/match_page/m1.html\n\n※
- 情報ソース: JFA (AFCチャンピオンズリーグ)
+ 詳細ページ: https://www.jfa.jp/match/acl_2019/match_page/m1.html\n\n
+ ※情報ソース: JFA (AFCチャンピオンズリーグ)
 LOCATION:茨城県立カシマサッカースタジアム
 URL:https://www.jfa.jp/match/acl_2019/match_page/m1.html
 STATUS:CONFIRMED
@@ -792,12 +792,12 @@ TRANSP:OPAQUE
 END:VEVENT
 BEGIN:VEVENT
 UID:j1-club-antlers-20190625-154ede0ad495448d@kashima.antlers
-DTSTAMP:20261120T014426Z
+DTSTAMP:20261120T104856Z
 DTSTART;TZID=Asia/Tokyo:20190625T190000
 DTEND;TZID=Asia/Tokyo:20190625T210000
 SUMMARY:AC[A]サンフレッチェ広島【第2節】
-DESCRIPTION:大会名: AFCチャンピオンズリーグ2019  ラウンド
- 16\n節 / ラウンド: 第2節\n対戦カード: サンフレッチェ広
+DESCRIPTION:大会名: AFCチャンピオンズリーグ2019  ラウンド1
+ 6\n節 / ラウンド: 第2節\n対戦カード: サンフレッチェ広
  島 vs 鹿島アントラーズ\nキックオフ: 19:00 (JST)\n会場: 広
  島広域公園陸上競技場\n試合結果: 3-2\n公式詳細ページ: 
  https://www.jfa.jp/match/acl_2019/match_page/m9.html\n\n※情報ソース
@@ -809,16 +809,16 @@ TRANSP:OPAQUE
 END:VEVENT
 BEGIN:VEVENT
 UID:j1-club-antlers-20190703-916f60c58e825240@kashima.antlers
-DTSTAMP:20261120T014426Z
+DTSTAMP:20261120T104856Z
 DTSTART;TZID=Asia/Tokyo:20190703T190000
 DTEND;TZID=Asia/Tokyo:20190703T210000
 SUMMARY:天[H]北陸大学【2回戦】
-DESCRIPTION:大会名: 天皇杯 JFA 第99回全日本サッカー選手
- 大会\n節 / ラウンド: ２回戦\n対戦カード: 鹿島アント
- ーズ vs 北陸大学\nキックオフ: 19:00 (JST)\n会場: 茨城県
+DESCRIPTION:大会名: 天皇杯 JFA 第99回全日本サッカー選手権
+ 大会\n節 / ラウンド: ２回戦\n対戦カード: 鹿島アントラ
+ ーズ vs 北陸大学\nキックオフ: 19:00 (JST)\n会場: 茨城県立
  カシマサッカースタジアム\n試合結果: 3-1\n公式詳細ペ
- ジ: https://www.jfa.jp/match/schedule_result/pdf/m49.pdf\n\n※情報
- ース: JFA (天皇杯)
+ ージ: https://www.jfa.jp/match/schedule_result/pdf/m49.pdf\n\n※情報
+ ソース: JFA (天皇杯)
 LOCATION:茨城県立カシマサッカースタジアム
 URL:https://www.jfa.jp/match/schedule_result/pdf/m49.pdf
 STATUS:CONFIRMED
@@ -826,16 +826,16 @@ TRANSP:OPAQUE
 END:VEVENT
 BEGIN:VEVENT
 UID:j1-club-antlers-20190814-c25fb7287920da74@kashima.antlers
-DTSTAMP:20261120T014426Z
+DTSTAMP:20261120T104856Z
 DTSTART;TZID=Asia/Tokyo:20190814T190000
 DTEND;TZID=Asia/Tokyo:20190814T210000
 SUMMARY:天[H]栃木ＳＣ【3回戦】
-DESCRIPTION:大会名: 天皇杯 JFA 第99回全日本サッカー選手
- 大会\n節 / ラウンド: ３回戦\n対戦カード: 鹿島アント
- ーズ vs 栃木ＳＣ\nキックオフ: 19:00 (JST)\n会場: 栃木県
- リーンスタジアム\n試合結果: 4-0\n公式詳細ページ: https
- ://www.jfa.jp/match/schedule_result/pdf/m69.pdf\n\n※情報ソース: JFA
-  (天皇杯)
+DESCRIPTION:大会名: 天皇杯 JFA 第99回全日本サッカー選手権
+ 大会\n節 / ラウンド: ３回戦\n対戦カード: 鹿島アントラ
+ ーズ vs 栃木ＳＣ\nキックオフ: 19:00 (JST)\n会場: 栃木県グ
+ リーンスタジアム\n試合結果: 4-0\n公式詳細ページ: https:
+ //www.jfa.jp/match/schedule_result/pdf/m69.pdf\n\n※情報ソース: JFA 
+ (天皇杯)
 LOCATION:栃木県グリーンスタジアム
 URL:https://www.jfa.jp/match/schedule_result/pdf/m69.pdf
 STATUS:CONFIRMED
@@ -843,16 +843,16 @@ TRANSP:OPAQUE
 END:VEVENT
 BEGIN:VEVENT
 UID:j1-club-antlers-20190828-058b01a313d43716@kashima.antlers
-DTSTAMP:20261120T014426Z
+DTSTAMP:20261120T104856Z
 DTSTART;TZID=Asia/Tokyo:20190828T200000
 DTEND;TZID=Asia/Tokyo:20190828T220000
 SUMMARY:AC[A]広州恒大【準々決勝】
-DESCRIPTION:大会名: AFCチャンピオンズリーグ2019　ノック
- ウトステージ\n節 / ラウンド: 準々決勝\n対戦カード: 
+DESCRIPTION:大会名: AFCチャンピオンズリーグ2019　ノックア
+ ウトステージ\n節 / ラウンド: 準々決勝\n対戦カード: 広
  州恒大 vs 鹿島アントラーズ\nキックオフ: 20:00 (JST)\n会
- : 広州天河体育中心\n試合結果: 0-0\n公式詳細ページ: ht
- tps://www.jfa.jp/match/acl_2019/match_page/m4.html\n\n※情報ソース: 
- JFA (AFCチャンピオンズリーグ)
+ 場: 広州天河体育中心\n試合結果: 0-0\n公式詳細ページ: h
+ ttps://www.jfa.jp/match/acl_2019/match_page/m4.html\n\n※情報ソース:
+  JFA (AFCチャンピオンズリーグ)
 LOCATION:広州天河体育中心
 URL:https://www.jfa.jp/match/acl_2019/match_page/m4.html
 STATUS:CONFIRMED
@@ -860,16 +860,16 @@ TRANSP:OPAQUE
 END:VEVENT
 BEGIN:VEVENT
 UID:j1-club-antlers-20190918-0c598d090624ad45@kashima.antlers
-DTSTAMP:20261120T014426Z
+DTSTAMP:20261120T104856Z
 DTSTART;TZID=Asia/Tokyo:20190918T190000
 DTEND;TZID=Asia/Tokyo:20190918T210000
 SUMMARY:AC[H]広州恒大【準々決勝】
-DESCRIPTION:大会名: AFCチャンピオンズリーグ2019　ノック
- ウトステージ\n節 / ラウンド: 準々決勝\n対戦カード: 
+DESCRIPTION:大会名: AFCチャンピオンズリーグ2019　ノックア
+ ウトステージ\n節 / ラウンド: 準々決勝\n対戦カード: 鹿
  島アントラーズ vs 広州恒大\nキックオフ: 19:00 (JST)\n会
- : 茨城県立カシマサッカースタジアム\n試合結果: 1-1\n
- 式詳細ページ: https://www.jfa.jp/match/acl_2019/match_page/m8.html
- \n\n※情報ソース: JFA (AFCチャンピオンズリーグ)
+ 場: 茨城県立カシマサッカースタジアム\n試合結果: 1-1\n
+ 公式詳細ページ: https://www.jfa.jp/match/acl_2019/match_page/m8.htm
+ l\n\n※情報ソース: JFA (AFCチャンピオンズリーグ)
 LOCATION:茨城県立カシマサッカースタジアム
 URL:https://www.jfa.jp/match/acl_2019/match_page/m8.html
 STATUS:CONFIRMED
@@ -877,16 +877,16 @@ TRANSP:OPAQUE
 END:VEVENT
 BEGIN:VEVENT
 UID:j1-club-antlers-20190925-701ffcb4a3abb71f@kashima.antlers
-DTSTAMP:20261120T014426Z
+DTSTAMP:20261120T104856Z
 DTSTART;TZID=Asia/Tokyo:20190925T190000
 DTEND;TZID=Asia/Tokyo:20190925T210000
 SUMMARY:天[H]横浜F・マリノス【ラウンド16】
-DESCRIPTION:大会名: 天皇杯 JFA 第99回全日本サッカー選手
+DESCRIPTION:大会名: 天皇杯 JFA 第99回全日本サッカー選手権
  大会\n節 / ラウンド: ラウンド16\n対戦カード: 鹿島アン
  トラーズ vs 横浜F・マリノス\nキックオフ: 19:00 (JST)\n会
- : 茨城県立カシマサッカースタジアム\n試合結果: 4-1\n
- 式詳細ページ: https://www.jfa.jp/match/schedule_result/pdf/m77.pdf
- \n\n※情報ソース: JFA (天皇杯)
+ 場: 茨城県立カシマサッカースタジアム\n試合結果: 4-1\n
+ 公式詳細ページ: https://www.jfa.jp/match/schedule_result/pdf/m77.pd
+ f\n\n※情報ソース: JFA (天皇杯)
 LOCATION:茨城県立カシマサッカースタジアム
 URL:https://www.jfa.jp/match/schedule_result/pdf/m77.pdf
 STATUS:CONFIRMED
@@ -894,16 +894,16 @@ TRANSP:OPAQUE
 END:VEVENT
 BEGIN:VEVENT
 UID:j1-club-antlers-20191023-f39c38c7f254f6fd@kashima.antlers
-DTSTAMP:20261120T014426Z
+DTSTAMP:20261120T104856Z
 DTSTART;TZID=Asia/Tokyo:20191023T190000
 DTEND;TZID=Asia/Tokyo:20191023T210000
 SUMMARY:天[H]Honda FC【準々決勝】
-DESCRIPTION:大会名: 天皇杯 JFA 第99回全日本サッカー選手
- 大会\n節 / ラウンド: 準々決勝\n対戦カード: 鹿島アン
+DESCRIPTION:大会名: 天皇杯 JFA 第99回全日本サッカー選手権
+ 大会\n節 / ラウンド: 準々決勝\n対戦カード: 鹿島アント
  ラーズ vs Honda FC\nキックオフ: 19:00 (JST)\n会場: 茨城県立
  カシマサッカースタジアム\n試合結果: 1-0\n公式詳細ペ
- ジ: https://www.jfa.jp/match/schedule_result/pdf/m83.pdf\n\n※情報ソ
- ース: JFA (天皇杯)
+ ージ: https://www.jfa.jp/match/schedule_result/pdf/m83.pdf\n\n※情報
+ ソース: JFA (天皇杯)
 LOCATION:茨城県立カシマサッカースタジアム
 URL:https://www.jfa.jp/match/schedule_result/pdf/m83.pdf
 STATUS:CONFIRMED
@@ -911,16 +911,16 @@ TRANSP:OPAQUE
 END:VEVENT
 BEGIN:VEVENT
 UID:j1-club-antlers-20191221-236ac6deaa557dcb@kashima.antlers
-DTSTAMP:20261120T014426Z
+DTSTAMP:20261120T104856Z
 DTSTART;TZID=Asia/Tokyo:20191221T160500
 DTEND;TZID=Asia/Tokyo:20191221T180500
 SUMMARY:天[H]Ｖ・ファーレン長崎【準決勝】
-DESCRIPTION:大会名: 天皇杯 JFA 第99回全日本サッカー選手
- 大会\n節 / ラウンド: 準決勝\n対戦カード: 鹿島アント
+DESCRIPTION:大会名: 天皇杯 JFA 第99回全日本サッカー選手権
+ 大会\n節 / ラウンド: 準決勝\n対戦カード: 鹿島アントラ
  ーズ vs Ｖ・ファーレン長崎\nキックオフ: 16:05 (JST)\n会
- : 茨城県立カシマサッカースタジアム\n試合結果: 3-2\n
- 式詳細ページ: https://www.jfa.jp/match/schedule_result/pdf/m86.pdf
- \n\n※情報ソース: JFA (天皇杯)
+ 場: 茨城県立カシマサッカースタジアム\n試合結果: 3-2\n
+ 公式詳細ページ: https://www.jfa.jp/match/schedule_result/pdf/m86.pd
+ f\n\n※情報ソース: JFA (天皇杯)
 LOCATION:茨城県立カシマサッカースタジアム
 URL:https://www.jfa.jp/match/schedule_result/pdf/m86.pdf
 STATUS:CONFIRMED
@@ -928,15 +928,15 @@ TRANSP:OPAQUE
 END:VEVENT
 BEGIN:VEVENT
 UID:j1-club-antlers-20200101-a033e810d6404b46@kashima.antlers
-DTSTAMP:20261120T014426Z
+DTSTAMP:20261120T104856Z
 DTSTART;TZID=Asia/Tokyo:20200101T143500
 DTEND;TZID=Asia/Tokyo:20200101T163500
 SUMMARY:天[A]ヴィッセル神戸【決勝戦】
-DESCRIPTION:大会名: 天皇杯 JFA 第99回全日本サッカー選手
- 大会\n節 / ラウンド: 決勝戦\n対戦カード: ヴィッセル
- 戸 vs 鹿島アントラーズ\nキックオフ: 14:35 (JST)\n会場: 
- 立競技場\n試合結果: 2-0\n公式詳細ページ: https://www.jfa.j
- p/match/schedule_result/pdf/m87.pdf\n\n※情報ソース: JFA (天皇杯)
+DESCRIPTION:大会名: 天皇杯 JFA 第99回全日本サッカー選手権
+ 大会\n節 / ラウンド: 決勝戦\n対戦カード: ヴィッセル神
+ 戸 vs 鹿島アントラーズ\nキックオフ: 14:35 (JST)\n会場: 国
+ 立競技場\n試合結果: 2-0\n公式詳細ページ: https://www.jfa.jp
+ /match/schedule_result/pdf/m87.pdf\n\n※情報ソース: JFA (天皇杯)
 LOCATION:国立競技場
 URL:https://www.jfa.jp/match/schedule_result/pdf/m87.pdf
 STATUS:CONFIRMED
@@ -944,16 +944,16 @@ TRANSP:OPAQUE
 END:VEVENT
 BEGIN:VEVENT
 UID:j1-club-antlers-20200128-e7025534d6cbb70f@kashima.antlers
-DTSTAMP:20261120T014426Z
+DTSTAMP:20261120T104856Z
 DTSTART;TZID=Asia/Tokyo:20200128T190000
 DTEND;TZID=Asia/Tokyo:20200128T210000
 SUMMARY:AC[H]メルボルン・ビクトリー【第1節】
-DESCRIPTION:大会名: AFCチャンピオンズリーグ2020 playoff\n節 
- / ラウンド: 第1節\n対戦カード: 鹿島アントラーズ vs メ
- ボルン・ビクトリー\nキックオフ: 19:00 (JST)\n会場: 茨
- 県立カシマサッカースタジアム\n試合結果: 0-1\n公式詳
- ページ: https://www.jfa.jp/match/acl_2020/match_page/m2.html\n\n※
- 報ソース: JFA (AFCチャンピオンズリーグ)
+DESCRIPTION:大会名: AFCチャンピオンズリーグ2020 playoff\n節 /
+  ラウンド: 第1節\n対戦カード: 鹿島アントラーズ vs メ
+ ルボルン・ビクトリー\nキックオフ: 19:00 (JST)\n会場: 茨
+ 城県立カシマサッカースタジアム\n試合結果: 0-1\n公式
+ 詳細ページ: https://www.jfa.jp/match/acl_2020/match_page/m2.html\n\n
+ ※情報ソース: JFA (AFCチャンピオンズリーグ)
 LOCATION:茨城県立カシマサッカースタジアム
 URL:https://www.jfa.jp/match/acl_2020/match_page/m2.html
 STATUS:CONFIRMED
@@ -961,16 +961,16 @@ TRANSP:OPAQUE
 END:VEVENT
 BEGIN:VEVENT
 UID:j1-club-antlers-20210616-c5cb51a2b5624f18@kashima.antlers
-DTSTAMP:20261120T014426Z
+DTSTAMP:20261120T104856Z
 DTSTART;TZID=Asia/Tokyo:20210616T190000
 DTEND;TZID=Asia/Tokyo:20210616T210000
 SUMMARY:天[H]Ｙ.Ｓ.Ｃ.Ｃ.横浜【2回戦】
 DESCRIPTION:大会名: 天皇杯 JFA 第101回全日本サッカー選手
- 大会\n節 / ラウンド: ２回戦\n対戦カード: 鹿島アント
- ーズ vs Ｙ.Ｓ.Ｃ.Ｃ.横浜\nキックオフ: 19:00 (JST)\n会場: 
- ケーズデンキスタジアム水戸\n試合結果: 8-1\n公式詳細
- ージ: https://www.jfa.jp/match/schedule_result/pdf/m39.pdf\n\n※情報
- ソース: JFA (天皇杯)
+ 権大会\n節 / ラウンド: ２回戦\n対戦カード: 鹿島アント
+ ラーズ vs Ｙ.Ｓ.Ｃ.Ｃ.横浜\nキックオフ: 19:00 (JST)\n会場:
+  ケーズデンキスタジアム水戸\n試合結果: 8-1\n公式詳細
+ ページ: https://www.jfa.jp/match/schedule_result/pdf/m39.pdf\n\n※情
+ 報ソース: JFA (天皇杯)
 LOCATION:ケーズデンキスタジアム水戸
 URL:https://www.jfa.jp/match/schedule_result/pdf/m39.pdf
 STATUS:CONFIRMED
@@ -978,16 +978,16 @@ TRANSP:OPAQUE
 END:VEVENT
 BEGIN:VEVENT
 UID:j1-club-antlers-20210707-8fe71da25c294638@kashima.antlers
-DTSTAMP:20261120T014426Z
+DTSTAMP:20261120T104856Z
 DTSTART;TZID=Asia/Tokyo:20210707T190000
 DTEND;TZID=Asia/Tokyo:20210707T210000
 SUMMARY:天[H]栃木ＳＣ【3回戦】
 DESCRIPTION:大会名: 天皇杯 JFA 第101回全日本サッカー選手
- 大会\n節 / ラウンド: ３回戦\n対戦カード: 鹿島アント
- ーズ vs 栃木ＳＣ\nキックオフ: 19:00 (JST)\n会場: カンセ
- スタジアムとちぎ\n試合結果: 3-0\n公式詳細ページ: http
- s://www.jfa.jp/match/schedule_result/pdf/m65.pdf\n\n※情報ソース: JF
- A (天皇杯)
+ 権大会\n節 / ラウンド: ３回戦\n対戦カード: 鹿島アント
+ ラーズ vs 栃木ＳＣ\nキックオフ: 19:00 (JST)\n会場: カンセ
+ キスタジアムとちぎ\n試合結果: 3-0\n公式詳細ページ: htt
+ ps://www.jfa.jp/match/schedule_result/pdf/m65.pdf\n\n※情報ソース: J
+ FA (天皇杯)
 LOCATION:カンセキスタジアムとちぎ
 URL:https://www.jfa.jp/match/schedule_result/pdf/m65.pdf
 STATUS:CONFIRMED
@@ -995,16 +995,16 @@ TRANSP:OPAQUE
 END:VEVENT
 BEGIN:VEVENT
 UID:j1-club-antlers-20210818-db0133419a660a4f@kashima.antlers
-DTSTAMP:20261120T014426Z
+DTSTAMP:20261120T104856Z
 DTSTART;TZID=Asia/Tokyo:20210818T190000
 DTEND;TZID=Asia/Tokyo:20210818T210000
 SUMMARY:天[H]V・ファーレン長崎【ラウンド16】
 DESCRIPTION:大会名: 天皇杯 JFA 第101回全日本サッカー選手
- 大会\n節 / ラウンド: ラウンド16\n対戦カード: 鹿島ア
- トラーズ vs V・ファーレン長崎\nキックオフ: 19:00 (JST)\n
- 会場: トランスコスモススタジアム長崎\n試合結果: 3-1\n
- 公式詳細ページ: https://www.jfa.jp/match/schedule_result/pdf/m78.pd
- f\n\n※情報ソース: JFA (天皇杯)
+ 権大会\n節 / ラウンド: ラウンド16\n対戦カード: 鹿島ア
+ ントラーズ vs V・ファーレン長崎\nキックオフ: 19:00 (JST)
+ \n会場: トランスコスモススタジアム長崎\n試合結果: 3-1
+ \n公式詳細ページ: https://www.jfa.jp/match/schedule_result/pdf/m78.
+ pdf\n\n※情報ソース: JFA (天皇杯)
 LOCATION:トランスコスモススタジアム長崎
 URL:https://www.jfa.jp/match/schedule_result/pdf/m78.pdf
 STATUS:CONFIRMED
@@ -1012,16 +1012,16 @@ TRANSP:OPAQUE
 END:VEVENT
 BEGIN:VEVENT
 UID:j1-club-antlers-20211027-34e023bf883cddb2@kashima.antlers
-DTSTAMP:20261120T014426Z
+DTSTAMP:20261120T104856Z
 DTSTART;TZID=Asia/Tokyo:20211027T180000
 DTEND;TZID=Asia/Tokyo:20211027T200000
 SUMMARY:天[A]川崎フロンターレ【準々決勝】
 DESCRIPTION:大会名: 天皇杯 JFA 第101回全日本サッカー選手
- 大会\n節 / ラウンド: 準々決勝\n対戦カード: 川崎フロ
- ターレ vs 鹿島アントラーズ\nキックオフ: 18:00 (JST)\n会
- 場: 等々力陸上競技場\n試合結果: 3-1\n公式詳細ページ: h
- ttps://www.jfa.jp/match/schedule_result/pdf/m85.pdf\n\n※情報ソース:
-  JFA (天皇杯)
+ 権大会\n節 / ラウンド: 準々決勝\n対戦カード: 川崎フロ
+ ンターレ vs 鹿島アントラーズ\nキックオフ: 18:00 (JST)\n
+ 会場: 等々力陸上競技場\n試合結果: 3-1\n公式詳細ページ
+ : https://www.jfa.jp/match/schedule_result/pdf/m85.pdf\n\n※情報ソー
+ ス: JFA (天皇杯)
 LOCATION:等々力陸上競技場
 URL:https://www.jfa.jp/match/schedule_result/pdf/m85.pdf
 STATUS:CONFIRMED
@@ -1029,16 +1029,16 @@ TRANSP:OPAQUE
 END:VEVENT
 BEGIN:VEVENT
 UID:j1-club-antlers-20220522-94085117c0055f84@kashima.antlers
-DTSTAMP:20261120T014426Z
+DTSTAMP:20261120T104856Z
 DTSTART;TZID=Asia/Tokyo:20220522T130000
 DTEND;TZID=Asia/Tokyo:20220522T150000
 SUMMARY:天[H]高知ユナイテッドＳＣ【1回戦】
 DESCRIPTION:大会名: 天皇杯 JFA 第102回全日本サッカー選手
- 大会\n節 / ラウンド: １回戦\n対戦カード: Brew KASHIMA vs 
- 高知ユナイテッドＳＣ\nキックオフ: 13:00 (JST)\n会場: 駅
- 不動産スタジアム\n試合結果: 0-2\n公式詳細ページ: http
- s://www.jfa.jp/match/schedule_result/pdf/m15.pdf\n\n※情報ソース: JF
- A (天皇杯)
+ 権大会\n節 / ラウンド: １回戦\n対戦カード: Brew KASHIMA vs
+  高知ユナイテッドＳＣ\nキックオフ: 13:00 (JST)\n会場: 駅
+ 前不動産スタジアム\n試合結果: 0-2\n公式詳細ページ: htt
+ ps://www.jfa.jp/match/schedule_result/pdf/m15.pdf\n\n※情報ソース: J
+ FA (天皇杯)
 LOCATION:駅前不動産スタジアム
 URL:https://www.jfa.jp/match/schedule_result/pdf/m15.pdf
 STATUS:CONFIRMED
@@ -1046,14 +1046,115 @@ TRANSP:OPAQUE
 END:VEVENT
 BEGIN:VEVENT
 UID:j1-club-antlers-20220601-ee62a62329b75364@kashima.antlers
-DTSTAMP:20261120T014426Z
+DTSTAMP:20261120T104856Z
 DTSTART;TZID=Asia/Tokyo:20220601T190000
 DTEND;TZID=Asia/Tokyo:20220601T210000
 SUMMARY:天[H]新潟医療福祉大学【2回戦】
 DESCRIPTION:大会名: 天皇杯 JFA 第102回全日本サッカー選手
- 大会\n節 / ラウンド: ２回戦\n対戦カード: 鹿島アント
- ーズ vs 新潟医療福祉大学\nキックオフ: 19:00 (JST)\n会場
- : 茨城県立カシマサッカースタジアム\n試合結果: 2-1\n公
+ 権大会\n節 / ラウンド: ２回戦\n対戦カード: 鹿島アント
+ ラーズ vs 新潟医療福祉大学\nキックオフ: 19:00 (JST)\n会
+ 場: 茨城県立カシマサッカースタジアム\n試合結果: 2-1\n
+ 公式詳細ページ: https://www.jfa.jp/match/schedule_result/pdf/m33.pd
+ f\n\n※情報ソース: JFA (天皇杯)
+LOCATION:茨城県立カシマサッカースタジアム
+URL:https://www.jfa.jp/match/schedule_result/pdf/m33.pdf
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+UID:j1-club-antlers-20220622-bb51fec04f45aa34@kashima.antlers
+DTSTAMP:20261120T104856Z
+DTSTART;TZID=Asia/Tokyo:20220622T190000
+DTEND;TZID=Asia/Tokyo:20220622T210000
+SUMMARY:天[H]大宮アルディージャ【3回戦】
+DESCRIPTION:大会名: 天皇杯 JFA 第102回全日本サッカー選手
+ 権大会\n節 / ラウンド: ３回戦\n対戦カード: 鹿島アント
+ ラーズ vs 大宮アルディージャ\nキックオフ: 19:00 (JST)\n
+ 会場: ＮＡＣＫ５スタジアム大宮\n試合結果: 3-0\n公式詳
+ 細ページ: https://www.jfa.jp/match/schedule_result/pdf/m61.pdf\n\n※
+ 情報ソース: JFA (天皇杯)
+LOCATION:ＮＡＣＫ５スタジアム大宮
+URL:https://www.jfa.jp/match/schedule_result/pdf/m61.pdf
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+UID:j1-club-antlers-20220713-a451f242742be19b@kashima.antlers
+DTSTAMP:20261120T104856Z
+DTSTART;TZID=Asia/Tokyo:20220713T190000
+DTEND;TZID=Asia/Tokyo:20220713T210000
+SUMMARY:天[H]ガンバ大阪【ラウンド16】
+DESCRIPTION:大会名: 天皇杯 JFA 第102回全日本サッカー選手
+ 権大会\n節 / ラウンド: ラウンド16\n対戦カード: 鹿島ア
+ ントラーズ vs ガンバ大阪\nキックオフ: 19:00 (JST)\n会場: 
+ 茨城県立カシマサッカースタジアム\n試合結果: 2-0\n公
+ 式詳細ページ: https://www.jfa.jp/match/schedule_result/pdf/m75.pdf\n
+ \n※情報ソース: JFA (天皇杯)
+LOCATION:茨城県立カシマサッカースタジアム
+URL:https://www.jfa.jp/match/schedule_result/pdf/m75.pdf
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+UID:j1-club-antlers-20220907-8cc068cd1183ca54@kashima.antlers
+DTSTAMP:20261120T104856Z
+DTSTART;TZID=Asia/Tokyo:20220907T190000
+DTEND;TZID=Asia/Tokyo:20220907T210000
+SUMMARY:天[A]ヴィッセル神戸【準々決勝】
+DESCRIPTION:大会名: 天皇杯 JFA 第102回全日本サッカー選手
+ 権大会\n節 / ラウンド: 準々決勝\n対戦カード: ヴィッセ
+ ル神戸 vs 鹿島アントラーズ\nキックオフ: 19:00 (JST)\n会
+ 場: ノエビアスタジアム神戸\n試合結果: 0-1\n公式詳細ペ
+ ージ: https://www.jfa.jp/match/schedule_result/pdf/m82.pdf\n\n※情報
+ ソース: JFA (天皇杯)
+LOCATION:ノエビアスタジアム神戸
+URL:https://www.jfa.jp/match/schedule_result/pdf/m82.pdf
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+UID:j1-club-antlers-20221005-90990165ecf4fbd1@kashima.antlers
+DTSTAMP:20261120T104856Z
+DTSTART;TZID=Asia/Tokyo:20221005T173000
+DTEND;TZID=Asia/Tokyo:20221005T193000
+SUMMARY:天[A]甲府【準決勝】
+DESCRIPTION:大会名: 天皇杯 JFA 第102回全日本サッカー選手
+ 権大会\n節 / ラウンド: 準決勝\n対戦カード: ヴァンフォ
+ ーレ甲府 vs 鹿島アントラーズ\nキックオフ: 17:30 (JST)\n
+ 会場: 茨城県立カシマサッカースタジアム\n試合結果: 1-
+ 0\n公式詳細ページ: https://www.jfa.jp/match/schedule_result/pdf/m85
+ .pdf\n\n※情報ソース: JFA (天皇杯)
+LOCATION:茨城県立カシマサッカースタジアム
+URL:https://www.jfa.jp/match/schedule_result/pdf/m85.pdf
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+UID:j1-club-antlers-20230520-9f8cf832cd3b91c0@kashima.antlers
+DTSTAMP:20261120T104856Z
+DTSTART;TZID=Asia/Tokyo:20230520T150000
+DTEND;TZID=Asia/Tokyo:20230520T170000
+SUMMARY:天[A]カマタマーレ讃岐【1回戦】
+DESCRIPTION:大会名: 天皇杯 JFA 第103回全日本サッカー選手
+ 権大会\n節 / ラウンド: １回戦\n対戦カード: カマタマー
+ レ讃岐 vs Brew KASHIMA\nキックオフ: 15:00 (JST)\n会場: Pikaraス
+ タジアム\n試合結果: 2-1\n公式詳細ページ: https://www.jfa.jp
+ /match/schedule_result/pdf/m09.pdf\n\n※情報ソース: JFA (天皇杯)
+LOCATION:Pikaraスタジアム
+URL:https://www.jfa.jp/match/schedule_result/pdf/m09.pdf
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+UID:j1-club-antlers-20230607-a003cfd42d2f8980@kashima.antlers
+DTSTAMP:20261120T104856Z
+DTSTART;TZID=Asia/Tokyo:20230607T190000
+DTEND;TZID=Asia/Tokyo:20230607T210000
+SUMMARY:天[H]Ｈｏｎｄａ ＦＣ【2回戦】
+DESCRIPTION:大会名: 天皇杯 JFA 第103回全日本サッカー選手
+ 権大会\n節 / ラウンド: ２回戦\n対戦カード: 鹿島アント
+ ラーズ vs Ｈｏｎｄａ ＦＣ\nキックオフ: 19:00 (JST)\n会場:
+  茨城県立カシマサッカースタジアム\n試合結果: 3-0\n公
  式詳細ページ: https://www.jfa.jp/match/schedule_result/pdf/m33.pdf\n
  \n※情報ソース: JFA (天皇杯)
 LOCATION:茨城県立カシマサッカースタジアム
@@ -1062,118 +1163,17 @@ STATUS:CONFIRMED
 TRANSP:OPAQUE
 END:VEVENT
 BEGIN:VEVENT
-UID:j1-club-antlers-20220622-bb51fec04f45aa34@kashima.antlers
-DTSTAMP:20261120T014426Z
-DTSTART;TZID=Asia/Tokyo:20220622T190000
-DTEND;TZID=Asia/Tokyo:20220622T210000
-SUMMARY:天[H]大宮アルディージャ【3回戦】
-DESCRIPTION:大会名: 天皇杯 JFA 第102回全日本サッカー選手
- 大会\n節 / ラウンド: ３回戦\n対戦カード: 鹿島アント
- ーズ vs 大宮アルディージャ\nキックオフ: 19:00 (JST)\n会
- 場: ＮＡＣＫ５スタジアム大宮\n試合結果: 3-0\n公式詳細
- ページ: https://www.jfa.jp/match/schedule_result/pdf/m61.pdf\n\n※情
- ソース: JFA (天皇杯)
-LOCATION:ＮＡＣＫ５スタジアム大宮
-URL:https://www.jfa.jp/match/schedule_result/pdf/m61.pdf
-STATUS:CONFIRMED
-TRANSP:OPAQUE
-END:VEVENT
-BEGIN:VEVENT
-UID:j1-club-antlers-20220713-a451f242742be19b@kashima.antlers
-DTSTAMP:20261120T014426Z
-DTSTART;TZID=Asia/Tokyo:20220713T190000
-DTEND;TZID=Asia/Tokyo:20220713T210000
-SUMMARY:天[H]ガンバ大阪【ラウンド16】
-DESCRIPTION:大会名: 天皇杯 JFA 第102回全日本サッカー選手
- 大会\n節 / ラウンド: ラウンド16\n対戦カード: 鹿島ア
- トラーズ vs ガンバ大阪\nキックオフ: 19:00 (JST)\n会場: 
- 城県立カシマサッカースタジアム\n試合結果: 2-0\n公式
- 細ページ: https://www.jfa.jp/match/schedule_result/pdf/m75.pdf\n\n
- 情報ソース: JFA (天皇杯)
-LOCATION:茨城県立カシマサッカースタジアム
-URL:https://www.jfa.jp/match/schedule_result/pdf/m75.pdf
-STATUS:CONFIRMED
-TRANSP:OPAQUE
-END:VEVENT
-BEGIN:VEVENT
-UID:j1-club-antlers-20220907-8cc068cd1183ca54@kashima.antlers
-DTSTAMP:20261120T014426Z
-DTSTART;TZID=Asia/Tokyo:20220907T190000
-DTEND;TZID=Asia/Tokyo:20220907T210000
-SUMMARY:天[A]ヴィッセル神戸【準々決勝】
-DESCRIPTION:大会名: 天皇杯 JFA 第102回全日本サッカー選手
- 大会\n節 / ラウンド: 準々決勝\n対戦カード: ヴィッセ
- 神戸 vs 鹿島アントラーズ\nキックオフ: 19:00 (JST)\n会場
- : ノエビアスタジアム神戸\n試合結果: 0-1\n公式詳細ペー
- ジ: https://www.jfa.jp/match/schedule_result/pdf/m82.pdf\n\n※情報ソ
- ス: JFA (天皇杯)
-LOCATION:ノエビアスタジアム神戸
-URL:https://www.jfa.jp/match/schedule_result/pdf/m82.pdf
-STATUS:CONFIRMED
-TRANSP:OPAQUE
-END:VEVENT
-BEGIN:VEVENT
-UID:j1-club-antlers-20221005-90990165ecf4fbd1@kashima.antlers
-DTSTAMP:20261120T014426Z
-DTSTART;TZID=Asia/Tokyo:20221005T173000
-DTEND;TZID=Asia/Tokyo:20221005T193000
-SUMMARY:天[A]甲府【準決勝】
-DESCRIPTION:大会名: 天皇杯 JFA 第102回全日本サッカー選手
- 大会\n節 / ラウンド: 準決勝\n対戦カード: ヴァンフォ
- レ甲府 vs 鹿島アントラーズ\nキックオフ: 17:30 (JST)\n会
- 場: 茨城県立カシマサッカースタジアム\n試合結果: 1-0\n
- 公式詳細ページ: https://www.jfa.jp/match/schedule_result/pdf/m85.pd
- f\n\n※情報ソース: JFA (天皇杯)
-LOCATION:茨城県立カシマサッカースタジアム
-URL:https://www.jfa.jp/match/schedule_result/pdf/m85.pdf
-STATUS:CONFIRMED
-TRANSP:OPAQUE
-END:VEVENT
-BEGIN:VEVENT
-UID:j1-club-antlers-20230520-9f8cf832cd3b91c0@kashima.antlers
-DTSTAMP:20261120T014426Z
-DTSTART;TZID=Asia/Tokyo:20230520T150000
-DTEND;TZID=Asia/Tokyo:20230520T170000
-SUMMARY:天[A]カマタマーレ讃岐【1回戦】
-DESCRIPTION:大会名: 天皇杯 JFA 第103回全日本サッカー選手
- 大会\n節 / ラウンド: １回戦\n対戦カード: カマタマー
- 讃岐 vs Brew KASHIMA\nキックオフ: 15:00 (JST)\n会場: Pikaraス
- ジアム\n試合結果: 2-1\n公式詳細ページ: https://www.jfa.jp/
- match/schedule_result/pdf/m09.pdf\n\n※情報ソース: JFA (天皇杯)
-LOCATION:Pikaraスタジアム
-URL:https://www.jfa.jp/match/schedule_result/pdf/m09.pdf
-STATUS:CONFIRMED
-TRANSP:OPAQUE
-END:VEVENT
-BEGIN:VEVENT
-UID:j1-club-antlers-20230607-a003cfd42d2f8980@kashima.antlers
-DTSTAMP:20261120T014426Z
-DTSTART;TZID=Asia/Tokyo:20230607T190000
-DTEND;TZID=Asia/Tokyo:20230607T210000
-SUMMARY:天[H]Ｈｏｎｄａ ＦＣ【2回戦】
-DESCRIPTION:大会名: 天皇杯 JFA 第103回全日本サッカー選手
- 大会\n節 / ラウンド: ２回戦\n対戦カード: 鹿島アント
- ーズ vs Ｈｏｎｄａ ＦＣ\nキックオフ: 19:00 (JST)\n会場: 
- 茨城県立カシマサッカースタジアム\n試合結果: 3-0\n公
- 詳細ページ: https://www.jfa.jp/match/schedule_result/pdf/m33.pdf\n\n
- ※情報ソース: JFA (天皇杯)
-LOCATION:茨城県立カシマサッカースタジアム
-URL:https://www.jfa.jp/match/schedule_result/pdf/m33.pdf
-STATUS:CONFIRMED
-TRANSP:OPAQUE
-END:VEVENT
-BEGIN:VEVENT
 UID:j1-club-antlers-20230712-c1600690e757dba9@kashima.antlers
-DTSTAMP:20261120T014426Z
+DTSTAMP:20261120T104856Z
 DTSTART;TZID=Asia/Tokyo:20230712T190000
 DTEND;TZID=Asia/Tokyo:20230712T210000
 SUMMARY:天[H]甲府【3回戦】
 DESCRIPTION:大会名: 天皇杯 JFA 第103回全日本サッカー選手
- 大会\n節 / ラウンド: ３回戦\n対戦カード: 鹿島アント
- ーズ vs ヴァンフォーレ甲府\nキックオフ: 19:00 (JST)\n会
- 場: JITリサイクルインク スタジアム\n試合結果: 1-1 (PK 10
- -11)\n公式詳細ページ: https://www.jfa.jp/match/schedule_result/pdf/
- m61.pdf\n\n※情報ソース: JFA (天皇杯)
+ 権大会\n節 / ラウンド: ３回戦\n対戦カード: 鹿島アント
+ ラーズ vs ヴァンフォーレ甲府\nキックオフ: 19:00 (JST)\n
+ 会場: JITリサイクルインク スタジアム\n試合結果: 1-1 (PK
+  10-11)\n公式詳細ページ: https://www.jfa.jp/match/schedule_result/p
+ df/m61.pdf\n\n※情報ソース: JFA (天皇杯)
 LOCATION:JITリサイクルインク スタジアム
 URL:https://www.jfa.jp/match/schedule_result/pdf/m61.pdf
 STATUS:CONFIRMED
@@ -1181,16 +1181,16 @@ TRANSP:OPAQUE
 END:VEVENT
 BEGIN:VEVENT
 UID:j1-club-antlers-20240612-a822241609798031@kashima.antlers
-DTSTAMP:20261120T014426Z
+DTSTAMP:20261120T104856Z
 DTSTART;TZID=Asia/Tokyo:20240612T190000
 DTEND;TZID=Asia/Tokyo:20240612T210000
 SUMMARY:天[H]奈良クラブ【2回戦】
 DESCRIPTION:大会名: 天皇杯 JFA 第104回全日本サッカー選手
- 大会\n節 / ラウンド: ２回戦\n対戦カード: 鹿島アント
- ーズ vs 奈良クラブ\nキックオフ: 19:00 (JST)\n会場: 茨城
- 立カシマサッカースタジアム\n試合結果: 2-1\n公式詳細
- ページ: https://www.jfa.jp/match/schedule_result/pdf/m33.pdf\n\n※情
- ソース: JFA (天皇杯)
+ 権大会\n節 / ラウンド: ２回戦\n対戦カード: 鹿島アント
+ ラーズ vs 奈良クラブ\nキックオフ: 19:00 (JST)\n会場: 茨城
+ 県立カシマサッカースタジアム\n試合結果: 2-1\n公式詳
+ 細ページ: https://www.jfa.jp/match/schedule_result/pdf/m33.pdf\n\n※
+ 情報ソース: JFA (天皇杯)
 LOCATION:茨城県立カシマサッカースタジアム
 URL:https://www.jfa.jp/match/schedule_result/pdf/m33.pdf
 STATUS:CONFIRMED
@@ -1198,16 +1198,16 @@ TRANSP:OPAQUE
 END:VEVENT
 BEGIN:VEVENT
 UID:j1-club-antlers-20240710-cb61abc872b50d2e@kashima.antlers
-DTSTAMP:20261120T014426Z
+DTSTAMP:20261120T104856Z
 DTSTART;TZID=Asia/Tokyo:20240710T190000
 DTEND;TZID=Asia/Tokyo:20240710T210000
 SUMMARY:天[H]藤枝ＭＹＦＣ【3回戦】
 DESCRIPTION:大会名: 天皇杯 JFA 第104回全日本サッカー選手
- 大会\n節 / ラウンド: ３回戦\n対戦カード: 鹿島アント
- ーズ vs 藤枝ＭＹＦＣ\nキックオフ: 19:00 (JST)\n会場: 藤
- 総合運動公園 サッカー場\n試合結果: 2-1\n公式詳細ペ
- ジ: https://www.jfa.jp/match/schedule_result/pdf/m61.pdf\n\n※情報ソ
- ース: JFA (天皇杯)
+ 権大会\n節 / ラウンド: ３回戦\n対戦カード: 鹿島アント
+ ラーズ vs 藤枝ＭＹＦＣ\nキックオフ: 19:00 (JST)\n会場: 藤
+ 枝総合運動公園 サッカー場\n試合結果: 2-1\n公式詳細ペ
+ ージ: https://www.jfa.jp/match/schedule_result/pdf/m61.pdf\n\n※情報
+ ソース: JFA (天皇杯)
 LOCATION:藤枝総合運動公園 サッカー場
 URL:https://www.jfa.jp/match/schedule_result/pdf/m61.pdf
 STATUS:CONFIRMED
@@ -1215,16 +1215,16 @@ TRANSP:OPAQUE
 END:VEVENT
 BEGIN:VEVENT
 UID:j1-club-antlers-20240821-6ba288c583fae496@kashima.antlers
-DTSTAMP:20261120T014426Z
+DTSTAMP:20261120T104856Z
 DTSTART;TZID=Asia/Tokyo:20240821T190000
 DTEND;TZID=Asia/Tokyo:20240821T210000
 SUMMARY:天[A]甲府【ラウンド16】
 DESCRIPTION:大会名: 天皇杯 JFA 第104回全日本サッカー選手
- 大会\n節 / ラウンド: ラウンド16\n対戦カード: ヴァン
- ォーレ甲府 vs 鹿島アントラーズ\nキックオフ: 19:00 (JST)
- \n会場: ＪＩＴ リサイクルインク スタジアム\n試合結果
- : 1-2\n公式詳細ページ: https://www.jfa.jp/match/schedule_result/pdf
- /m77.pdf\n\n※情報ソース: JFA (天皇杯)
+ 権大会\n節 / ラウンド: ラウンド16\n対戦カード: ヴァン
+ フォーレ甲府 vs 鹿島アントラーズ\nキックオフ: 19:00 (JS
+ T)\n会場: ＪＩＴ リサイクルインク スタジアム\n試合結
+ 果: 1-2\n公式詳細ページ: https://www.jfa.jp/match/schedule_result/
+ pdf/m77.pdf\n\n※情報ソース: JFA (天皇杯)
 LOCATION:ＪＩＴ リサイクルインク スタジアム
 URL:https://www.jfa.jp/match/schedule_result/pdf/m77.pdf
 STATUS:CONFIRMED
@@ -1232,16 +1232,16 @@ TRANSP:OPAQUE
 END:VEVENT
 BEGIN:VEVENT
 UID:j1-club-antlers-20240925-465974efff0824ab@kashima.antlers
-DTSTAMP:20261120T014426Z
+DTSTAMP:20261120T104856Z
 DTSTART;TZID=Asia/Tokyo:20240925T190000
 DTEND;TZID=Asia/Tokyo:20240925T210000
 SUMMARY:天[H]ヴィッセル神戸【準々決勝】
 DESCRIPTION:大会名: 天皇杯 JFA 第104回全日本サッカー選手
- 大会\n節 / ラウンド: 準々決勝\n対戦カード: 鹿島アン
- ラーズ vs ヴィッセル神戸\nキックオフ: 19:00 (JST)\n会場
- : ノエビアスタジアム神戸\n試合結果: 0-3\n公式詳細ペー
- ジ: https://www.jfa.jp/match/schedule_result/pdf/m83.pdf\n\n※情報ソ
- ス: JFA (天皇杯)
+ 権大会\n節 / ラウンド: 準々決勝\n対戦カード: 鹿島アン
+ トラーズ vs ヴィッセル神戸\nキックオフ: 19:00 (JST)\n会
+ 場: ノエビアスタジアム神戸\n試合結果: 0-3\n公式詳細ペ
+ ージ: https://www.jfa.jp/match/schedule_result/pdf/m83.pdf\n\n※情報
+ ソース: JFA (天皇杯)
 LOCATION:ノエビアスタジアム神戸
 URL:https://www.jfa.jp/match/schedule_result/pdf/m83.pdf
 STATUS:CONFIRMED
@@ -1249,16 +1249,16 @@ TRANSP:OPAQUE
 END:VEVENT
 BEGIN:VEVENT
 UID:j1-club-antlers-20250611-76be668211498db2@kashima.antlers
-DTSTAMP:20261120T014426Z
+DTSTAMP:20261120T104856Z
 DTSTART;TZID=Asia/Tokyo:20250611T190000
 DTEND;TZID=Asia/Tokyo:20250611T210000
 SUMMARY:天[H]ザスパ群馬【2回戦】
 DESCRIPTION:大会名: 天皇杯 JFA 第105回全日本サッカー選手
- 大会\n節 / ラウンド: ２回戦\n対戦カード: 鹿島アント
- ーズ vs ザスパ群馬\nキックオフ: 19:00 (JST)\n会場: カシ
- スタジアム\n試合結果: 4-0\n公式詳細ページ: https://www.j
- fa.jp/match/schedule_result/pdf/m38.pdf\n\n※情報ソース: JFA (天皇
- 杯)
+ 権大会\n節 / ラウンド: ２回戦\n対戦カード: 鹿島アント
+ ラーズ vs ザスパ群馬\nキックオフ: 19:00 (JST)\n会場: カシ
+ マスタジアム\n試合結果: 4-0\n公式詳細ページ: https://www.
+ jfa.jp/match/schedule_result/pdf/m38.pdf\n\n※情報ソース: JFA (天
+ 皇杯)
 LOCATION:カシマスタジアム
 URL:https://www.jfa.jp/match/schedule_result/pdf/m38.pdf
 STATUS:CONFIRMED
@@ -1266,16 +1266,16 @@ TRANSP:OPAQUE
 END:VEVENT
 BEGIN:VEVENT
 UID:j1-club-antlers-20250716-9bdc86a38de97e2e@kashima.antlers
-DTSTAMP:20261120T014426Z
+DTSTAMP:20261120T104856Z
 DTSTART;TZID=Asia/Tokyo:20250716T190000
 DTEND;TZID=Asia/Tokyo:20250716T210000
 SUMMARY:天[H]Ｖ・ファーレン長崎【3回戦】
 DESCRIPTION:大会名: 天皇杯 JFA 第105回全日本サッカー選手
- 大会\n節 / ラウンド: ３回戦\n対戦カード: 鹿島アント
- ーズ vs Ｖ・ファーレン長崎\nキックオフ: 19:00 (JST)\n会
- 場: PEACE STADIUM Connected by SoftBank\n試合結果: 2-1\n公式詳細
- ージ: https://www.jfa.jp/match/schedule_result/pdf/m63.pdf\n\n※情
- ソース: JFA (天皇杯)
+ 権大会\n節 / ラウンド: ３回戦\n対戦カード: 鹿島アント
+ ラーズ vs Ｖ・ファーレン長崎\nキックオフ: 19:00 (JST)\n
+ 会場: PEACE STADIUM Connected by SoftBank\n試合結果: 2-1\n公式詳
+ 細ページ: https://www.jfa.jp/match/schedule_result/pdf/m63.pdf\n\n※
+ 情報ソース: JFA (天皇杯)
 LOCATION:PEACE STADIUM Connected by SoftBank
 URL:https://www.jfa.jp/match/schedule_result/pdf/m63.pdf
 STATUS:CONFIRMED
@@ -1283,16 +1283,16 @@ TRANSP:OPAQUE
 END:VEVENT
 BEGIN:VEVENT
 UID:j1-club-antlers-20250806-2fd987b429e55c15@kashima.antlers
-DTSTAMP:20261120T014426Z
+DTSTAMP:20261120T104856Z
 DTSTART;TZID=Asia/Tokyo:20250806T190000
 DTEND;TZID=Asia/Tokyo:20250806T210000
 SUMMARY:天[H]アビスパ福岡【ラウンド16】
 DESCRIPTION:大会名: 天皇杯 JFA 第105回全日本サッカー選手
- 大会\n節 / ラウンド: ラウンド16\n対戦カード: 鹿島ア
- トラーズ vs アビスパ福岡\nキックオフ: 19:00 (JST)\n会場:
-  メルカリスタジアム\n試合結果: 3-2\n公式詳細ページ: ht
- tps://www.jfa.jp/match/schedule_result/pdf/m76.pdf\n\n※情報ソース: 
- JFA (天皇杯)
+ 権大会\n節 / ラウンド: ラウンド16\n対戦カード: 鹿島ア
+ ントラーズ vs アビスパ福岡\nキックオフ: 19:00 (JST)\n会
+ 場: メルカリスタジアム\n試合結果: 3-2\n公式詳細ページ
+ : https://www.jfa.jp/match/schedule_result/pdf/m76.pdf\n\n※情報ソー
+ ス: JFA (天皇杯)
 LOCATION:メルカリスタジアム
 URL:https://www.jfa.jp/match/schedule_result/pdf/m76.pdf
 STATUS:CONFIRMED
@@ -1300,16 +1300,16 @@ TRANSP:OPAQUE
 END:VEVENT
 BEGIN:VEVENT
 UID:j1-club-antlers-20250827-8ea5aa1f9b646424@kashima.antlers
-DTSTAMP:20261120T014426Z
+DTSTAMP:20261120T104856Z
 DTSTART;TZID=Asia/Tokyo:20250827T183000
 DTEND;TZID=Asia/Tokyo:20250827T203000
 SUMMARY:天[A]ＦＣ町田ゼルビア【準々決勝】
 DESCRIPTION:大会名: 天皇杯 JFA 第105回全日本サッカー選手
- 大会\n節 / ラウンド: 準々決勝\n対戦カード: ＦＣ町田
- ルビア vs 鹿島アントラーズ\nキックオフ: 18:30 (JST)\n会
- 場: 町田ＧＩＯＮスタジアム\n試合結果: 3-0\n公式詳細ペ
- ージ: https://www.jfa.jp/match/schedule_result/pdf/m81.pdf\n\n※情報
- ース: JFA (天皇杯)
+ 権大会\n節 / ラウンド: 準々決勝\n対戦カード: ＦＣ町田
+ ゼルビア vs 鹿島アントラーズ\nキックオフ: 18:30 (JST)\n
+ 会場: 町田ＧＩＯＮスタジアム\n試合結果: 3-0\n公式詳細
+ ページ: https://www.jfa.jp/match/schedule_result/pdf/m81.pdf\n\n※情
+ 報ソース: JFA (天皇杯)
 LOCATION:町田ＧＩＯＮスタジアム
 URL:https://www.jfa.jp/match/schedule_result/pdf/m81.pdf
 STATUS:CONFIRMED
@@ -1317,15 +1317,16 @@ TRANSP:OPAQUE
 END:VEVENT
 BEGIN:VEVENT
 UID:j1-club-antlers-20260807-49dfe4194ea5f86a@kashima.antlers
-DTSTAMP:20261120T014426Z
+DTSTAMP:20261120T104856Z
 DTSTART;TZID=Asia/Tokyo:20260807T192600
 DTEND;TZID=Asia/Tokyo:20260807T212600
 SUMMARY:J1[A]横浜FM【第1節第1日】
 DESCRIPTION:大会名: Ｊ１\n節 / ラウンド: 第１節第１日\n対
  戦カード: 横浜FM vs 鹿島\nキックオフ: 19:26 (JST)\n会場: MU
  FG国立\n試合結果: 3-4\nTV中継・配信: ＤＡＺＮ／フジテ
- ビ系列全国ネット\n公式詳細ページ: https://data.j-league.or
- .jp/SFMS02/?match_card_id=34517\n\n※情報ソース: J.League Data Site
+ レビ系列全国ネット\n公式詳細ページ: https://data.j-league.
+ or.jp/SFMS02/?match_card_id=34517\n\n※情報ソース: J.League Data Sit
+ e
 LOCATION:MUFG国立
 URL:https://data.j-league.or.jp/SFMS02/?match_card_id=34517
 STATUS:CONFIRMED
@@ -1333,15 +1334,15 @@ TRANSP:OPAQUE
 END:VEVENT
 BEGIN:VEVENT
 UID:j1-club-antlers-20260815-7a00e609f3b29e4b@kashima.antlers
-DTSTAMP:20261120T014426Z
+DTSTAMP:20261120T104856Z
 DTSTART;TZID=Asia/Tokyo:20260815T180300
 DTEND;TZID=Asia/Tokyo:20260815T200300
 SUMMARY:J1[H]名古屋【第2節第2日】
 DESCRIPTION:大会名: Ｊ１\n節 / ラウンド: 第２節第２日\n対
  戦カード: 鹿島 vs 名古屋\nキックオフ: 18:03 (JST)\n会場: 
- ルスタ\n試合結果: 2-1\nTV中継・配信: ＤＡＺＮ\n公式詳
- 細ページ: https://data.j-league.or.jp/SFMS02/?match_card_id=34528\n\n
- 情報ソース: J.League Data Site
+ メルスタ\n試合結果: 2-1\nTV中継・配信: ＤＡＺＮ\n公式
+ 詳細ページ: https://data.j-league.or.jp/SFMS02/?match_card_id=34528\n
+ \n※情報ソース: J.League Data Site
 LOCATION:メルスタ
 URL:https://data.j-league.or.jp/SFMS02/?match_card_id=34528
 STATUS:CONFIRMED
@@ -1349,15 +1350,15 @@ TRANSP:OPAQUE
 END:VEVENT
 BEGIN:VEVENT
 UID:j1-club-antlers-20260822-556360f77667da89@kashima.antlers
-DTSTAMP:20261120T014426Z
+DTSTAMP:20261120T104856Z
 DTSTART;TZID=Asia/Tokyo:20260822T180300
 DTEND;TZID=Asia/Tokyo:20260822T200300
 SUMMARY:J1[H]福岡【第3節第2日】
 DESCRIPTION:大会名: Ｊ１\n節 / ラウンド: 第３節第２日\n対
  戦カード: 鹿島 vs 福岡\nキックオフ: 18:03 (JST)\n会場: メ
- スタ\n試合結果: 3-2\nTV中継・配信: ＤＡＺＮ\n公式詳細
- ページ: https://data.j-league.or.jp/SFMS02/?match_card_id=34539\n\n※
- 報ソース: J.League Data Site
+ ルスタ\n試合結果: 3-2\nTV中継・配信: ＤＡＺＮ\n公式詳
+ 細ページ: https://data.j-league.or.jp/SFMS02/?match_card_id=34539\n\n
+ ※情報ソース: J.League Data Site
 LOCATION:メルスタ
 URL:https://data.j-league.or.jp/SFMS02/?match_card_id=34539
 STATUS:CONFIRMED
@@ -1365,16 +1366,16 @@ TRANSP:OPAQUE
 END:VEVENT
 BEGIN:VEVENT
 UID:j1-club-antlers-20260826-6183ad020e85c4b0@kashima.antlers
-DTSTAMP:20261120T014426Z
+DTSTAMP:20261120T104856Z
 DTSTART;TZID=Asia/Tokyo:20260826T190000
 DTEND;TZID=Asia/Tokyo:20260826T210000
 SUMMARY:天[H]鈴鹿【2回戦】
 DESCRIPTION:大会名: 天皇杯 JFA 第106回全日本サッカー選手
- 大会\n節 / ラウンド: ２回戦\n対戦カード: 鹿島アント
- ーズ vs アトレチコ鈴鹿\nキックオフ: 19:00 (JST)\n会場: 
- ルカリスタジアム\n試合結果: 3-0\n公式詳細ページ: http
- s://www.jfa.jp/match/schedule_result/pdf/m25.pdf\n\n※情報ソース: JF
- A (天皇杯)
+ 権大会\n節 / ラウンド: ２回戦\n対戦カード: 鹿島アント
+ ラーズ vs アトレチコ鈴鹿\nキックオフ: 19:00 (JST)\n会場: 
+ メルカリスタジアム\n試合結果: 3-0\n公式詳細ページ: htt
+ ps://www.jfa.jp/match/schedule_result/pdf/m25.pdf\n\n※情報ソース: J
+ FA (天皇杯)
 LOCATION:メルカリスタジアム
 URL:https://www.jfa.jp/match/schedule_result/pdf/m25.pdf
 STATUS:CONFIRMED
@@ -1382,15 +1383,15 @@ TRANSP:OPAQUE
 END:VEVENT
 BEGIN:VEVENT
 UID:j1-club-antlers-20260829-5078edfd7720c980@kashima.antlers
-DTSTAMP:20261120T014426Z
+DTSTAMP:20261120T104856Z
 DTSTART;TZID=Asia/Tokyo:20260829T190300
 DTEND;TZID=Asia/Tokyo:20260829T210300
 SUMMARY:J1[A]東京V【第4節第1日】
 DESCRIPTION:大会名: Ｊ１\n節 / ラウンド: 第４節第１日\n対
  戦カード: 東京Ｖ vs 鹿島\nキックオフ: 19:03 (JST)\n会場: 
- スタ\n試合結果: 0-2\nTV中継・配信: ＤＡＺＮ\n公式詳細
- ページ: https://data.j-league.or.jp/SFMS02/?match_card_id=34552\n\n※
- 報ソース: J.League Data Site
+ 味スタ\n試合結果: 0-2\nTV中継・配信: ＤＡＺＮ\n公式詳
+ 細ページ: https://data.j-league.or.jp/SFMS02/?match_card_id=34552\n\n
+ ※情報ソース: J.League Data Site
 LOCATION:味スタ
 URL:https://data.j-league.or.jp/SFMS02/?match_card_id=34552
 STATUS:CONFIRMED
@@ -1398,15 +1399,15 @@ TRANSP:OPAQUE
 END:VEVENT
 BEGIN:VEVENT
 UID:j1-club-antlers-20260902-695315b9e50a7c00@kashima.antlers
-DTSTAMP:20261120T014426Z
+DTSTAMP:20261120T104856Z
 DTSTART;TZID=Asia/Tokyo:20260902T190300
 DTEND;TZID=Asia/Tokyo:20260902T210300
 SUMMARY:J1[A]水戸【第5節第1日】
 DESCRIPTION:大会名: Ｊ１\n節 / ラウンド: 第５節第１日\n対
  戦カード: 水戸 vs 鹿島\nキックオフ: 19:03 (JST)\n会場: 水
- 信ス\n試合結果: 4-2\nTV中継・配信: ＤＡＺＮ／ＮＨＫ
- 戸\n公式詳細ページ: https://data.j-league.or.jp/SFMS02/?match_car
- d_id=34557\n\n※情報ソース: J.League Data Site
+ 戸信ス\n試合結果: 4-2\nTV中継・配信: ＤＡＺＮ／ＮＨＫ
+ 水戸\n公式詳細ページ: https://data.j-league.or.jp/SFMS02/?match_c
+ ard_id=34557\n\n※情報ソース: J.League Data Site
 LOCATION:水戸信ス
 URL:https://data.j-league.or.jp/SFMS02/?match_card_id=34557
 STATUS:CONFIRMED
@@ -1414,15 +1415,15 @@ TRANSP:OPAQUE
 END:VEVENT
 BEGIN:VEVENT
 UID:j1-club-antlers-20260906-6540ab1388fb293a@kashima.antlers
-DTSTAMP:20261120T014426Z
+DTSTAMP:20261120T104856Z
 DTSTART;TZID=Asia/Tokyo:20260906T180300
 DTEND;TZID=Asia/Tokyo:20260906T200300
 SUMMARY:J1[H]浦和【第6節第2日】
 DESCRIPTION:大会名: Ｊ１\n節 / ラウンド: 第６節第２日\n対
  戦カード: 鹿島 vs 浦和\nキックオフ: 18:03 (JST)\n会場: メ
- スタ\n試合結果: 0-1\nTV中継・配信: ＤＡＺＮ\n公式詳細
- ページ: https://data.j-league.or.jp/SFMS02/?match_card_id=34568\n\n※
- 報ソース: J.League Data Site
+ ルスタ\n試合結果: 0-1\nTV中継・配信: ＤＡＺＮ\n公式詳
+ 細ページ: https://data.j-league.or.jp/SFMS02/?match_card_id=34568\n\n
+ ※情報ソース: J.League Data Site
 LOCATION:メルスタ
 URL:https://data.j-league.or.jp/SFMS02/?match_card_id=34568
 STATUS:CONFIRMED
@@ -1430,15 +1431,15 @@ TRANSP:OPAQUE
 END:VEVENT
 BEGIN:VEVENT
 UID:j1-club-antlers-20260911-0fe25c4f31fbdd1b@kashima.antlers
-DTSTAMP:20261120T014426Z
+DTSTAMP:20261120T104856Z
 DTSTART;TZID=Asia/Tokyo:20260911T190400
 DTEND;TZID=Asia/Tokyo:20260911T210400
 SUMMARY:J1[A]神戸【第7節第1日】
 DESCRIPTION:大会名: Ｊ１\n節 / ラウンド: 第７節第１日\n対
  戦カード: 神戸 vs 鹿島\nキックオフ: 19:04 (JST)\n会場: ノ
- スタ\n試合結果: 2-1\nTV中継・配信: ＤＡＺＮ\n公式詳細
- ページ: https://data.j-league.or.jp/SFMS02/?match_card_id=34586\n\n※
- 報ソース: J.League Data Site
+ エスタ\n試合結果: 2-1\nTV中継・配信: ＤＡＺＮ\n公式詳
+ 細ページ: https://data.j-league.or.jp/SFMS02/?match_card_id=34586\n\n
+ ※情報ソース: J.League Data Site
 LOCATION:ノエスタ
 URL:https://data.j-league.or.jp/SFMS02/?match_card_id=34586
 STATUS:CONFIRMED
@@ -1446,16 +1447,16 @@ TRANSP:OPAQUE
 END:VEVENT
 BEGIN:VEVENT
 UID:j1-club-antlers-20260915-9bba8ec7b54afc70@kashima.antlers
-DTSTAMP:20261120T014426Z
+DTSTAMP:20261120T104856Z
 DTSTART;TZID=Asia/Tokyo:20260915T190000
 DTEND;TZID=Asia/Tokyo:20260915T210000
 SUMMARY:AC[H]ニューカッスル・ジェッツ【第1節】
-DESCRIPTION:大会名: AFCチャンピオンズリーグ Elite 2026/27　E
- AST\n節 / ラウンド: 第1節\n対戦カード: 鹿島アントラー
+DESCRIPTION:大会名: AFCチャンピオンズリーグ Elite 2026/27　EA
+ ST\n節 / ラウンド: 第1節\n対戦カード: 鹿島アントラーズ
   vs ニューカッスル・ジェッツ\nキックオフ: 19:00 (JST)\n
- 場: カシマサッカースタジアム\n試合結果: 7-1\n公式詳
- ページ: https://www.jfa.jp/match/acl_elite_2026/match_page/m4.html\n\
- n※情報ソース: JFA (AFCチャンピオンズリーグ Elite)
+ 会場: カシマサッカースタジアム\n試合結果: 7-1\n公式詳
+ 細ページ: https://www.jfa.jp/match/acl_elite_2026/match_page/m4.html\n
+ \n※情報ソース: JFA (AFCチャンピオンズリーグ Elite)
 LOCATION:カシマサッカースタジアム
 URL:https://www.jfa.jp/match/acl_elite_2026/match_page/m4.html
 STATUS:CONFIRMED
@@ -1463,15 +1464,15 @@ TRANSP:OPAQUE
 END:VEVENT
 BEGIN:VEVENT
 UID:j1-club-antlers-20260919-4a6b4d53a8b97fe4@kashima.antlers
-DTSTAMP:20261120T014426Z
+DTSTAMP:20261120T104856Z
 DTSTART;TZID=Asia/Tokyo:20260919T180300
 DTEND;TZID=Asia/Tokyo:20260919T200300
 SUMMARY:J1[A]川崎F【第8節第1日】
 DESCRIPTION:大会名: Ｊ１\n節 / ラウンド: 第８節第１日\n対
  戦カード: 川崎Ｆ vs 鹿島\nキックオフ: 18:03 (JST)\n会場: 
- 等々力\n試合結果: 3-3\nTV中継・配信: ＤＡＺＮ\n公式詳
- 細ページ: https://data.j-league.or.jp/SFMS02/?match_card_id=34596\n\n
- 情報ソース: J.League Data Site
+ Ｕ等々力\n試合結果: 3-3\nTV中継・配信: ＤＡＺＮ\n公式
+ 詳細ページ: https://data.j-league.or.jp/SFMS02/?match_card_id=34596\n
+ \n※情報ソース: J.League Data Site
 LOCATION:Ｕ等々力
 URL:https://data.j-league.or.jp/SFMS02/?match_card_id=34596
 STATUS:CONFIRMED
@@ -1479,16 +1480,16 @@ TRANSP:OPAQUE
 END:VEVENT
 BEGIN:VEVENT
 UID:j1-club-antlers-20260923-9d7b724f32d4a10a@kashima.antlers
-DTSTAMP:20261120T014426Z
+DTSTAMP:20261120T104856Z
 DTSTART;TZID=Asia/Tokyo:20260923T170000
 DTEND;TZID=Asia/Tokyo:20260923T190000
 SUMMARY:天[H]甲府【3回戦】
 DESCRIPTION:大会名: 天皇杯 JFA 第106回全日本サッカー選手
- 大会\n節 / ラウンド: ３回戦\n対戦カード: 鹿島アント
- ーズ vs ヴァンフォーレ甲府\nキックオフ: 17:00 (JST)\n会
- 場: メルカリスタジアム\n試合結果: 3-1\n公式詳細ページ
- : https://www.jfa.jp/match/schedule_result/pdf/m57.pdf\n\n※情報ソー
- : JFA (天皇杯)
+ 権大会\n節 / ラウンド: ３回戦\n対戦カード: 鹿島アント
+ ラーズ vs ヴァンフォーレ甲府\nキックオフ: 17:00 (JST)\n
+ 会場: メルカリスタジアム\n試合結果: 3-1\n公式詳細ペー
+ ジ: https://www.jfa.jp/match/schedule_result/pdf/m57.pdf\n\n※情報ソ
+ ース: JFA (天皇杯)
 LOCATION:メルカリスタジアム
 URL:https://www.jfa.jp/match/schedule_result/pdf/m57.pdf
 STATUS:CONFIRMED
@@ -1496,15 +1497,15 @@ TRANSP:OPAQUE
 END:VEVENT
 BEGIN:VEVENT
 UID:j1-club-antlers-20261009-1ba364e806e3413c@kashima.antlers
-DTSTAMP:20261120T014426Z
+DTSTAMP:20261120T104856Z
 DTSTART;TZID=Asia/Tokyo:20261009T190400
 DTEND;TZID=Asia/Tokyo:20261009T210400
 SUMMARY:J1[H]G大阪【第9節第1日】
 DESCRIPTION:大会名: Ｊ１\n節 / ラウンド: 第９節第１日\n対
  戦カード: 鹿島 vs Ｇ大阪\nキックオフ: 19:04 (JST)\n会場: 
- ルスタ\n試合結果: 2-0\nTV中継・配信: ＤＡＺＮ／千葉
- レビ\n公式詳細ページ: https://data.j-league.or.jp/SFMS02/?match_
- card_id=34605\n\n※情報ソース: J.League Data Site
+ メルスタ\n試合結果: 2-0\nTV中継・配信: ＤＡＺＮ／千葉
+ テレビ\n公式詳細ページ: https://data.j-league.or.jp/SFMS02/?matc
+ h_card_id=34605\n\n※情報ソース: J.League Data Site
 LOCATION:メルスタ
 URL:https://data.j-league.or.jp/SFMS02/?match_card_id=34605
 STATUS:CONFIRMED
@@ -1512,16 +1513,16 @@ TRANSP:OPAQUE
 END:VEVENT
 BEGIN:VEVENT
 UID:j1-club-antlers-20261013-40d0340862fafe51@kashima.antlers
-DTSTAMP:20261120T014426Z
+DTSTAMP:20261120T104856Z
 DTSTART;TZID=Asia/Tokyo:20261013T191500
 DTEND;TZID=Asia/Tokyo:20261013T211500
 SUMMARY:AC[A]コンアン・ハノイ【第2節】
-DESCRIPTION:大会名: AFCチャンピオンズリーグ Elite 2026/27　E
- AST\n節 / ラウンド: 第2節\n対戦カード: コンアン・ハノ
-  vs 鹿島アントラーズ\nキックオフ: 19:15 (JST)\n会場: ベ
+DESCRIPTION:大会名: AFCチャンピオンズリーグ Elite 2026/27　EA
+ ST\n節 / ラウンド: 第2節\n対戦カード: コンアン・ハノイ
+  vs 鹿島アントラーズ\nキックオフ: 19:15 (JST)\n会場: ベト
  ナム／ハンダイスタジアム\n試合結果: 0-1\n公式詳細ペ
- ジ: https://www.jfa.jp/match/acl_elite_2026/match_page/m13.html\n\n※
- 報ソース: JFA (AFCチャンピオンズリーグ Elite)
+ ージ: https://www.jfa.jp/match/acl_elite_2026/match_page/m13.html\n\n※
+ 情報ソース: JFA (AFCチャンピオンズリーグ Elite)
 LOCATION:ベトナム／ハンダイスタジアム
 URL:https://www.jfa.jp/match/acl_elite_2026/match_page/m13.html
 STATUS:CONFIRMED
@@ -1529,15 +1530,15 @@ TRANSP:OPAQUE
 END:VEVENT
 BEGIN:VEVENT
 UID:j1-club-antlers-20261017-9cacf0cad3739508@kashima.antlers
-DTSTAMP:20261120T014426Z
+DTSTAMP:20261120T104856Z
 DTSTART;TZID=Asia/Tokyo:20261017T150400
 DTEND;TZID=Asia/Tokyo:20261017T170400
 SUMMARY:J1[H]長崎【第10節第1日】
 DESCRIPTION:大会名: Ｊ１\n節 / ラウンド: 第１０節第１日\n
  対戦カード: 鹿島 vs 長崎\nキックオフ: 15:04 (JST)\n会場: 
- ルスタ\n試合結果: 2-0\nTV中継・配信: ＤＡＺＮ\n公式詳
- 細ページ: https://data.j-league.or.jp/SFMS02/?match_card_id=34613\n\n
- 情報ソース: J.League Data Site
+ メルスタ\n試合結果: 2-0\nTV中継・配信: ＤＡＺＮ\n公式
+ 詳細ページ: https://data.j-league.or.jp/SFMS02/?match_card_id=34613\n
+ \n※情報ソース: J.League Data Site
 LOCATION:メルスタ
 URL:https://data.j-league.or.jp/SFMS02/?match_card_id=34613
 STATUS:CONFIRMED
@@ -1545,15 +1546,15 @@ TRANSP:OPAQUE
 END:VEVENT
 BEGIN:VEVENT
 UID:j1-club-antlers-20261021-a0808f1d1e44ab98@kashima.antlers
-DTSTAMP:20261120T014426Z
+DTSTAMP:20261120T104856Z
 DTSTART;TZID=Asia/Tokyo:20261021T190300
 DTEND;TZID=Asia/Tokyo:20261021T210300
 SUMMARY:J1[A]京都【第11節第1日】
 DESCRIPTION:大会名: Ｊ１\n節 / ラウンド: 第１１節第１日\n
  対戦カード: 京都 vs 鹿島\nキックオフ: 19:03 (JST)\n会場: 
- ンガＳ\n試合結果: 2-2\nTV中継・配信: ＤＡＺＮ\n公式詳
- 細ページ: https://data.j-league.or.jp/SFMS02/?match_card_id=34622\n\n
- 情報ソース: J.League Data Site
+ サンガＳ\n試合結果: 2-2\nTV中継・配信: ＤＡＺＮ\n公式
+ 詳細ページ: https://data.j-league.or.jp/SFMS02/?match_card_id=34622\n
+ \n※情報ソース: J.League Data Site
 LOCATION:サンガＳ
 URL:https://data.j-league.or.jp/SFMS02/?match_card_id=34622
 STATUS:CONFIRMED
@@ -1561,15 +1562,15 @@ TRANSP:OPAQUE
 END:VEVENT
 BEGIN:VEVENT
 UID:j1-club-antlers-20261024-93b0ea3e8cae9c7d@kashima.antlers
-DTSTAMP:20261120T014426Z
+DTSTAMP:20261120T104856Z
 DTSTART;TZID=Asia/Tokyo:20261024T150300
 DTEND;TZID=Asia/Tokyo:20261024T170300
 SUMMARY:J1[H]柏【第12節第1日】
 DESCRIPTION:大会名: Ｊ１\n節 / ラウンド: 第１２節第１日\n
  対戦カード: 鹿島 vs 柏\nキックオフ: 15:03 (JST)\n会場: メ
- スタ\n試合結果: 2-3\nTV中継・配信: ＤＡＺＮ\n公式詳細
- ページ: https://data.j-league.or.jp/SFMS02/?match_card_id=34635\n\n※
- 報ソース: J.League Data Site
+ ルスタ\n試合結果: 2-3\nTV中継・配信: ＤＡＺＮ\n公式詳
+ 細ページ: https://data.j-league.or.jp/SFMS02/?match_card_id=34635\n\n
+ ※情報ソース: J.League Data Site
 LOCATION:メルスタ
 URL:https://data.j-league.or.jp/SFMS02/?match_card_id=34635
 STATUS:CONFIRMED
@@ -1577,16 +1578,16 @@ TRANSP:OPAQUE
 END:VEVENT
 BEGIN:VEVENT
 UID:j1-club-antlers-20261028-9fb419b3050c52fe@kashima.antlers
-DTSTAMP:20261120T014426Z
+DTSTAMP:20261120T104856Z
 DTSTART;TZID=Asia/Tokyo:20261028T190000
 DTEND;TZID=Asia/Tokyo:20261028T210000
 SUMMARY:AC[H]浦項スティーラーズ【第3節】
-DESCRIPTION:大会名: AFCチャンピオンズリーグ Elite 2026/27　E
- AST\n節 / ラウンド: 第3節\n対戦カード: 鹿島アントラー
-  vs 浦項スティーラーズ\nキックオフ: 19:00 (JST)\n会場: 
+DESCRIPTION:大会名: AFCチャンピオンズリーグ Elite 2026/27　EA
+ ST\n節 / ラウンド: 第3節\n対戦カード: 鹿島アントラーズ
+  vs 浦項スティーラーズ\nキックオフ: 19:00 (JST)\n会場: カ
  シマサッカースタジアム\n試合結果: 3-0\n公式詳細ペー
- : https://www.jfa.jp/match/acl_elite_2026/match_page/m24.html\n\n※情
- ソース: JFA (AFCチャンピオンズリーグ Elite)
+ ジ: https://www.jfa.jp/match/acl_elite_2026/match_page/m24.html\n\n※情
+ 報ソース: JFA (AFCチャンピオンズリーグ Elite)
 LOCATION:カシマサッカースタジアム
 URL:https://www.jfa.jp/match/acl_elite_2026/match_page/m24.html
 STATUS:CONFIRMED
@@ -1594,7 +1595,7 @@ TRANSP:OPAQUE
 END:VEVENT
 BEGIN:VEVENT
 UID:j1-club-antlers-20261031-4a51df6539082f22@kashima.antlers
-DTSTAMP:20261120T014426Z
+DTSTAMP:20261120T104856Z
 DTSTART;TZID=Asia/Tokyo:20261031T150400
 DTEND;TZID=Asia/Tokyo:20261031T170400
 SUMMARY:J1[H]C大阪【第13節第1日】
@@ -1610,16 +1611,16 @@ TRANSP:OPAQUE
 END:VEVENT
 BEGIN:VEVENT
 UID:j1-club-antlers-20261104-3cffe1fc088021b4@kashima.antlers
-DTSTAMP:20261120T014426Z
+DTSTAMP:20261120T104856Z
 DTSTART;TZID=Asia/Tokyo:20261104T191500
 DTEND;TZID=Asia/Tokyo:20261104T211500
 SUMMARY:AC[A]ブリーラム・ユナイテッド【第4節】
-DESCRIPTION:大会名: AFCチャンピオンズリーグ Elite 2026/27　E
- AST\n節 / ラウンド: 第4節\n対戦カード: ブリーラム・ユ
+DESCRIPTION:大会名: AFCチャンピオンズリーグ Elite 2026/27　EA
+ ST\n節 / ラウンド: 第4節\n対戦カード: ブリーラム・ユナ
  イテッド vs 鹿島アントラーズ\nキックオフ: 19:15 (JST)\n
- 場: タイ／ブリーラムスタジアム\n試合結果: 0-0\n公式
- 細ページ: https://www.jfa.jp/match/acl_elite_2026/match_page/m32.htm
- l\n\n※情報ソース: JFA (AFCチャンピオンズリーグ Elite)
+ 会場: タイ／ブリーラムスタジアム\n試合結果: 0-0\n公式
+ 詳細ページ: https://www.jfa.jp/match/acl_elite_2026/match_page/m32.ht
+ ml\n\n※情報ソース: JFA (AFCチャンピオンズリーグ Elite)
 LOCATION:タイ／ブリーラムスタジアム
 URL:https://www.jfa.jp/match/acl_elite_2026/match_page/m32.html
 STATUS:CONFIRMED
@@ -1627,15 +1628,15 @@ TRANSP:OPAQUE
 END:VEVENT
 BEGIN:VEVENT
 UID:j1-club-antlers-20261107-e2be558eb4eae299@kashima.antlers
-DTSTAMP:20261120T014426Z
+DTSTAMP:20261120T104856Z
 DTSTART;TZID=Asia/Tokyo:20261107T150300
 DTEND;TZID=Asia/Tokyo:20261107T170300
 SUMMARY:J1[A]FC東京【第14節第1日】
 DESCRIPTION:大会名: Ｊ１\n節 / ラウンド: 第１４節第１日\n
  対戦カード: FC東京 vs 鹿島\nキックオフ: 15:03 (JST)\n会場:
   味スタ\n試合結果: 2-0\nTV中継・配信: ＤＡＺＮ\n公式詳
- ページ: https://data.j-league.or.jp/SFMS02/?match_card_id=34650\n\n
- 情報ソース: J.League Data Site
+ 細ページ: https://data.j-league.or.jp/SFMS02/?match_card_id=34650\n\n
+ ※情報ソース: J.League Data Site
 LOCATION:味スタ
 URL:https://data.j-league.or.jp/SFMS02/?match_card_id=34650
 STATUS:CONFIRMED
@@ -1643,17 +1644,17 @@ TRANSP:OPAQUE
 END:VEVENT
 BEGIN:VEVENT
 UID:j1-club-antlers-20261111-2a3d99512e51f279@kashima.antlers
-DTSTAMP:20261120T014426Z
+DTSTAMP:20261120T104856Z
 DTSTART;TZID=Asia/Tokyo:20261111T190300
 DTEND;TZID=Asia/Tokyo:20261111T210300
 SUMMARY:LC[A]横浜FM【準々決勝 第1戦】
-DESCRIPTION:大会名: ルヴァンカップ プライムラウンド\n節
-  / ラウンド: 準々決勝　第１戦\n対戦カード: 横浜FM vs 
- 島\nキックオフ: 19:03 (JST)\n会場: 日産ス\n試合結果: 2-3\n
- TV中継・配信: フジテレビＮＥＸＴ（録）／スカパー！
- スカパー！動画ストア\n公式詳細ページ: https://data.j-le
- ague.or.jp/SFMS02/?match_card_id=35304\n\n※情報ソース: J.League Dat
- a Site
+DESCRIPTION:大会名: ルヴァンカップ プライムラウンド\n節 
+ / ラウンド: 準々決勝　第１戦\n対戦カード: 横浜FM vs 鹿
+ 島\nキックオフ: 19:03 (JST)\n会場: 日産ス\n試合結果: 2-3\nT
+ V中継・配信: フジテレビＮＥＸＴ（録）／スカパー！
+ ／スカパー！動画ストア\n公式詳細ページ: https://data.j-l
+ eague.or.jp/SFMS02/?match_card_id=35304\n\n※情報ソース: J.League Da
+ ta Site
 LOCATION:日産ス
 URL:https://data.j-league.or.jp/SFMS02/?match_card_id=35304
 STATUS:CONFIRMED
@@ -1661,17 +1662,17 @@ TRANSP:OPAQUE
 END:VEVENT
 BEGIN:VEVENT
 UID:j1-club-antlers-20261115-f91b247e7cfca484@kashima.antlers
-DTSTAMP:20261120T014426Z
+DTSTAMP:20261120T104856Z
 DTSTART;TZID=Asia/Tokyo:20261115T150300
 DTEND;TZID=Asia/Tokyo:20261115T170300
 SUMMARY:LC[H]横浜FM【準々決勝 第2戦】
-DESCRIPTION:大会名: ルヴァンカップ プライムラウンド\n節
-  / ラウンド: 準々決勝　第２戦\n対戦カード: 鹿島 vs 横
- FM\nキックオフ: 15:03 (JST)\n会場: メルスタ\n試合結果: 3-
- 2\nTV中継・配信: フジテレビＮＥＸＴ（録）／スカパー
- ／スカパー！動画ストア\n公式詳細ページ: https://data.j
- -league.or.jp/SFMS02/?match_card_id=35308\n\n※情報ソース: J.League 
- Data Site
+DESCRIPTION:大会名: ルヴァンカップ プライムラウンド\n節 
+ / ラウンド: 準々決勝　第２戦\n対戦カード: 鹿島 vs 横
+ 浜FM\nキックオフ: 15:03 (JST)\n会場: メルスタ\n試合結果: 3
+ -2\nTV中継・配信: フジテレビＮＥＸＴ（録）／スカパー
+ ！／スカパー！動画ストア\n公式詳細ページ: https://data.
+ j-league.or.jp/SFMS02/?match_card_id=35308\n\n※情報ソース: J.League
+  Data Site
 LOCATION:メルスタ
 URL:https://data.j-league.or.jp/SFMS02/?match_card_id=35308
 STATUS:CONFIRMED
@@ -1679,30 +1680,30 @@ TRANSP:OPAQUE
 END:VEVENT
 BEGIN:VEVENT
 UID:j1-club-antlers-20261120-203dcb0e771a9723@kashima.antlers
-DTSTAMP:20261120T014426Z
+DTSTAMP:20261120T104856Z
 DTSTART;TZID=Asia/Tokyo:20261120T190000
 DTEND;TZID=Asia/Tokyo:20261120T210000
 SUMMARY:J1[H]清水【第15節第1日】
 DESCRIPTION:大会名: Ｊ１\n節 / ラウンド: 第１５節第１日\n
  対戦カード: 鹿島 vs 清水\nキックオフ: 19:00 (JST)\n会場: 
- ルスタ\nTV中継・配信: ＤＡＺＮ\n\n※情報ソース: J.Leag
- ue Data Site
+ メルスタ\nTV中継・配信: ＤＡＺＮ\n\n※情報ソース: J.Lea
+ gue Data Site
 LOCATION:メルスタ
 STATUS:CONFIRMED
 TRANSP:OPAQUE
 END:VEVENT
 BEGIN:VEVENT
 UID:j1-club-antlers-20261125-186b8857d2db79e5@kashima.antlers
-DTSTAMP:20261120T014426Z
+DTSTAMP:20261120T104856Z
 DTSTART;TZID=Asia/Tokyo:20261125T190000
 DTEND;TZID=Asia/Tokyo:20261125T210000
 SUMMARY:AC[H]全北現代モーターズ【第5節】
-DESCRIPTION:大会名: AFCチャンピオンズリーグ Elite 2026/27　E
- AST\n節 / ラウンド: 第5節\n対戦カード: 鹿島アントラー
-  vs 全北現代モーターズ\nキックオフ: 19:00 (JST)\n会場: 
- シマサッカースタジアム\n公式詳細ページ: https://www.jfa
- .jp/match/acl_elite_2026/match_page/m40.html\n\n※情報ソース: JFA (A
- FCチャンピオンズリーグ Elite)
+DESCRIPTION:大会名: AFCチャンピオンズリーグ Elite 2026/27　EA
+ ST\n節 / ラウンド: 第5節\n対戦カード: 鹿島アントラーズ
+  vs 全北現代モーターズ\nキックオフ: 19:00 (JST)\n会場: カ
+ シマサッカースタジアム\n公式詳細ページ: https://www.jfa.
+ jp/match/acl_elite_2026/match_page/m40.html\n\n※情報ソース: JFA (AF
+ Cチャンピオンズリーグ Elite)
 LOCATION:カシマサッカースタジアム
 URL:https://www.jfa.jp/match/acl_elite_2026/match_page/m40.html
 STATUS:CONFIRMED
@@ -1710,30 +1711,30 @@ TRANSP:OPAQUE
 END:VEVENT
 BEGIN:VEVENT
 UID:j1-club-antlers-20261128-21fa12da02c3f9dd@kashima.antlers
-DTSTAMP:20261120T014426Z
+DTSTAMP:20261120T104856Z
 DTSTART;TZID=Asia/Tokyo:20261128T150000
 DTEND;TZID=Asia/Tokyo:20261128T170000
 SUMMARY:J1[H]岡山【第17節第1日】
 DESCRIPTION:大会名: Ｊ１\n節 / ラウンド: 第１７節第１日\n
  対戦カード: 鹿島 vs 岡山\nキックオフ: 15:00 (JST)\n会場: 
- ルスタ\nTV中継・配信: ＤＡＺＮ\n\n※情報ソース: J.Leag
- ue Data Site
+ メルスタ\nTV中継・配信: ＤＡＺＮ\n\n※情報ソース: J.Lea
+ gue Data Site
 LOCATION:メルスタ
 STATUS:CONFIRMED
 TRANSP:OPAQUE
 END:VEVENT
 BEGIN:VEVENT
 UID:j1-club-antlers-20261202-5e4749d837111c69@kashima.antlers
-DTSTAMP:20261120T014426Z
+DTSTAMP:20261120T104856Z
 DTSTART;TZID=Asia/Tokyo:20261202T191500
 DTEND;TZID=Asia/Tokyo:20261202T211500
 SUMMARY:AC[A]ポートFC【第6節】
-DESCRIPTION:大会名: AFCチャンピオンズリーグ Elite 2026/27　E
- AST\n節 / ラウンド: 第6節\n対戦カード: ポートFC vs 鹿島
+DESCRIPTION:大会名: AFCチャンピオンズリーグ Elite 2026/27　EA
+ ST\n節 / ラウンド: 第6節\n対戦カード: ポートFC vs 鹿島ア
  ントラーズ\nキックオフ: 19:15 (JST)\n会場: タイ／パトゥ
  ムターニースタジアム\n公式詳細ページ: https://www.jfa.jp/
  match/acl_elite_2026/match_page/m48.html\n\n※情報ソース: JFA (AFC
- ャンピオンズリーグ Elite)
+ チャンピオンズリーグ Elite)
 LOCATION:タイ／パトゥムターニースタジアム
 URL:https://www.jfa.jp/match/acl_elite_2026/match_page/m48.html
 STATUS:CONFIRMED
@@ -1741,30 +1742,30 @@ TRANSP:OPAQUE
 END:VEVENT
 BEGIN:VEVENT
 UID:j1-club-antlers-20261205-92e138b6b3f50c54@kashima.antlers
-DTSTAMP:20261120T014426Z
+DTSTAMP:20261120T104856Z
 DTSTART;TZID=Asia/Tokyo:20261205T130000
 DTEND;TZID=Asia/Tokyo:20261205T150000
 SUMMARY:J1[A]千葉【第18節第2日】
 DESCRIPTION:大会名: Ｊ１\n節 / ラウンド: 第１８節第２日\n
  対戦カード: 千葉 vs 鹿島\nキックオフ: 13:00 (JST)\n会場: 
- クアリ\nTV中継・配信: ＤＡＺＮ\n\n※情報ソース: J.Leag
- ue Data Site
+ フクアリ\nTV中継・配信: ＤＡＺＮ\n\n※情報ソース: J.Lea
+ gue Data Site
 LOCATION:フクアリ
 STATUS:CONFIRMED
 TRANSP:OPAQUE
 END:VEVENT
 BEGIN:VEVENT
 UID:j1-club-antlers-20261209-e56d510969ca549e@kashima.antlers
-DTSTAMP:20261120T014426Z
+DTSTAMP:20261120T104856Z
 DTSTART;TZID=Asia/Tokyo:20261209T190000
 DTEND;TZID=Asia/Tokyo:20261209T210000
 SUMMARY:天[H]C大阪【ラウンド16】
 DESCRIPTION:大会名: 天皇杯 JFA 第106回全日本サッカー選手
- 大会\n節 / ラウンド: ラウンド16\n対戦カード: 鹿島ア
- トラーズ vs セレッソ大阪\nキックオフ: 19:00 (JST)\n会場:
-  メルカリスタジアム\n公式詳細ページ: https://www.jfa.jp/ma
- tch/emperorscup_2026/match_page/m74.html\n\n※情報ソース: JFA (天
- 杯)
+ 権大会\n節 / ラウンド: ラウンド16\n対戦カード: 鹿島ア
+ ントラーズ vs セレッソ大阪\nキックオフ: 19:00 (JST)\n会
+ 場: メルカリスタジアム\n公式詳細ページ: https://www.jfa.j
+ p/match/emperorscup_2026/match_page/m74.html\n\n※情報ソース: JFA (
+ 天皇杯)
 LOCATION:メルカリスタジアム
 URL:https://www.jfa.jp/match/emperorscup_2026/match_page/m74.html
 STATUS:CONFIRMED
@@ -1772,57 +1773,57 @@ TRANSP:OPAQUE
 END:VEVENT
 BEGIN:VEVENT
 UID:j1-club-antlers-20261213-17ef14c656d3af7b@kashima.antlers
-DTSTAMP:20261120T014426Z
+DTSTAMP:20261120T104856Z
 DTSTART;TZID=Asia/Tokyo:20261213T140000
 DTEND;TZID=Asia/Tokyo:20261213T160000
 SUMMARY:J1[A]広島【第19節第2日】
 DESCRIPTION:大会名: Ｊ１\n節 / ラウンド: 第１９節第２日\n
  対戦カード: 広島 vs 鹿島\nキックオフ: 14:00 (JST)\n会場: 
- ピース\nTV中継・配信: ＤＡＺＮ／ＮＨＫ広島\n\n※情
- ソース: J.League Data Site
+ Ｅピース\nTV中継・配信: ＤＡＺＮ／ＮＨＫ広島\n\n※情
+ 報ソース: J.League Data Site
 LOCATION:Ｅピース
 STATUS:CONFIRMED
 TRANSP:OPAQUE
 END:VEVENT
 BEGIN:VEVENT
 UID:j1-club-antlers-20261216-67e37ae0259ff353@kashima.antlers
-DTSTAMP:20261120T014426Z
+DTSTAMP:20261120T104856Z
 DTSTART;TZID=Asia/Tokyo:20261216T190000
 DTEND;TZID=Asia/Tokyo:20261216T210000
 SUMMARY:J1[H]町田【第16節第2日】
 DESCRIPTION:大会名: Ｊ１\n節 / ラウンド: 第１６節第２日\n
  対戦カード: 鹿島 vs 町田\nキックオフ: 19:00 (JST)\n会場: 
- ルスタ\nTV中継・配信: ＤＡＺＮ\n\n※情報ソース: J.Leag
- ue Data Site
+ メルスタ\nTV中継・配信: ＤＡＺＮ\n\n※情報ソース: J.Lea
+ gue Data Site
 LOCATION:メルスタ
 STATUS:CONFIRMED
 TRANSP:OPAQUE
 END:VEVENT
 BEGIN:VEVENT
 UID:j1-club-antlers-20261219-f80fb543e93c2db7@kashima.antlers
-DTSTAMP:20261120T014426Z
+DTSTAMP:20261120T104856Z
 DTSTART;TZID=Asia/Tokyo:20261219T150000
 DTEND;TZID=Asia/Tokyo:20261219T170000
 SUMMARY:J1[H]東京V【第20節第1日】
 DESCRIPTION:大会名: Ｊ１\n節 / ラウンド: 第２０節第１日\n
  対戦カード: 鹿島 vs 東京Ｖ\nキックオフ: 15:00 (JST)\n会場
  : MUFG国立\nTV中継・配信: ＤＡＺＮ／ＮＨＫ　ＢＳ\n\n※
- 報ソース: J.League Data Site
+ 情報ソース: J.League Data Site
 LOCATION:MUFG国立
 STATUS:CONFIRMED
 TRANSP:OPAQUE
 END:VEVENT
 BEGIN:VEVENT
 UID:j1-club-antlers-20270209-75e3d2b8e352bb79@kashima.antlers
-DTSTAMP:20261120T014426Z
+DTSTAMP:20261120T104856Z
 DTSTART;TZID=Asia/Tokyo:20270209T190000
 DTEND;TZID=Asia/Tokyo:20270209T210000
 SUMMARY:AC[A]大田ハナ・シチズン【第7節】
-DESCRIPTION:大会名: AFCチャンピオンズリーグ Elite 2026/27　E
- AST\n節 / ラウンド: 第7節\n対戦カード: 大田ハナ・シチ
- ン vs 鹿島アントラーズ\nキックオフ: 19:00 (JST)\n会場: 
- 国／大田ワールドカップスタジアム\n公式詳細ページ: 
- https://www.jfa.jp/match/acl_elite_2026/match_page/m51.html\n\n※情報
+DESCRIPTION:大会名: AFCチャンピオンズリーグ Elite 2026/27　EA
+ ST\n節 / ラウンド: 第7節\n対戦カード: 大田ハナ・シチズ
+ ン vs 鹿島アントラーズ\nキックオフ: 19:00 (JST)\n会場: 韓
+ 国／大田ワールドカップスタジアム\n公式詳細ページ: h
+ ttps://www.jfa.jp/match/acl_elite_2026/match_page/m51.html\n\n※情報ソ
  ース: JFA (AFCチャンピオンズリーグ Elite)
 LOCATION:韓国／大田ワールドカップスタジアム
 URL:https://www.jfa.jp/match/acl_elite_2026/match_page/m51.html
@@ -1831,31 +1832,31 @@ TRANSP:OPAQUE
 END:VEVENT
 BEGIN:VEVENT
 UID:j1-club-antlers-20270213-80d30248afe25718@kashima.antlers
-DTSTAMP:20261120T014426Z
+DTSTAMP:20261120T104856Z
 DTSTART;VALUE=DATE:20270213
 DTEND;VALUE=DATE:20270214
 SUMMARY:J1[H]水戸【第21節第1日】
 DESCRIPTION:大会名: Ｊ１\n節 / ラウンド: 第２１節第１日\n
  対戦カード: 鹿島 vs 水戸\nキックオフ: 時間未定（また
- 公式発表待ち）\n会場: メルスタ\nTV中継・配信: ＤＡ
- Ｎ　※２／１３（土）　ｏｒ　２／１４（日）\n\n※情
- 報ソース: J.League Data Site
+ は公式発表待ち）\n会場: メルスタ\nTV中継・配信: ＤＡ
+ ＺＮ　※２／１３（土）　ｏｒ　２／１４（日）\n\n※
+ 情報ソース: J.League Data Site
 LOCATION:メルスタ
 STATUS:CONFIRMED
 TRANSP:OPAQUE
 END:VEVENT
 BEGIN:VEVENT
 UID:j1-club-antlers-20270216-47e5e09b88a15603@kashima.antlers
-DTSTAMP:20261120T014426Z
+DTSTAMP:20261120T104856Z
 DTSTART;TZID=Asia/Tokyo:20270216T190000
 DTEND;TZID=Asia/Tokyo:20270216T210000
 SUMMARY:AC[H]ラーチャブリーFC【第8節】
-DESCRIPTION:大会名: AFCチャンピオンズリーグ Elite 2026/27　E
- AST\n節 / ラウンド: 第8節\n対戦カード: 鹿島アントラー
+DESCRIPTION:大会名: AFCチャンピオンズリーグ Elite 2026/27　EA
+ ST\n節 / ラウンド: 第8節\n対戦カード: 鹿島アントラーズ
   vs ラーチャブリーFC\nキックオフ: 19:00 (JST)\n会場: カシ
  マサッカースタジアム\n公式詳細ページ: https://www.jfa.jp/
  match/acl_elite_2026/match_page/m64.html\n\n※情報ソース: JFA (AFC
- ャンピオンズリーグ Elite)
+ チャンピオンズリーグ Elite)
 LOCATION:カシマサッカースタジアム
 URL:https://www.jfa.jp/match/acl_elite_2026/match_page/m64.html
 STATUS:CONFIRMED
@@ -1863,296 +1864,297 @@ TRANSP:OPAQUE
 END:VEVENT
 BEGIN:VEVENT
 UID:j1-club-antlers-20270220-347cf9ec6dc91b32@kashima.antlers
-DTSTAMP:20261120T014426Z
+DTSTAMP:20261120T104856Z
 DTSTART;VALUE=DATE:20270220
 DTEND;VALUE=DATE:20270221
 SUMMARY:J1[A]浦和【第22節第1日】
 DESCRIPTION:大会名: Ｊ１\n節 / ラウンド: 第２２節第１日\n
  対戦カード: 浦和 vs 鹿島\nキックオフ: 時間未定（また
- 公式発表待ち）\n会場: 埼玉\nTV中継・配信: ＤＡＺＮ
- ※２／２０（土）　ｏｒ　２／２１（日）\n\n※情報ソ
- ース: J.League Data Site
+ は公式発表待ち）\n会場: 埼玉\nTV中継・配信: ＤＡＺＮ
+ 　※２／２０（土）　ｏｒ　２／２１（日）\n\n※情報
+ ソース: J.League Data Site
 LOCATION:埼玉
 STATUS:CONFIRMED
 TRANSP:OPAQUE
 END:VEVENT
 BEGIN:VEVENT
 UID:j1-club-antlers-20270227-6d15fdea28b048bb@kashima.antlers
-DTSTAMP:20261120T014426Z
+DTSTAMP:20261120T104856Z
 DTSTART;VALUE=DATE:20270227
 DTEND;VALUE=DATE:20270228
 SUMMARY:J1[A]岡山【第23節第1日】
 DESCRIPTION:大会名: Ｊ１\n節 / ラウンド: 第２３節第１日\n
  対戦カード: 岡山 vs 鹿島\nキックオフ: 時間未定（また
- 公式発表待ち）\n会場: ＪＦＥス\nTV中継・配信: ＤＡ
- Ｎ　※２／２７（土）　ｏｒ　２／２８（日）\n\n※情
- 報ソース: J.League Data Site
+ は公式発表待ち）\n会場: ＪＦＥス\nTV中継・配信: ＤＡ
+ ＺＮ　※２／２７（土）　ｏｒ　２／２８（日）\n\n※
+ 情報ソース: J.League Data Site
 LOCATION:ＪＦＥス
 STATUS:CONFIRMED
 TRANSP:OPAQUE
 END:VEVENT
 BEGIN:VEVENT
 UID:j1-club-antlers-20270306-d0d9be1d46b9bf43@kashima.antlers
-DTSTAMP:20261120T014426Z
+DTSTAMP:20261120T104856Z
 DTSTART;VALUE=DATE:20270306
 DTEND;VALUE=DATE:20270307
 SUMMARY:J1[H]千葉【第24節第1日】
 DESCRIPTION:大会名: Ｊ１\n節 / ラウンド: 第２４節第１日\n
  対戦カード: 鹿島 vs 千葉\nキックオフ: 時間未定（また
- 公式発表待ち）\n会場: メルスタ\nTV中継・配信: ＤＡ
- Ｎ　※３／６（土）　ｏｒ　３／７（日）\n\n※情報ソ
- ース: J.League Data Site
+ は公式発表待ち）\n会場: メルスタ\nTV中継・配信: ＤＡ
+ ＺＮ　※３／６（土）　ｏｒ　３／７（日）\n\n※情報
+ ソース: J.League Data Site
 LOCATION:メルスタ
 STATUS:CONFIRMED
 TRANSP:OPAQUE
 END:VEVENT
 BEGIN:VEVENT
 UID:j1-club-antlers-20270310-8cca38f8b0dd4606@kashima.antlers
-DTSTAMP:20261120T014426Z
+DTSTAMP:20261120T104856Z
 DTSTART;VALUE=DATE:20270310
 DTEND;VALUE=DATE:20270311
 SUMMARY:J1[A]町田【第25節第1日】
 DESCRIPTION:大会名: Ｊ１\n節 / ラウンド: 第２５節第１日\n
  対戦カード: 町田 vs 鹿島\nキックオフ: 時間未定（また
- 公式発表待ち）\n会場: Ｇスタ\nTV中継・配信: ＤＡＺ
- 　※ＡＦＣクラブ競技会の試合日程により、２／２４
- 水）に開催する可能性があります\n\n※情報ソース: J.L
- eague Data Site
+ は公式発表待ち）\n会場: Ｇスタ\nTV中継・配信: ＤＡＺ
+ Ｎ　※ＡＦＣクラブ競技会の試合日程により、２／２
+ ４（水）に開催する可能性があります\n\n※情報ソース:
+  J.League Data Site
 LOCATION:Ｇスタ
 STATUS:CONFIRMED
 TRANSP:OPAQUE
 END:VEVENT
 BEGIN:VEVENT
 UID:j1-club-antlers-20270313-bb72d40e3c9198a8@kashima.antlers
-DTSTAMP:20261120T014426Z
+DTSTAMP:20261120T104856Z
 DTSTART;VALUE=DATE:20270313
 DTEND;VALUE=DATE:20270314
 SUMMARY:J1[H]広島【第26節第1日】
 DESCRIPTION:大会名: Ｊ１\n節 / ラウンド: 第２６節第１日\n
  対戦カード: 鹿島 vs 広島\nキックオフ: 時間未定（また
- 公式発表待ち）\n会場: メルスタ\nTV中継・配信: ＤＡ
- Ｎ　※３／１３（土）　ｏｒ　３／１４（日）　※Ａ
- Ｃクラブ競技会の試合日程により、　３／３（水）も
- しくは４／７（水）に開催する可能性があります\n\n※
- 報ソース: J.League Data Site
+ は公式発表待ち）\n会場: メルスタ\nTV中継・配信: ＤＡ
+ ＺＮ　※３／１３（土）　ｏｒ　３／１４（日）　※
+ ＡＦＣクラブ競技会の試合日程により、　３／３（水
+ ）もしくは４／７（水）に開催する可能性があります\n
+ \n※情報ソース: J.League Data Site
 LOCATION:メルスタ
 STATUS:CONFIRMED
 TRANSP:OPAQUE
 END:VEVENT
 BEGIN:VEVENT
 UID:j1-club-antlers-20270321-add9d8a361c6a880@kashima.antlers
-DTSTAMP:20261120T014426Z
+DTSTAMP:20261120T104856Z
 DTSTART;VALUE=DATE:20270321
 DTEND;VALUE=DATE:20270322
 SUMMARY:J1[A]清水【第27節第2日】
 DESCRIPTION:大会名: Ｊ１\n節 / ラウンド: 第２７節第２日\n
  対戦カード: 清水 vs 鹿島\nキックオフ: 時間未定（また
- 公式発表待ち）\n会場: MUFG国立\nTV中継・配信: ＤＡＺ
- \n\n※情報ソース: J.League Data Site
+ は公式発表待ち）\n会場: MUFG国立\nTV中継・配信: ＤＡＺ
+ Ｎ\n\n※情報ソース: J.League Data Site
 LOCATION:MUFG国立
 STATUS:CONFIRMED
 TRANSP:OPAQUE
 END:VEVENT
 BEGIN:VEVENT
 UID:j1-club-antlers-20270324-b1aeb11715efe819@kashima.antlers
-DTSTAMP:20261120T014426Z
+DTSTAMP:20261120T104856Z
 DTSTART;TZID=Asia/Tokyo:20270324T190000
 DTEND;TZID=Asia/Tokyo:20270324T210000
 SUMMARY:LC[A]柏【準決勝 第1戦】
-DESCRIPTION:大会名: ルヴァンカップ プライムラウンド\n節
-  / ラウンド: 準決勝　第１戦\n対戦カード: 柏 vs 鹿島\n
- ックオフ: 19:00 (JST)\n会場: 三協Ｆ柏\nTV中継・配信: フ
+DESCRIPTION:大会名: ルヴァンカップ プライムラウンド\n節 
+ / ラウンド: 準決勝　第１戦\n対戦カード: 柏 vs 鹿島\nキ
+ ックオフ: 19:00 (JST)\n会場: 三協Ｆ柏\nTV中継・配信: フジ
  テレビＮＥＸＴ／スカパー！／ＦＯＤ／フジテレビＮ
- ＸＴｓｍａｒｔ／スカパー！動画ストア\n\n※情報ソ
- ス: J.League Data Site
+ ＥＸＴｓｍａｒｔ／スカパー！動画ストア\n\n※情報ソ
+ ース: J.League Data Site
 LOCATION:三協Ｆ柏
 STATUS:CONFIRMED
 TRANSP:OPAQUE
 END:VEVENT
 BEGIN:VEVENT
 UID:j1-club-antlers-20270328-60af316ae863dfeb@kashima.antlers
-DTSTAMP:20261120T014426Z
+DTSTAMP:20261120T104856Z
 DTSTART;TZID=Asia/Tokyo:20270328T150000
 DTEND;TZID=Asia/Tokyo:20270328T170000
 SUMMARY:LC[H]柏【準決勝 第2戦】
-DESCRIPTION:大会名: ルヴァンカップ プライムラウンド\n節
-  / ラウンド: 準決勝　第２戦\n対戦カード: 鹿島 vs 柏\n
- ックオフ: 15:00 (JST)\n会場: メルスタ\nTV中継・配信: フ
+DESCRIPTION:大会名: ルヴァンカップ プライムラウンド\n節 
+ / ラウンド: 準決勝　第２戦\n対戦カード: 鹿島 vs 柏\nキ
+ ックオフ: 15:00 (JST)\n会場: メルスタ\nTV中継・配信: フジ
  テレビＮＥＸＴ（録）／スカパー！／スカパー！動画
- トア\n\n※情報ソース: J.League Data Site
+ ストア\n\n※情報ソース: J.League Data Site
 LOCATION:メルスタ
 STATUS:CONFIRMED
 TRANSP:OPAQUE
 END:VEVENT
 BEGIN:VEVENT
 UID:j1-club-antlers-20270403-607f6eb0631b4887@kashima.antlers
-DTSTAMP:20261120T014426Z
+DTSTAMP:20261120T104856Z
 DTSTART;VALUE=DATE:20270403
 DTEND;VALUE=DATE:20270404
 SUMMARY:J1[H]横浜FM【第28節第1日】
 DESCRIPTION:大会名: Ｊ１\n節 / ラウンド: 第２８節第１日\n
  対戦カード: 鹿島 vs 横浜FM\nキックオフ: 時間未定（ま
- は公式発表待ち）\n会場: メルスタ\nTV中継・配信: ＤＡ
- ＺＮ　※４／３（土）　ｏｒ　４／４（日）\n\n※情報
- ース: J.League Data Site
+ たは公式発表待ち）\n会場: メルスタ\nTV中継・配信: Ｄ
+ ＡＺＮ　※４／３（土）　ｏｒ　４／４（日）\n\n※情
+ 報ソース: J.League Data Site
 LOCATION:メルスタ
 STATUS:CONFIRMED
 TRANSP:OPAQUE
 END:VEVENT
 BEGIN:VEVENT
 UID:j1-club-antlers-20270410-6befe60492b6d8d4@kashima.antlers
-DTSTAMP:20261120T014426Z
+DTSTAMP:20261120T104856Z
 DTSTART;VALUE=DATE:20270410
 DTEND;VALUE=DATE:20270411
 SUMMARY:J1[A]名古屋【第29節第2日】
 DESCRIPTION:大会名: Ｊ１\n節 / ラウンド: 第２９節第２日\n
  対戦カード: 名古屋 vs 鹿島\nキックオフ: 時間未定（ま
- は公式発表待ち）\n会場: ●未定●\nTV中継・配信: Ｄ
- ＺＮ　※４／１０（土）　ｏｒ　４／１１（日）\n\n※
- 情報ソース: J.League Data Site
+ たは公式発表待ち）\n会場: ●未定●\nTV中継・配信: Ｄ
+ ＡＺＮ　※４／１０（土）　ｏｒ　４／１１（日）\n\n
+ ※情報ソース: J.League Data Site
 LOCATION:●未定●
 STATUS:CONFIRMED
 TRANSP:OPAQUE
 END:VEVENT
 BEGIN:VEVENT
 UID:j1-club-antlers-20270417-176215daec6fa140@kashima.antlers
-DTSTAMP:20261120T014426Z
+DTSTAMP:20261120T104856Z
 DTSTART;VALUE=DATE:20270417
 DTEND;VALUE=DATE:20270418
 SUMMARY:J1[A]C大阪【第30節第2日】
 DESCRIPTION:大会名: Ｊ１\n節 / ラウンド: 第３０節第２日\n
  対戦カード: Ｃ大阪 vs 鹿島\nキックオフ: 時間未定（ま
- は公式発表待ち）\n会場: ハナサカ\nTV中継・配信: Ｄ
- ＺＮ　※４／１７（土）　ｏｒ　４／１８（日）\n\n※
- 情報ソース: J.League Data Site
+ たは公式発表待ち）\n会場: ハナサカ\nTV中継・配信: Ｄ
+ ＡＺＮ　※４／１７（土）　ｏｒ　４／１８（日）\n\n
+ ※情報ソース: J.League Data Site
 LOCATION:ハナサカ
 STATUS:CONFIRMED
 TRANSP:OPAQUE
 END:VEVENT
 BEGIN:VEVENT
 UID:j1-club-antlers-20270424-061307fdf946c4a1@kashima.antlers
-DTSTAMP:20261120T014426Z
+DTSTAMP:20261120T104856Z
 DTSTART;VALUE=DATE:20270424
 DTEND;VALUE=DATE:20270425
 SUMMARY:J1[H]京都【第31節第1日】
 DESCRIPTION:大会名: Ｊ１\n節 / ラウンド: 第３１節第１日\n
  対戦カード: 鹿島 vs 京都\nキックオフ: 時間未定（また
- 公式発表待ち）\n会場: メルスタ\nTV中継・配信: ＤＡ
- Ｎ　※４／２４（土）　ｏｒ　４／２５（日）　※Ａ
- Ｌ　Ｅｌｉｔｅ出場クラブがＡＣＬ　Ｅｌｉｔｅ準々
- 決勝進出の場合は４／１（木）　もしくは４／７（水
- に開催する可能性があります。\n\n※情報ソース: J.Leagu
- e Data Site
+ は公式発表待ち）\n会場: メルスタ\nTV中継・配信: ＤＡ
+ ＺＮ　※４／２４（土）　ｏｒ　４／２５（日）　※
+ ＡＣＬ　Ｅｌｉｔｅ出場クラブがＡＣＬ　Ｅｌｉｔｅ
+ 準々決勝進出の場合は４／１（木）　もしくは４／７
+ （水）に開催する可能性があります。\n\n※情報ソース:
+  J.League Data Site
 LOCATION:メルスタ
 STATUS:CONFIRMED
 TRANSP:OPAQUE
 END:VEVENT
 BEGIN:VEVENT
 UID:j1-club-antlers-20270429-2c57fc61379c6610@kashima.antlers
-DTSTAMP:20261120T014426Z
+DTSTAMP:20261120T104856Z
 DTSTART;VALUE=DATE:20270429
 DTEND;VALUE=DATE:20270430
 SUMMARY:J1[H]神戸【第32節第1日】
 DESCRIPTION:大会名: Ｊ１\n節 / ラウンド: 第３２節第１日\n
  対戦カード: 鹿島 vs 神戸\nキックオフ: 時間未定（また
- 公式発表待ち）\n会場: メルスタ\nTV中継・配信: ＤＡ
- Ｎ　※ＡＣＬ　Ｅｌｉｔｅ出場クラブがＡＣＬ　Ｅｌ
- ｔｅ準々決勝進出の場合は５／１９（水）に開催する
- 可能性があります。\n\n※情報ソース: J.League Data Site
+ は公式発表待ち）\n会場: メルスタ\nTV中継・配信: ＤＡ
+ ＺＮ　※ＡＣＬ　Ｅｌｉｔｅ出場クラブがＡＣＬ　Ｅ
+ ｌｉｔｅ準々決勝進出の場合は５／１９（水）に開催
+ する可能性があります。\n\n※情報ソース: J.League Data Sit
+ e
 LOCATION:メルスタ
 STATUS:CONFIRMED
 TRANSP:OPAQUE
 END:VEVENT
 BEGIN:VEVENT
 UID:j1-club-antlers-20270503-a464b7aab9adc1a3@kashima.antlers
-DTSTAMP:20261120T014426Z
+DTSTAMP:20261120T104856Z
 DTSTART;VALUE=DATE:20270503
 DTEND;VALUE=DATE:20270504
 SUMMARY:J1[A]G大阪【第33節第1日】
 DESCRIPTION:大会名: Ｊ１\n節 / ラウンド: 第３３節第１日\n
  対戦カード: Ｇ大阪 vs 鹿島\nキックオフ: 時間未定（ま
- は公式発表待ち）\n会場: パナスタ\nTV中継・配信: Ｄ
- ＺＮ　※５／３（月・祝）　ｏｒ　５／４（火・祝）
- ※ＡＣＬ　Ｅｌｉｔｅ出場クラブがＡＣＬ　Ｅｌｉｔ
- ｅ準々決勝進出の場合は５／５（水・祝）もしくは５
- ２６（水）に開催する可能性があります。\n\n※情報ソ
- ース: J.League Data Site
+ たは公式発表待ち）\n会場: パナスタ\nTV中継・配信: Ｄ
+ ＡＺＮ　※５／３（月・祝）　ｏｒ　５／４（火・祝
+ ）　※ＡＣＬ　Ｅｌｉｔｅ出場クラブがＡＣＬ　Ｅｌ
+ ｉｔｅ準々決勝進出の場合は５／５（水・祝）もしく
+ は５／２６（水）に開催する可能性があります。\n\n※
+ 情報ソース: J.League Data Site
 LOCATION:パナスタ
 STATUS:CONFIRMED
 TRANSP:OPAQUE
 END:VEVENT
 BEGIN:VEVENT
 UID:j1-club-antlers-20270509-0efa802e519910c2@kashima.antlers
-DTSTAMP:20261120T014426Z
+DTSTAMP:20261120T104856Z
 DTSTART;VALUE=DATE:20270509
 DTEND;VALUE=DATE:20270510
 SUMMARY:J1[H]川崎F【第34節第1日】
 DESCRIPTION:大会名: Ｊ１\n節 / ラウンド: 第３４節第１日\n
  対戦カード: 鹿島 vs 川崎Ｆ\nキックオフ: 時間未定（ま
- は公式発表待ち）\n会場: メルスタ\nTV中継・配信: Ｄ
- ＺＮ　※ルヴァンカップ決勝進出クラブの試合は４／
- １（水）、５／１２（水）、５／１９（水）、　６／
- ２（水）のいずれかに開催する可能性があります。\n\n
- 情報ソース: J.League Data Site
+ たは公式発表待ち）\n会場: メルスタ\nTV中継・配信: Ｄ
+ ＡＺＮ　※ルヴァンカップ決勝進出クラブの試合は４
+ ／２１（水）、５／１２（水）、５／１９（水）、　
+ ６／２（水）のいずれかに開催する可能性があります
+ 。\n\n※情報ソース: J.League Data Site
 LOCATION:メルスタ
 STATUS:CONFIRMED
 TRANSP:OPAQUE
 END:VEVENT
 BEGIN:VEVENT
 UID:j1-club-antlers-20270515-3ba2874d14b9cc49@kashima.antlers
-DTSTAMP:20261120T014426Z
+DTSTAMP:20261120T104856Z
 DTSTART;VALUE=DATE:20270515
 DTEND;VALUE=DATE:20270516
 SUMMARY:J1[A]長崎【第35節第1日】
 DESCRIPTION:大会名: Ｊ１\n節 / ラウンド: 第３５節第１日\n
  対戦カード: 長崎 vs 鹿島\nキックオフ: 時間未定（また
- 公式発表待ち）\n会場: ピースタ\nTV中継・配信: ＤＡ
- Ｎ　※５／１５（土）　ｏｒ　５／１６（日）\n\n※情
- 報ソース: J.League Data Site
+ は公式発表待ち）\n会場: ピースタ\nTV中継・配信: ＤＡ
+ ＺＮ　※５／１５（土）　ｏｒ　５／１６（日）\n\n※
+ 情報ソース: J.League Data Site
 LOCATION:ピースタ
 STATUS:CONFIRMED
 TRANSP:OPAQUE
 END:VEVENT
 BEGIN:VEVENT
 UID:j1-club-antlers-20270522-69f24d9928ac410a@kashima.antlers
-DTSTAMP:20261120T014426Z
+DTSTAMP:20261120T104856Z
 DTSTART;VALUE=DATE:20270522
 DTEND;VALUE=DATE:20270523
 SUMMARY:J1[A]福岡【第36節第1日】
 DESCRIPTION:大会名: Ｊ１\n節 / ラウンド: 第３６節第１日\n
  対戦カード: 福岡 vs 鹿島\nキックオフ: 時間未定（また
- 公式発表待ち）\n会場: ベススタ\nTV中継・配信: ＤＡ
- Ｎ　※５／２２（土）　ｏｒ　５／２３（日）\n\n※情
- 報ソース: J.League Data Site
+ は公式発表待ち）\n会場: ベススタ\nTV中継・配信: ＤＡ
+ ＺＮ　※５／２２（土）　ｏｒ　５／２３（日）\n\n※
+ 情報ソース: J.League Data Site
 LOCATION:ベススタ
 STATUS:CONFIRMED
 TRANSP:OPAQUE
 END:VEVENT
 BEGIN:VEVENT
 UID:j1-club-antlers-20270529-09b078562a6e2544@kashima.antlers
-DTSTAMP:20261120T014426Z
+DTSTAMP:20261120T104856Z
 DTSTART;VALUE=DATE:20270529
 DTEND;VALUE=DATE:20270530
 SUMMARY:J1[A]柏【第37節第1日】
 DESCRIPTION:大会名: Ｊ１\n節 / ラウンド: 第３７節第１日\n
  対戦カード: 柏 vs 鹿島\nキックオフ: 時間未定（または
- 式発表待ち）\n会場: 三協Ｆ柏\nTV中継・配信: ＤＡＺ
- 　※５／２９（土）　ｏｒ　５／３０（日）\n\n※情報
- ソース: J.League Data Site
+ 公式発表待ち）\n会場: 三協Ｆ柏\nTV中継・配信: ＤＡＺ
+ Ｎ　※５／２９（土）　ｏｒ　５／３０（日）\n\n※情
+ 報ソース: J.League Data Site
 LOCATION:三協Ｆ柏
 STATUS:CONFIRMED
 TRANSP:OPAQUE
 END:VEVENT
 BEGIN:VEVENT
 UID:j1-club-antlers-20270606-bcdb789470e9b401@kashima.antlers
-DTSTAMP:20261120T014426Z
+DTSTAMP:20261120T104856Z
 DTSTART;VALUE=DATE:20270606
 DTEND;VALUE=DATE:20270607
 SUMMARY:J1[H]FC東京【第38節第1日】
 DESCRIPTION:大会名: Ｊ１\n節 / ラウンド: 第３８節第１日\n
  対戦カード: 鹿島 vs FC東京\nキックオフ: 時間未定（ま
- は公式発表待ち）\n会場: メルスタ\nTV中継・配信: ＤＡ
- ＺＮ\n\n※情報ソース: J.League Data Site
+ たは公式発表待ち）\n会場: メルスタ\nTV中継・配信: Ｄ
+ ＡＺＮ\n\n※情報ソース: J.League Data Site
 LOCATION:メルスタ
 STATUS:CONFIRMED
 TRANSP:OPAQUE
