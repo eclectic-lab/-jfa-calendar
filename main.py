@@ -124,6 +124,60 @@ def to_halfwidth(text: str) -> str:
     ))
 
 
+def is_cancelled_or_unresolved_postponed(
+    date_text: str = "",
+    score_text: str = "",
+    ko_text: str = "",
+    extra_text: str = "",
+) -> bool:
+    """
+    日本代表の試合が「中止」または「代替日程が未定の延期」であるかを判定する。
+
+    - 戻り値:
+        True: カレンダーから完全に削除（除外）する。
+        False: 有効な試合日程としてカレンダーに含める（新日程が確定している場合を含む）。
+    """
+    clean_date = to_halfwidth(date_text).strip()
+    clean_score = to_halfwidth(score_text).strip()
+    clean_ko = to_halfwidth(ko_text).strip()
+    clean_extra = to_halfwidth(extra_text).strip()
+
+    # 1. 日付欄に矢印（→, ->, ⇒）が含まれている場合（日程変更パターン）
+    arrow_match = re.split(r"[→⇒]|->", clean_date)
+    if len(arrow_match) > 1:
+        after_arrow = arrow_match[-1].strip()
+        # 矢印の後ろ（新日程側）に「未定」「中止」「延期」「調整中」がある場合
+        if any(w in after_arrow for w in ["未定", "中止", "延期", "調整中"]):
+            return True
+        # 矢印の後ろに日付（月/日）が含まれていれば、新日程が確定しているので除外しない
+        if re.search(r"\d{1,2}[./月]\d{1,2}", after_arrow):
+            return False
+        # 矢印の後ろに日付がなければ未定扱い
+        return True
+
+    # 2. スコア欄の判定（代表戦での中止例: 北朝鮮戦などでスコア欄が「中止」）
+    if clean_score:
+        score_keywords = ["中止", "延期", "未定", "開催中止", "取消", "cancelled", "postponed"]
+        for kw in score_keywords:
+            if kw in clean_score:
+                return True
+
+    # 3. 日付欄自体の判定
+    if any(w in clean_date for w in ["試合中止", "開催中止"]):
+        return True
+    if clean_date in ["中止", "延期", "未定", "調整中", "-"]:
+        return True
+
+    # 4. キックオフ欄や備考欄に明確な中止判定がある場合
+    if clean_ko in ["中止", "試合中止", "延期", "開催中止"]:
+        return True
+
+    if any(w in clean_extra for w in ["試合中止", "開催中止", "開催を中止", "中止が決定", "開催延期", "延期（未定）", "延期を発表", "延期が決定", "日程変更"]):
+        return True
+
+    return False
+
+
 @dataclass
 class MatchEvent:
     """試合日程情報を保持するデータクラス"""
@@ -295,13 +349,19 @@ class JFAScraper:
             try:
                 event = self._parse_table_row(tds, default_year)
                 if event:
-                    resolved_date, kickoff = self._resolve_kickoff_datetime(
+                    dt_result = self._resolve_kickoff_datetime(
                         target_date=event.date,
                         opponent=event.opponent,
                         comp=event.competition,
                         venue=event.venue,
                         detail_url=event.detail_url,
                     )
+                    # 中止または延期と判定された場合はカレンダーから除外
+                    if dt_result is None:
+                        logger.info(f"[JFA SAMURAI BLUE] 詳細ページ等により中止・延期と判定したため除外: {event.date} {event.summary}")
+                        continue
+
+                    resolved_date, kickoff = dt_result
                     event.date = resolved_date
                     event.kickoff_time = kickoff
                     events.append(event)
@@ -352,6 +412,15 @@ class JFAScraper:
         if not date_text or not comp_text:
             return None
 
+        # 中止・代替日未定の延期試合を完全にスキップ（カレンダーから除外）
+        if is_cancelled_or_unresolved_postponed(
+            date_text=date_text,
+            score_text=score_text,
+            extra_text=f"{comp_text} {team_text} {place_text}",
+        ):
+            logger.info(f"[JFA SAMURAI BLUE] 中止または代替日未定のため除外: {date_text} {comp_text} vs {team_text} (スコア/状態: {score_text})")
+            return None
+
         parsed_date = self._parse_date(date_text, default_year)
         if not parsed_date:
             logger.debug(f"日付のパースに失敗したためスキップ: {date_text}")
@@ -373,18 +442,40 @@ class JFAScraper:
         )
 
     def _parse_date(self, text: str, default_year: int) -> Optional[datetime.date]:
-        """文字列から date オブジェクトを抽出"""
-        clean_text = text.translate(str.maketrans("０１２３４５６７８９／", "0123456789/"))
+        """
+        文字列から date オブジェクトを抽出。
+        矢印表記（例: 8/31 → 11/17、2024/08/31 -> 2024/11/17）がある場合は、
+        必ず矢印の右側（最新・延期後の新日程）を優先してパースする。
+        """
+        if not text:
+            return None
+        clean_text = to_halfwidth(text)
 
-        m = re.search(r"(\d{4})[./年](\d{1,2})[./月](\d{1,2})", clean_text)
+        # 矢印（→, ->, ⇒）が含まれている場合、新日程側（右側）を優先
+        parts = re.split(r"[→⇒]|->", clean_text)
+        target_text = parts[-1].strip() if len(parts) > 1 else clean_text
+
+        m = re.search(r"(\d{4})[./年](\d{1,2})[./月](\d{1,2})", target_text)
         if m:
             year, month, day = int(m.group(1)), int(m.group(2)), int(m.group(3))
-            return datetime.date(year, month, day)
+            try:
+                return datetime.date(year, month, day)
+            except ValueError:
+                return None
 
-        m2 = re.search(r"(\d{1,2})[./月](\d{1,2})", clean_text)
+        m2 = re.search(r"(\d{1,2})[./月](\d{1,2})", target_text)
         if m2:
             month, day = int(m2.group(1)), int(m2.group(2))
-            return datetime.date(default_year, month, day)
+            year = default_year
+            # 矢印の左側に年があればそちらを採用
+            if len(parts) > 1:
+                m_left_year = re.search(r"(\d{4})[./年]", parts[0])
+                if m_left_year:
+                    year = int(m_left_year.group(1))
+            try:
+                return datetime.date(year, month, day)
+            except ValueError:
+                return None
 
         return None
 
@@ -395,9 +486,10 @@ class JFAScraper:
         comp: str,
         venue: str,
         detail_url: Optional[str],
-    ) -> Tuple[datetime.date, Optional[datetime.time]]:
+    ) -> Optional[Tuple[datetime.date, Optional[datetime.time]]]:
         """
         公式JSON、詳細ページ、時差計算を統合して正確な日本時間（JST）の日時を解決する。
+        試合が中止または延期（未定）であると確認された場合は None を返す。
         """
         resolved_date = target_date
         resolved_time: Optional[datetime.time] = None
@@ -418,6 +510,18 @@ class JFAScraper:
             if html:
                 soup = BeautifulSoup(html, "html.parser")
                 text = soup.get_text()
+
+                # 詳細ページでの開催中止・試合中止の判定（例: 2026/12/30 キリンチャレンジカップ中止）
+                if any(w in text for w in ["開催中止", "試合中止", "開催を中止", "試合を中止", "中止が決定", "中止を発表", "開催の中止"]):
+                    logger.info(f"詳細ページにて中止を確認のため除外 [{detail_url}]")
+                    return None
+
+                # 詳細ページでの開催延期・日程変更の判定（例: AFCアジアカップ2027 開催延期）
+                if any(w in text for w in ["開催延期", "開催日程の変更", "日程変更", "大会の開催期間が変更", "延期を発表", "延期が決定", "延期となりました", "開催を延期"]):
+                    # 旧日程（1月〜2月）から大幅延期されている場合、あるいは未定の場合
+                    if (target_date.month in [1, 2] and ("2027年12月" in text or "12月23日" in text)) or "延期" in text:
+                        logger.info(f"詳細ページにて延期・日程変更を確認のため除外 [{detail_url}]: {target_date}")
+                        return None
 
                 # 未定・調整中の確認
                 if "キックオフ時間調整中" in text or "キックオフ未定" in text:

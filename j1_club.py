@@ -125,6 +125,61 @@ def normalize_competition_category(comp_name: str) -> str:
     return "other"
 
 
+def is_cancelled_or_unresolved_postponed(
+    date_text: str = "",
+    score_text: str = "",
+    ko_text: str = "",
+    extra_text: str = "",
+) -> bool:
+    """
+    試合が「中止」または「代替日程が未定の延期」であるかを判定する。
+
+    - 戻り値:
+        True: カレンダーから完全に削除（除外）する。
+        False: 有効な試合日程としてカレンダーに含める（新日程が確定している場合を含む）。
+    """
+    clean_date = to_halfwidth(date_text).strip()
+    clean_score = to_halfwidth(score_text).strip()
+    clean_ko = to_halfwidth(ko_text).strip()
+    clean_extra = to_halfwidth(extra_text).strip()
+
+    # 1. 日付欄に矢印（→, ->, ⇒）が含まれている場合（延期・日程変更パターン）
+    arrow_match = re.split(r"[→⇒]|->", clean_date)
+    if len(arrow_match) > 1:
+        after_arrow = arrow_match[-1].strip()
+        # 矢印の後ろ（新日程側）に「未定」「中止」「延期」「調整中」がある場合
+        if any(w in after_arrow for w in ["未定", "中止", "延期", "調整中"]):
+            return True
+        # 矢印の後ろに日付（月/日）が含まれていれば、新日程が確定しているので除外しない
+        if re.search(r"\d{1,2}[./月]\d{1,2}", after_arrow):
+            return False
+        # 矢印の後ろに日付がなければ未定扱い
+        return True
+
+    # 2. スコア欄の判定
+    # スコア欄が「中止」「延期」「試合中止」などの場合（未開催で中止または代替日未定）
+    if clean_score:
+        score_keywords = ["中止", "延期", "未定", "開催中止", "取消", "cancelled", "postponed"]
+        for kw in score_keywords:
+            if kw in clean_score:
+                return True
+
+    # 3. 日付欄自体の判定
+    if any(w in clean_date for w in ["試合中止", "開催中止"]):
+        return True
+    if clean_date in ["中止", "延期", "未定", "調整中", "-"]:
+        return True
+
+    # 4. キックオフ欄や備考欄に明確な中止判定がある場合
+    if clean_ko in ["中止", "試合中止", "延期", "開催中止"]:
+        return True
+
+    if any(w in clean_extra for w in ["試合中止", "開催中止", "開催を中止", "中止が決定", "開催延期", "延期（未定）", "延期を発表", "延期が決定", "日程変更"]):
+        return True
+
+    return False
+
+
 @dataclass
 class MatchEvent:
     """試合日程情報を保持するデータクラス"""
@@ -386,6 +441,16 @@ class J1ClubScraper:
         if not date_text or not (home_text or away_text):
             return None
 
+        # 中止・代替日未定の延期試合を完全にスキップ（カレンダーから除外）
+        if is_cancelled_or_unresolved_postponed(
+            date_text=date_text,
+            score_text=score_text,
+            ko_text=ko_text,
+            extra_text=f"{venue_text} {broadcast_text}",
+        ):
+            logger.info(f"[J.League Data Site] 中止または代替日未定のため除外: {date_text} {sec_text} {home_text} vs {away_text} (スコア/状態: {score_text})")
+            return None
+
         parsed_date = self._parse_date(date_text)
         if not parsed_date:
             return None
@@ -413,8 +478,32 @@ class J1ClubScraper:
         )
 
     def _parse_date(self, text: str) -> Optional[datetime.date]:
-        clean_text = text.translate(str.maketrans("０１２３４５６７８９／", "0123456789/"))
-        m = re.search(r"(\d{2,4})[./年](\d{1,2})[./月](\d{1,2})", clean_text)
+        """
+        文字列から date オブジェクトを抽出。
+        矢印表記（例: 2024/08/31 -> 2024/11/17、8/31 → 11/17）がある場合は、
+        必ず矢印の右側（最新・延期後の新日程）を優先してパースする。
+        """
+        if not text:
+            return None
+        clean_text = to_halfwidth(text)
+
+        # 矢印（→, ->, ⇒）が含まれている場合、新日程側（右側）を優先
+        parts = re.split(r"[→⇒]|->", clean_text)
+        target_text = parts[-1].strip() if len(parts) > 1 else clean_text
+
+        m = re.search(r"(\d{2,4})[./年](\d{1,2})[./月](\d{1,2})", target_text)
+        if not m and len(parts) > 1:
+            # 右側で年が省略されている場合（例: 2024/8/31 → 11/17）、左側から年を取得
+            m_month_day = re.search(r"(\d{1,2})[./月](\d{1,2})", target_text)
+            m_year = re.search(r"(\d{2,4})[./年]", parts[0])
+            if m_month_day and m_year:
+                raw_year = int(m_year.group(1))
+                year = 2000 + raw_year if raw_year < 100 else raw_year
+                try:
+                    return datetime.date(year, int(m_month_day.group(1)), int(m_month_day.group(2)))
+                except ValueError:
+                    return None
+
         if not m:
             return None
 
@@ -655,12 +744,33 @@ class JFAClubScraper:
                 continue
 
             date_str = item.get("matchDate", "").strip()
-            if not date_str or date_str == "未定":
+            if not date_str or date_str in ["未定", "中止", "延期"]:
+                continue
+
+            score_dict = item.get("score") or {}
+            home_score = str(score_dict.get("homeScore", "")).strip()
+            away_score = str(score_dict.get("awayScore", "")).strip()
+            status_text = str(item.get("matchStatus", "")).strip()
+            remarks = str(item.get("remarks", "")).strip()
+            time_str = item.get("matchTime", "").strip()
+
+            # 中止・代替日未定の延期試合を除外
+            if is_cancelled_or_unresolved_postponed(
+                date_text=date_str,
+                score_text=f"{home_score} {away_score} {status_text}",
+                ko_text=time_str,
+                extra_text=f"{comp_name} {remarks}",
+            ):
+                logger.info(f"[JFA JSON] 中止または代替日未定のため除外: {date_str} {comp_name} {home_name} vs {away_name}")
                 continue
 
             # 日付パース
             clean_date_str = date_str.replace("-", "/").translate(str.maketrans("０１２３４５６７８９", "0123456789"))
-            m = re.search(r"(\d{4})/(\d{1,2})/(\d{1,2})", clean_date_str)
+            # 矢印表記がある場合は新日程を優先
+            parts = re.split(r"[→⇒]|->", clean_date_str)
+            target_date_str = parts[-1].strip() if len(parts) > 1 else clean_date_str
+
+            m = re.search(r"(\d{4})/(\d{1,2})/(\d{1,2})", target_date_str)
             if not m:
                 continue
             try:
@@ -669,7 +779,6 @@ class JFAClubScraper:
                 continue
 
             # キックオフ時間パース
-            time_str = item.get("matchTime", "").strip()
             parsed_time = None
             if time_str and time_str != "未定":
                 tm = re.search(r"(\d{1,2}):(\d{2})", time_str)
@@ -685,9 +794,6 @@ class JFAClubScraper:
             section = item.get("matchTypeName", "").strip()
 
             # スコア
-            score_dict = item.get("score") or {}
-            home_score = str(score_dict.get("homeScore", "")).strip()
-            away_score = str(score_dict.get("awayScore", "")).strip()
             score_text = ""
             if home_score and away_score:
                 score_text = f"{home_score}-{away_score}"
@@ -750,21 +856,34 @@ class JFAClubScraper:
                 if len(tds) < 3:
                     continue
 
+                # 中止・代替日未定の延期試合を除外
+                if is_cancelled_or_unresolved_postponed(
+                    date_text=row_text,
+                    score_text=row_text if "中止" in row_text or "延期" in row_text else "",
+                    extra_text=row_text,
+                ):
+                    logger.info(f"[JFA HTML] 中止または代替日未定のため除外: {row_text[:60]}")
+                    continue
+
                 # JFA標準の試合行構造
                 try:
-                    date_match = re.search(r"(\d{4})[./年](\d{1,2})[./月](\d{1,2})", row_text)
+                    clean_row = to_halfwidth(row_text)
+                    parts = re.split(r"[→⇒]|->", clean_row)
+                    target_row = parts[-1].strip() if len(parts) > 1 else clean_row
+
+                    date_match = re.search(r"(\d{4})[./年](\d{1,2})[./月](\d{1,2})", target_row)
                     if not date_match:
                         continue
                     p_date = datetime.date(int(date_match.group(1)), int(date_match.group(2)), int(date_match.group(3)))
 
-                    time_match = re.search(r"(\d{1,2}):(\d{2})", row_text)
+                    time_match = re.search(r"(\d{1,2}):(\d{2})", target_row)
                     p_time = None
                     if time_match:
                         p_time = datetime.time(int(time_match.group(1)), int(time_match.group(2)))
 
                     home_team = ""
                     away_team = ""
-                    teams = re.findall(r"([^\s\d\-–—vsVS:：/／()（）]+(?:\s[^\s\d\-–—vsVS:：/／()（）]+)*)", row_text)
+                    teams = re.findall(r"([^\s\d\-–—vsVS:：/／()（）]+(?:\s[^\s\d\-–—vsVS:：/／()（）]+)*)", target_row)
                     for t in teams:
                         if is_kashima_team(t):
                             home_team = t
@@ -845,15 +964,34 @@ def merge_schedule_events(
             merged_list.append(jfa_ev)
             logger.info(f"JFAから新規日程を追加しました: {jfa_ev.date} {jfa_ev.summary}")
 
-    # 3. UIDによる最終重複排除（万が一の同日同条件）
-    unique_events_dict: Dict[str, MatchEvent] = {}
+    # 3. 同一節・同一対戦カードの延期重複チェック（旧日程と新日程がサイト上に混在した場合の安全策）
+    deduped_by_section: List[MatchEvent] = []
+    section_card_dict: Dict[str, MatchEvent] = {}
     for ev in merged_list:
+        cat = normalize_competition_category(ev.competition)
+        if ev.section and cat in ("j1", "levain"):
+            card_key = f"{ev.date.year}_{cat}_{ev.section}_{normalize_team_name(ev.opponent)}"
+            if card_key in section_card_dict:
+                existing = section_card_dict[card_key]
+                # 日付が新しい日程を優先採用
+                if ev.date > existing.date:
+                    logger.info(f"同一節の延期後新日程を優先採用: {existing.date} -> {ev.date} {ev.summary}")
+                    section_card_dict[card_key] = existing.merge_with(ev)
+                continue
+            section_card_dict[card_key] = ev
+        else:
+            deduped_by_section.append(ev)
+    deduped_by_section.extend(section_card_dict.values())
+
+    # 4. UIDによる最終重複排除（万が一の同日同条件）
+    unique_events_dict: Dict[str, MatchEvent] = {}
+    for ev in deduped_by_section:
         if ev.uid in unique_events_dict:
             unique_events_dict[ev.uid] = unique_events_dict[ev.uid].merge_with(ev)
         else:
             unique_events_dict[ev.uid] = ev
 
-    # 4. 日付・キックオフ時間順にソート
+    # 5. 日付・キックオフ時間順にソート
     sorted_events = sorted(
         unique_events_dict.values(),
         key=lambda e: (e.date, e.kickoff_time or datetime.time.min),
