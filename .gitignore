@@ -9,6 +9,18 @@ venv/
 .venv/
 ENV/
 
+# Secrets & Environment variables
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.cert
+*.crt
+credentials.json
+token.json
+secrets/
+
 # IDE / Editor
 .vscode/
 .idea/

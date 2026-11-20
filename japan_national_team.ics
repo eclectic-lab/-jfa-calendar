@@ -269,20 +269,4 @@ URL:https://www.jfa.jp/samuraiblue/20270330/
 STATUS:CONFIRMED
 TRANSP:OPAQUE
 END:VEVENT
-BEGIN:VEVENT
-UID:jfa-match-20280121-8bdd77fe2bfd12f8@jfa.jp
-DTSTAMP:20261120T005907Z
-DTSTART;VALUE=DATE:20280121
-DTEND;VALUE=DATE:20280122
-SUMMARY:代表[A]インドネシア、タイ、カタール【AFC アジ
- カップ サウジアラビア 2027】
-DESCRIPTION:大会名: AFC アジアカップ サウジアラビア 2027\n
- 対戦カード: 日本代表 vs インドネシア、タイ、カター
- \nキックオフ: 時間未定（または公式発表待ち）\n会場:
-  サウジアラビア\n\n※JFA公式サイトより自動取得した日
- 程情報です。
-LOCATION:サウジアラビア
-STATUS:CONFIRMED
-TRANSP:OPAQUE
-END:VEVENT
 END:VCALENDAR

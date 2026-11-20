@@ -174,7 +174,7 @@ def is_cancelled_or_unresolved_postponed(
     if clean_ko in ["中止", "試合中止", "延期", "開催中止"]:
         return True
 
-    if any(w in clean_extra for w in ["試合中止", "開催中止", "開催を中止", "中止が決定", "開催延期", "延期（未定）", "延期を発表", "延期が決定", "日程変更"]):
+    if any(w in clean_extra for w in ["試合中止", "開催中止", "開催を中止", "中止が決定", "開催延期", "延期（未定）", "延期を発表", "延期が決定", "日程変更", "延期※"]):
         return True
 
     return False
@@ -1016,23 +1016,34 @@ class ICalGenerator:
 
     @staticmethod
     def fold_line(line: str) -> str:
-        """1行の長さをRFC 5545規定の75バイト以内で折り返し（フォールディング）"""
+        """
+        RFC 5545規定の75バイト以内で折り返し（フォールディング）。
+        UTF-8マルチバイト文字の途中での分割を防ぎ、文字化けや欠損を防止する。
+        """
         encoded = line.encode("utf-8")
         if len(encoded) <= 75:
             return line
 
-        folded_parts = []
-        current_part = bytearray()
-        for b in encoded:
-            current_part.append(b)
-            if len(current_part) >= 74:
-                folded_parts.append(current_part.decode("utf-8", errors="ignore"))
-                current_part = bytearray()
+        folded_lines: list[str] = []
+        current_chars: list[str] = []
+        current_bytes = 0
+        max_bytes = 75
 
-        if current_part:
-            folded_parts.append(current_part.decode("utf-8", errors="ignore"))
+        for char in line:
+            char_bytes = len(char.encode("utf-8"))
+            if current_bytes + char_bytes > max_bytes:
+                folded_lines.append("".join(current_chars))
+                current_chars = [char]
+                current_bytes = char_bytes
+                max_bytes = 74  # 継続行は先頭に半角スペース（1バイト）が入るため上限は74バイト
+            else:
+                current_chars.append(char)
+                current_bytes += char_bytes
 
-        return "\r\n ".join(folded_parts)
+        if current_chars:
+            folded_lines.append("".join(current_chars))
+
+        return "\r\n ".join(folded_lines)
 
     @classmethod
     def generate(cls, events: List[MatchEvent]) -> str:
@@ -1088,7 +1099,9 @@ class ICalGenerator:
                 lines.append(f"LOCATION:{cls.escape_text(ev.venue)}")
 
             if ev.detail_url:
-                lines.append(f"URL:{ev.detail_url}")
+                clean_url = ev.detail_url.strip().replace("\r", "").replace("\n", "")
+                if clean_url.startswith(("http://", "https://")):
+                    lines.append(f"URL:{clean_url}")
 
             lines.append("STATUS:CONFIRMED")
             lines.append("TRANSP:OPAQUE")
